@@ -1,0 +1,72 @@
+2024-11-25 20:27:29,143 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 20:27:29,167 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 21876 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-25 20:27:29,167 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-25 20:27:29,168 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-25 20:27:30,675 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-25 20:27:30,677 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-25 20:27:30,690 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-25 20:27:30,694 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-25 20:27:30,694 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-25 20:27:30,697 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-25 20:27:30,704 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-25 20:27:30,705 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-25 20:27:30,712 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-25 20:27:31,488 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-25 20:27:31,495 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-25 20:27:31,497 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-25 20:27:31,497 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-25 20:27:31,543 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-25 20:27:31,543 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2195 ms
+2024-11-25 20:27:32,350 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-25 20:27:32,483 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@441762b8
+2024-11-25 20:27:32,484 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-25 20:27:32,529 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-25 20:27:32,580 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.028s)
+2024-11-25 20:27:32,590 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-25 20:27:32,597 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-25 20:27:32,724 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-25 20:27:32,959 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-25 20:27:32,995 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-25 20:27:34,215 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-25 20:27:34,292 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f1bde96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3776c917, org.springframework.security.web.context.SecurityContextHolderFilter@4f7bb581, org.springframework.security.web.header.HeaderWriterFilter@271ced5f, org.springframework.web.filter.CorsFilter@1d1deb11, org.springframework.security.web.csrf.CsrfFilter@2d99b35f, org.springframework.security.web.authentication.logout.LogoutFilter@72bb3f3e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f283b8f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4a81582c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2cf88ae1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ae449e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3087b35f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20bd3082, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b80be13, org.springframework.security.web.access.ExceptionTranslationFilter@4dc74211, org.springframework.security.web.access.intercept.AuthorizationFilter@4de3a1ca]
+2024-11-25 20:27:34,448 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-25 20:27:34,548 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-25 20:27:34,552 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-25 20:27:34,562 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 5.763 seconds (process running for 6.428)
+2024-11-25 20:27:34,566 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-25 20:27:34,566 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-25 20:27:34,567 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-25 20:27:34,567 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-25 20:27:34,567 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-25 20:27:34,972 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 20:27:34,972 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-25 20:27:34,973 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-25 20:30:52,577 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f1b647f5725a6020
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: b72e174b-4dd3-4363-a00c-798932cb2062
+user-agent: PostmanRuntime/7.42.0
+2024-11-25 20:30:53,345 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f1b647f5725a6020
+Duration: 766 ms
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Mon, 25 Nov 2024 12:30:53 GMT
+Expires: 0
+Keep-Alive: timeout=60
+Pragma: no-cache
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+
+{"code":"00000","message":"一切 ok","data":{"sessionId":"350e2a2a4f908eb74ca724f0b3132179","img":"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"},"ok":true}
+2024-11-25 22:04:57,825 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-25 22:04:57,831 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.

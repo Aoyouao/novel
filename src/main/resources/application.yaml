@@ -1,0 +1,161 @@
+#--------------------------通用配置-------------------------
+spring:
+  application:
+    # 应用名
+    name: novel
+  profiles:
+    # 激活特定配置
+    active: dev
+  jackson:
+    generator:
+      # JSON 序列化时，将所有 Number 类型的属性都转为 String 类型返回，避免前端数据精度丢失的问题。
+      # 由于 Javascript 标准规定所有数字处理都应使用 64 位 IEEE 754 浮点值完成，
+      # 结果是某些 64 位整数值无法准确表示（尾数只有 51 位宽）
+      write-numbers-as-strings: true
+  servlet:
+    multipart:
+      # 上传文件最大大小
+      max-file-size: 5MB
+  # 启用虚拟线程
+  threads:
+    virtual:
+      enabled: true
+  # initialize the schema history table
+  flyway:
+    baseline-on-migrate: true
+server:
+  # 端口号
+  port: 9999
+
+--- #---------------------数据库配置---------------------------
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/novel?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+    # 数据源配置
+    datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        url: jdbc:mysql:///novel
+        username: root
+        password: '123456'
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+--- #---------------------中间件配置---------------------------
+spring:
+  data:
+    # Redis 配置
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: 123456
+
+# Actuator 端点管理
+management:
+  # 端点公开配置
+  endpoints:
+    # 通过 HTTP 公开的 Web 端点
+    web:
+      exposure:
+        # 公开所有的 Web 端点
+        include: "*"
+  # 端点启用配置
+  endpoint:
+    logfile:
+      # 启用返回日志文件内容的端点
+      enabled: true
+      # 外部日志文件路径
+      external-file: logs/novel.log
+  info:
+    env:
+      # 公开所有以 info. 开头的环境属性
+      enabled: true
+  health:
+    rabbit:
+      # 关闭 rabbitmq 的健康检查
+      enabled: false
+    elasticsearch:
+      # 关闭 elasticsearch 的健康检查
+      enabled: false
+    mail:
+      # 关闭 mail 的健康检查
+      enabled: false
+
+--- #--------------------接口文档配置---------------------------
+springdoc:
+  api-docs:
+    enabled: false
+
+--- #----------------------邮箱配置-----------------------------
+# 邮箱服务器配置
+spring:
+  mail:
+    host: smtp.163.com
+    nickname: aoyouao
+    username: xxx@163.com
+    password: xxx
+    default-encoding: UTF-8
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true  # 这里应该是 'true'，不是 'rue'
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+
+
+--- #----------------------Logbook配置-----------------------------
+logbook:
+  format:
+    # 输出格式
+    style: http
+  obfuscate:
+    headers:
+      # 隐藏 Authorization 头信息
+      - Authorization
+    parameters:
+      # 隐藏密码参数
+      - password
+
+--- #---------------------自定义配置----------------------------
+novel:
+  # 跨域配置
+  cors:
+    # 允许跨域的域名
+    allow-origins:
+      - http://localhost:1024
+      - http://localhost:9999
+  # JWT 密钥
+  jwt:
+    secret: E66559580A1ADF48CDD928516062F12E
+
+
+--- #------------------- dev 特定配置---------------------------
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+--- #------------------- test 特定配置--------------------------
+spring:
+  config:
+    activate:
+      on-profile: test
+
+--- #-------------------- prod 特定配置-------------------------
+spring:
+  config:
+    activate:
+      on-profile: prod
+

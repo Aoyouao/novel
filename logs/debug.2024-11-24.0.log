@@ -1,0 +1,731 @@
+2024-11-24 11:05:07,238 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-24 11:05:07,266 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 20176 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-24 11:05:07,266 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-24 11:05:07,267 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-24 11:05:08,801 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:05:08,802 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:05:08,817 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-24 11:05:08,820 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:05:08,821 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:05:08,825 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-24 11:05:08,834 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:05:08,836 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-24 11:05:08,846 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-24 11:05:09,649 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-24 11:05:09,657 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:05:09,658 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-24 11:05:09,658 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-24 11:05:09,699 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-24 11:05:09,700 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2281 ms
+2024-11-24 11:05:10,602 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-24 11:05:10,754 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e2f16bd
+2024-11-24 11:05:10,755 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-24 11:05:10,791 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-24 11:05:10,869 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.049s)
+2024-11-24 11:05:10,886 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-24 11:05:10,894 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-24 11:05:11,053 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-24 11:05:11,279 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:05:11,309 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:05:12,693 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 11:05:12,795 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7cb7ca06, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@660b8572, org.springframework.security.web.context.SecurityContextHolderFilter@13ecedf6, org.springframework.security.web.header.HeaderWriterFilter@2f7432f3, org.springframework.web.filter.CorsFilter@306cfb8a, org.springframework.security.web.csrf.CsrfFilter@abb1c3e, org.springframework.security.web.authentication.logout.LogoutFilter@3c995eae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48d68740, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2dda28a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60adea01, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4d13b552, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53eb4ef5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a3b0387, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@603042a5, org.springframework.security.web.access.ExceptionTranslationFilter@46a6f51b, org.springframework.security.web.access.intercept.AuthorizationFilter@24e5a4e0]
+2024-11-24 11:05:12,952 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-24 11:05:13,096 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:05:13,102 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-24 11:05:13,113 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 6.293 seconds (process running for 15.28)
+2024-11-24 11:05:13,119 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-24 11:05:13,119 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-24 11:05:13,119 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-24 11:05:13,119 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-24 11:05:13,119 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-24 11:05:28,862 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 11:05:28,863 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-24 11:05:28,864 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-24 11:05:29,052 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8a436286d18b95b5
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: 88d92a8c-a32a-498d-aea1-f24398dbd7dc
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:05:29,055 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8a436286d18b95b5
+Duration: 169 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 11:09:21,034 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ff5e1720ed3b8cc2
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=D5A1DDC7DE261ABA6965251353DE62BD
+host: localhost:9999
+postman-token: 5b93b38a-4e41-4a40-98a5-aa088f342fa3
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:09:21,035 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ff5e1720ed3b8cc2
+Duration: 136 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 11:14:42,400 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-24 11:14:42,408 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-24 11:14:44,114 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-24 11:14:44,133 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 15300 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-24 11:14:44,133 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-24 11:14:44,134 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-24 11:14:44,937 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:14:44,939 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:14:44,952 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-24 11:14:44,956 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:14:44,956 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:14:44,960 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-24 11:14:44,966 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:14:44,967 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-24 11:14:44,975 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-24 11:14:45,622 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-24 11:14:45,629 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:14:45,630 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-24 11:14:45,632 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-24 11:14:45,679 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-24 11:14:45,679 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1425 ms
+2024-11-24 11:14:46,266 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-24 11:14:46,363 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@112b3298
+2024-11-24 11:14:46,368 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-24 11:14:46,398 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-24 11:14:46,429 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-24 11:14:46,447 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-24 11:14:46,449 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-24 11:14:46,589 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-24 11:14:46,783 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:14:46,824 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:14:47,968 WARN (UserDetailsServiceAutoConfiguration.java:86)- 
+
+Using generated security password: 734e569c-189b-4d9f-a33b-5963ae1a9697
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24 11:14:47,980 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 11:14:48,055 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3df05c40, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@752957da, org.springframework.security.web.context.SecurityContextHolderFilter@603042a5, org.springframework.security.web.header.HeaderWriterFilter@5cfb4b71, org.springframework.web.filter.CorsFilter@2c3b0cc8, org.springframework.security.web.csrf.CsrfFilter@2d0ed017, org.springframework.security.web.authentication.logout.LogoutFilter@7ee46aaf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2242dd2b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4dd4a4e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b1505c3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e38b4ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75ba33b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46b4d4e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c6a5712, org.springframework.security.web.access.ExceptionTranslationFilter@586be63c, org.springframework.security.web.access.intercept.AuthorizationFilter@4f7bb581]
+2024-11-24 11:14:48,182 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-24 11:14:48,290 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:14:48,294 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-24 11:14:48,304 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.489 seconds (process running for 4.922)
+2024-11-24 11:14:48,310 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-24 11:14:48,310 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-24 11:14:48,310 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-24 11:14:48,311 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-24 11:14:48,311 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-24 11:14:48,652 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 11:14:48,652 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-24 11:14:48,654 INFO (FrameworkServlet.java:554)- Completed initialization in 2 ms
+2024-11-24 11:15:45,071 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: eef3635a0eb37cf2
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 7a46ce0a-879f-493c-8a04-cade3eab87ea
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:15:45,074 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: eef3635a0eb37cf2
+Duration: 37 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=5F5A68358BA7F38C93D2DE48940F21DA; Path=/; HttpOnly
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 11:18:18,861 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: b19649a19752666c
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=5F5A68358BA7F38C93D2DE48940F21DA
+host: localhost:9999
+postman-token: f8b52dba-48ab-483d-9dbd-fcd64bcd6039
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:18:18,862 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: b19649a19752666c
+Duration: 139 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 11:28:20,892 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: fad134f8006b3537
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: 7ebfcdb8-ef9f-4d67-9389-ed8b2ef25929
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:28:20,892 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: fad134f8006b3537
+Duration: 109 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 11:37:07,012 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-24 11:37:07,018 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-24 11:37:08,973 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-24 11:37:08,991 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 3664 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-24 11:37:08,991 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-24 11:37:08,991 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-24 11:37:09,893 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:37:09,895 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:37:09,922 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 23 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-24 11:37:09,927 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:37:09,929 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:37:09,932 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-24 11:37:09,942 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:37:09,943 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-24 11:37:09,953 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-11-24 11:37:10,610 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-24 11:37:10,617 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:37:10,618 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-24 11:37:10,618 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-24 11:37:10,661 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-24 11:37:10,662 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1549 ms
+2024-11-24 11:37:11,288 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-24 11:37:11,377 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39921410
+2024-11-24 11:37:11,378 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-24 11:37:11,402 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-24 11:37:11,428 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.012s)
+2024-11-24 11:37:11,437 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-24 11:37:11,438 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-24 11:37:11,570 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-24 11:37:11,765 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:37:11,801 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:37:13,076 WARN (UserDetailsServiceAutoConfiguration.java:86)- 
+
+Using generated security password: 8f50f6cd-440b-4ec0-90bf-90f2e16fb432
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24 11:37:13,087 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 11:37:13,159 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f2731e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21eb33d4, org.springframework.security.web.context.SecurityContextHolderFilter@1ec22804, org.springframework.security.web.header.HeaderWriterFilter@2295535f, org.springframework.web.filter.CorsFilter@220cda54, org.springframework.security.web.csrf.CsrfFilter@24e5a4e0, org.springframework.security.web.authentication.logout.LogoutFilter@63a9ab7d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d03404e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6818c0a6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a636c62, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b1505c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58da6f7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14a204f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e4d55a6, org.springframework.security.web.access.ExceptionTranslationFilter@b517988, org.springframework.security.web.access.intercept.AuthorizationFilter@19324eab]
+2024-11-24 11:37:13,289 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-24 11:37:13,428 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:37:13,432 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-24 11:37:13,442 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.767 seconds (process running for 5.165)
+2024-11-24 11:37:13,447 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-24 11:37:13,448 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-24 11:37:13,448 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-24 11:37:13,448 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-24 11:37:13,448 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-24 11:37:13,947 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 11:37:13,947 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-24 11:37:13,949 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-24 11:37:27,568 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c4eacfa4b199bfd4
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+cookie: JSESSIONID=B979A1C97902E1A049F76832E1F08DF1
+host: localhost:9999
+postman-token: 3e5d44e8-0357-4be7-99b0-a37aa71386c7
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:37:27,571 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c4eacfa4b199bfd4
+Duration: 39 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=9F3416BD1A35045BF87BA94B2A289C0B; Path=/; HttpOnly
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 11:41:37,055 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-24 11:41:37,065 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-24 11:41:38,709 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-24 11:41:38,727 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 9616 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-24 11:41:38,727 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-24 11:41:38,727 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-24 11:41:39,573 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:41:39,574 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:41:39,588 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-24 11:41:39,591 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:41:39,592 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-24 11:41:39,595 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-24 11:41:39,600 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 11:41:39,601 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-24 11:41:39,608 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-24 11:41:40,304 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-24 11:41:40,310 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:41:40,311 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-24 11:41:40,311 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-24 11:41:40,360 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-24 11:41:40,361 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1509 ms
+2024-11-24 11:41:41,003 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-24 11:41:41,101 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ca7bddd
+2024-11-24 11:41:41,102 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-24 11:41:41,127 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-24 11:41:41,160 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-24 11:41:41,171 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-24 11:41:41,173 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-24 11:41:41,296 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-24 11:41:41,483 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:41:41,512 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 11:41:42,619 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 11:41:42,702 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@329cdafa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b36ab82, org.springframework.security.web.context.SecurityContextHolderFilter@f5475d7, org.springframework.security.web.header.HeaderWriterFilter@3e42cff9, org.springframework.web.filter.CorsFilter@1322b542, org.springframework.security.web.csrf.CsrfFilter@a6017f9, org.springframework.security.web.authentication.logout.LogoutFilter@49dce561, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4374c051, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@8cc1bac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4f283b8f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@431782fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cee1b4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@524a96f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f953e51, org.springframework.security.web.access.ExceptionTranslationFilter@2f42f20f, org.springframework.security.web.access.intercept.AuthorizationFilter@6a275836]
+2024-11-24 11:41:42,821 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-24 11:41:42,926 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-24 11:41:42,931 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-24 11:41:42,940 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.551 seconds (process running for 4.938)
+2024-11-24 11:41:42,945 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-24 11:41:42,946 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-24 11:41:42,947 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-24 11:41:42,947 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-24 11:41:42,947 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-24 11:41:43,205 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 11:41:43,205 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-24 11:41:43,206 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-24 11:43:07,585 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: bb11e47e5941226a
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=9F3416BD1A35045BF87BA94B2A289C0B
+host: localhost:9999
+postman-token: f179bd1e-28e1-4210-8d43-7fbd9c605311
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:43:07,594 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: bb11e47e5941226a
+Duration: 384 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 11:43:43,786 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ed36d78658e06c0b
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=3244AFB50923FE0B45799AC34A8BF939
+host: localhost:9999
+postman-token: 261a5ccf-0cb5-4f86-94b7-8f7c66537791
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 11:43:43,788 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ed36d78658e06c0b
+Duration: 98 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 13:12:41,791 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 97f9ec645d05a802
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=3244AFB50923FE0B45799AC34A8BF939
+host: localhost:9999
+postman-token: 0ac2c848-ee46-45df-9594-1e9f042d2ab2
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 13:12:41,801 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 97f9ec645d05a802
+Duration: 103 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 13:21:56,604 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f17681860b0ec424
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=196B4FC946FAC48F891E306F8B2984E4
+host: localhost:9999
+postman-token: 25b6f018-0907-42d9-a7f2-bde34919655e
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 13:21:56,605 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f17681860b0ec424
+Duration: 138 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 13:25:56,406 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c84025feaefa0bd9
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=196B4FC946FAC48F891E306F8B2984E4
+host: localhost:9999
+postman-token: e5e83869-6d1c-4efa-909c-744ded9c228c
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 13:25:56,406 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c84025feaefa0bd9
+Duration: 270 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 13:32:48,861 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8d003f4d592f44a4
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=196B4FC946FAC48F891E306F8B2984E4
+host: localhost:9999
+postman-token: 2738c378-4420-4824-9adc-923021c7854a
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 13:32:49,313 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,type,sort,book_id,create_time,update_time FROM home_book
+2024-11-24 13:32:49,341 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 
+2024-11-24 13:32:49,420 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2024-11-24 13:32:49,554 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?))
+2024-11-24 13:32:49,560 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334318182169681920(Long), 1334318497132552192(Long), 1334318818323963904(Long), 1334328310788882432(Long), 1334334734843609088(Long), 1334335471568912384(Long), 1337759637059973121(Long), 1337759773395824640(Long), 1337762752513486849(Long), 1337872061003993088(Long), 1337872316667793408(Long), 1337872488235798528(Long), 1337872597996539904(Long), 1337872898115768320(Long), 1337873148071120896(Long), 1337874646456864768(Long), 1337874812798767104(Long), 1337874951365988352(Long), 1337875255574663168(Long), 1337876581629038592(Long), 1337879143543476224(Long), 1337879206630002688(Long), 1337882606201475072(Long), 1337884719262470144(Long), 1337949399824781312(Long), 1337957605418520576(Long), 1337958745514233856(Long), 1337960531323047936(Long), 1337961040297644032(Long), 1337968514828390400(Long), 1337971702436515840(Long)
+2024-11-24 13:32:49,608 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2024-11-24 13:32:49,666 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8d003f4d592f44a4
+Duration: 840 ms
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Sun, 24 Nov 2024 05:32:49 GMT
+Expires: 0
+Keep-Alive: timeout=60
+Pragma: no-cache
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+
+{"code":null,"message":null,"data":[],"ok":false}
+2024-11-24 13:42:08,750 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-24 13:42:08,754 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-24 16:45:17,329 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-24 16:45:17,356 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 23912 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-24 16:45:17,356 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-24 16:45:17,356 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-24 16:45:18,784 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 16:45:18,786 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-24 16:45:18,803 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 12 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-24 16:45:18,806 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 16:45:18,807 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-24 16:45:18,811 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-24 16:45:18,818 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 16:45:18,819 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-24 16:45:18,829 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-24 16:45:19,634 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-24 16:45:19,643 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-24 16:45:19,644 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-24 16:45:19,644 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-24 16:45:19,690 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-24 16:45:19,691 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2142 ms
+2024-11-24 16:45:20,588 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-24 16:45:20,719 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@956cf3d
+2024-11-24 16:45:20,720 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-24 16:45:20,758 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-24 16:45:20,809 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.032s)
+2024-11-24 16:45:20,819 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-24 16:45:20,821 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-24 16:45:20,987 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-24 16:45:21,201 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 16:45:21,232 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 16:45:22,499 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 16:45:22,597 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35984172, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746fda68, org.springframework.security.web.context.SecurityContextHolderFilter@4e38b4ea, org.springframework.security.web.header.HeaderWriterFilter@1ebb6e20, org.springframework.web.filter.CorsFilter@46bdc55e, org.springframework.security.web.csrf.CsrfFilter@4f991f00, org.springframework.security.web.authentication.logout.LogoutFilter@718aa49a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@179806f3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20ee12d8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77cac3b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12f826c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3df05c40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73c71083, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3167c0d, org.springframework.security.web.access.ExceptionTranslationFilter@20bd3082, org.springframework.security.web.access.intercept.AuthorizationFilter@ae449e7]
+2024-11-24 16:45:22,753 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-24 16:45:22,854 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-24 16:45:22,858 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-24 16:45:22,867 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 5.976 seconds (process running for 8.597)
+2024-11-24 16:45:22,872 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-24 16:45:22,872 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-24 16:45:22,872 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-24 16:45:22,873 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-24 16:45:22,873 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-24 16:45:33,346 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 16:45:33,346 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-24 16:45:33,348 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-24 16:45:33,521 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: af9378f3bcdcf011
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: e112e1f9-2af7-423d-9ab1-70e2852aaa4b
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 16:45:33,578 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,type,sort,book_id,create_time,update_time FROM home_book
+2024-11-24 16:45:33,588 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 
+2024-11-24 16:45:33,611 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2024-11-24 16:45:33,628 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?))
+2024-11-24 16:45:33,629 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334318182169681920(Long), 1334318497132552192(Long), 1334318818323963904(Long), 1334328310788882432(Long), 1334334734843609088(Long), 1334335471568912384(Long), 1337759637059973121(Long), 1337759773395824640(Long), 1337762752513486849(Long), 1337872061003993088(Long), 1337872316667793408(Long), 1337872488235798528(Long), 1337872597996539904(Long), 1337872898115768320(Long), 1337873148071120896(Long), 1337874646456864768(Long), 1337874812798767104(Long), 1337874951365988352(Long), 1337875255574663168(Long), 1337876581629038592(Long), 1337879143543476224(Long), 1337879206630002688(Long), 1337882606201475072(Long), 1337884719262470144(Long), 1337949399824781312(Long), 1337957605418520576(Long), 1337958745514233856(Long), 1337960531323047936(Long), 1337961040297644032(Long), 1337968514828390400(Long), 1337971702436515840(Long)
+2024-11-24 16:45:33,645 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2024-11-24 16:45:33,676 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: af9378f3bcdcf011
+Duration: 152 ms
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Sun, 24 Nov 2024 08:45:33 GMT
+Expires: 0
+Keep-Alive: timeout=60
+Pragma: no-cache
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+
+{"code":"00000","message":"一切 ok","data":[{"type":null,"bookId":"1334318182169681920","picUrl":"/localPic/2020/12/03/d307192479a34d79adae6a1f7521aefa.jpg","bookName":"我给战神王爷寄刀片","authorName":"汐娴阳光","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;她是冉府的嫡长女确被迫从小离开冉府，他是纪国的战神，更是纪国女子心中的男神。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;多年后，她学得一身本事再回冉府为母报仇，成了冉府的一抹黑月光，一场巧遇，这抹黑月光成了战神王爷的心尖宝，看黑月光和战神王爷碰撞的爱情火花是闪瞎你的眼还是甜进你的心？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;有喜欢阳光的小可......爱们，可以加阳光的qq群哟：807833254【展开】【收起】"},{"type":null,"bookId":"1334318497132552192","picUrl":"/localPic/2020/12/03/c734eb38ee9d4968988642d0665d7e22.jpg","bookName":"我有家诸天最强当铺","authorName":"白袍小飞","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;诸天万界最强当铺，本店物资丰富、价格公道、童叟无欺，只有您想不到的，没有本店没有的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只要您能拿出有价值的东西来典当，本店保证，什么神仙皇帝，在您面前都得靠边站。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;本店营业地址不定，联系方式暂无，如需交易，请在心中默念：第一当铺，诸天最强，我要交易，快快现身。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第一页：经营当铺？小意思，不就是做奸商吗，没有人比我更懂做奸商。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第二页：我从没想过赚穷人的钱，干翻那些大人物，他们的钱就是我的了。"},{"type":null,"bookId":"1334318818323963904","picUrl":"/localPic/2020/12/03/78c9dcfe5b5d4b70a04b34df4659fc59.jpg","bookName":"名侦探修炼手册","authorName":"肥瓜","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;请谨记，永远不要去挖掘那些未被解开的谜题。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因为你永远不会知道，当时的人们为了将其掩盖，付出了多大的代价。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;虚假平静的表面之下，大多数的真相都是残酷的......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;好吧，我说的再明白点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;如果有一天，你在下班的路上看到一本书掉在地上，拴住你的好奇心，千万不要去碰它。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;很遗憾，最初的周言并没有认识到这一点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;所以他将那本书捡了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;那书有个很别扭的名字———《名侦探修炼手册》<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;至于作者......叫肥瓜。"},{"type":null,"bookId":"1334328310788882432","picUrl":"/localPic/2020/12/03/775d5845493d4be8b3254a29cfd9e05e.jpg","bookName":"北国谍影","authorName":"寻青藤","bookDesc":"　　一九三九春，中共地下党员，军统情报站特工许诚言，奉命前往太原锄奸，眼见日寇的残暴，为抗击日寇决定深入敌后，化身蝰蛇，刺杀敌酋，清除汉奸，潜伏敌营，收集情报，在这片北国大地上，续写谍战传奇！北国谍影官方1群：833528943北国谍影官方2群：879936725"},{"type":null,"bookId":"1334334734843609088","picUrl":"/localPic/2020/12/03/850e3ee448324e66942c46014db0a0c8.jpg","bookName":"家里来了个野原琳","authorName":"冰镇菠萝吹雪","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;“你愿意获得强大的力量吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意和一个小美女同居吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意时不时来一场其它位面双人游吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我都......愿意，可你能给我吗?问这么多。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“契约达成，力量、美女、系统马上发放。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;呃……于是乎，主角苏白开局成为十尾人柱力，开启轮回眼仙人体，同时拥有了十二符咒的力量，还有了一个名叫野原琳的同居女友，瞬间这辈子走上了人生巅峰。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只是为啥大部分都处于封印中？这要是遇上了带土那个偏执狂怎么办？【展开】【收起】"},{"type":null,"bookId":"1334335471568912384","picUrl":"/localPic/2020/12/03/108fcc33987b4ab8a205c8cfc7c7dc30.jpg","bookName":"我辈的江湖","authorName":"钟无涯","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;下载客户端，查看完整作品简介。"},{"type":null,"bookId":"1337759637059973121","picUrl":"/images/default.gif","bookName":"檀香刑","authorName":"莫言","bookDesc":"　　《檀香刑》是莫言潜心五年完成的一部长篇力作。在这部神品妙构的小说中，莫言以1900年德国人在山东修建胶济铁路、袁世凯镇压山东义和团运动、八国联军攻陷北京、慈禧仓皇出逃为历史背景，用摇曳多姿的笔触，大悲大喜的激情，高瞻深睿的思想，活龙活现的讲述了发生在\"高密东北乡\"的一场可歌可泣的兵荒马乱的运动，一桩骇人听闻的酷刑，一段惊心动魄的爱情。"},{"type":null,"bookId":"1337759773395824640","picUrl":"/localPic/2020/12/12/484c1a4d03094614a02742a154cbd8f3.jpg","bookName":"从今天开始做藩王","authorName":"背着家的蜗牛","bookDesc":"　　一闭眼，一睁眼。赵煦发现自己成了一名皇子。美人妖娆，封地很远，国家很乱。而他只想守着自己的封土逍遥自在。只是若有敌人敢来犯，只让他有来无回，心胆寒……"},{"type":null,"bookId":"1337762752513486849","picUrl":"/images/default.gif","bookName":"明朝那些事儿7:　大结局","authorName":"当年明月","bookDesc":"　　《明朝那些事儿7:大结局》是对这样一段历史进行了分析梳理，引人思索：明朝最后一位皇帝，自来有许多传说。关于崇祯究竟是一个昏庸无能的皇帝，还是一个力图奋起的人，一直众说纷纭。不管怎么说，这是一个残酷的时代，也是一个精彩的时代。在这一时期，北方的后金势力崛起，经过努尔哈赤的经营，势力急剧壮大。努尔哈赤死后，皇太极即位。袁崇焕就在这一时期迈上了历史的舞台。本文作者告诉我们，袁崇焕这个民族英雄，在历史上不过是个二流角色。"},{"type":null,"bookId":"1337872061003993088","picUrl":"/images/default.gif","bookName":"酒楼","authorName":"许春樵","bookDesc":"　　天德酒楼传到了齐家三兄弟一代，却被老大一人独占。老三齐立言不愿接受兄长的施舍，也不堪老大的精神虐待，在造汽车的白日梦幻灭后，从最底层做起，历经穷困潦倒和各种打击，终于创办了自己的酒楼，吞并了老大的酒楼。成功后的齐立言却变了，由诚笃奋发的创业者变成了狡诈贪心的资本野心家……"},{"type":null,"bookId":"1337872316667793408","picUrl":"/images/default.gif","bookName":"大唐太子李建成","authorName":"龙耳东","bookDesc":"　　小说根据宋朝范祖禹、明末清初王夫之，近代章太炎、陈寅恪、郭沫若以及当今世界知名史学家牛致功、胡戟、胡如雷等人的历史研究成果，拨开历史迷雾，还原历史真相。通过李建成短暂而悲剧的人生，告诉您一个波澜壮阔的时代发生的一些惊心动魄的事件，无不令您感慨万千，气荡回肠，掩卷深思，受益良多……"},{"type":null,"bookId":"1337872488235798528","picUrl":"/images/default.gif","bookName":"我的唐山","authorName":"林那北","bookDesc":"　　本书是第一部史诗性再现唐山过台湾历史的长篇巨作。宏大的视野，观照恢弘历史中的纵横捭阖，细致的笔触，抚摸往昔岁月里的爱恨情仇。小说通过一对貌合神离的兄弟和两个性情迥异的女子之间爱恨情仇、波澜起伏的人生悲欢展现整个唐山过台湾斑驳、丰饶而跌宕的历史画卷……"},{"type":null,"bookId":"1337872597996539904","picUrl":"/images/default.gif","bookName":"火蓝刀锋","authorName":"冯骥","bookDesc":"　　一次危险的水下救援，将爱吹牛的草根渔民蒋小鱼阴差阳错地进了以残酷训练而著称的“兽营”，在这里，他遇到了一批绝世天才：能在丛林中徒手搏狼的野孩子张冲，全国大学生游泳冠军鲁炎，打遍兽营无敌手的“兽王”巴郎，在海盗窝里艰辛成长的“战神”向羽，草原上的神枪女猎人乌云格日乐等人。"},{"type":null,"bookId":"1337872898115768320","picUrl":"/images/default.gif","bookName":"出手","authorName":"陈建波","bookDesc":"　　民国时期，陈仓城，随着陈仓守将党玉昆的覆灭，缙绅名流孙伯啸突然成为各方势力关注的焦点——相传党玉昆曾交他保管一大批藏宝。孙府周围频频上演各种明争暗斗的好戏，共产党、国民党、土匪、日本人、美国人等多方势力互相交错。迷雾重重之中，各方势力一一出手，鹿死谁手？谁能得手？"},{"type":null,"bookId":"1337873148071120896","picUrl":"/images/default.gif","bookName":"污点","authorName":"武和平","bookDesc":"　　小说作者既是行动者，又是书写者，还是思想者。他一手用枪，一手用笔，集战士与诗人于一身。他把经验的亲历与人性的剖析结合在一起。他的长篇小说充满正义的激情、直观社会的勇气和法的尊严。小说讲述了一个文物失窃案如何历尽千辛终被破获的故事。其中有动人的爱情故事和感人至深的亲情……"},{"type":null,"bookId":"1337874646456864768","picUrl":"/images/default.gif","bookName":"黑白道3：渗透","authorName":"朱维坚","bookDesc":"　　洪水中接连出现一男一女两具尸体，李斌良和战友们经缜密侦查，确认二人都是本市应届高中毕业生。为查明真相，他的足迹随着作家的笔迹奔走于各个校园之间，由此他涉足到一个从未涉及过的领域——教育……"},{"type":null,"bookId":"1337874812798767104","picUrl":"/images/default.gif","bookName":"噬魂","authorName":"通吃小墨墨","bookDesc":"　　这个世界绝对没有绝对的事情，也没有不可能的事。一把充满灵性的枪，一个有着特殊异能的警察，一个能走在人间和冥界的IT人士。一件件无法用现代科学去解释的事件。是世间的恶灵，还是人的心魔？凶手是谁？说不定，他就在看着你……"},{"type":null,"bookId":"1337874951365988352","picUrl":"/images/default.gif","bookName":"远征·流在缅北的血","authorName":"金满","bookDesc":"　　远征军第一次入缅作战大溃败，狙击手岳昆仑为追寻大部队孤身进入野人山。在地狱般的野人山中岳昆仑历经生死，与一群战友结下生死情谊。在印度兰姆伽基地整训后岳昆仑跟随部队踏上反攻缅甸的征程，与为兄报仇的天才狙击手藤原冷野不期而遇。"},{"type":null,"bookId":"1337875255574663168","picUrl":"/images/default.gif","bookName":"洪荒修圣","authorName":"轩影九变","bookDesc":"　　在他第一次练功的时候，产生的能量波动和天地灵气达到了共振，产生了一个黑洞，将云谣一下子吸了进去。而到的哪个时候，竟然是盘古还没有开天的洪荒时代。那时机遇不断，危险不断的时代。且看现代人云谣怎样玩转圣人，玩转洪荒……"},{"type":null,"bookId":"1337876581629038592","picUrl":"/localPic/2020/12/13/cb57c519e71b4e1b9cbc5eb7e4cbfcf0.jpg","bookName":"诸天之我是沙悟净","authorName":"目自翕张","bookDesc":"　　骆天明本是个农民工，穿越后的身份也和农民工类似，成了挑担子的沙悟净。好在天无绝人之路，他还有个穿越者的标配——系统。只是这个系统也是平民版的，简陋的让人无法直视。骆天明就依靠这个系统，穿越各个位面，见识各种各样的人和事，不断的炼心炼体，一步步走上巅峰！"},{"type":null,"bookId":"1337879143543476224","picUrl":"/images/default.gif","bookName":"最后一个道士3","authorName":"夏忆","bookDesc":"　　查文斌，凌正阳二十七代传人，茅山天正道掌门，一个因救人触犯了天罚的道士，一个源自生活的人物原型。将带领我们走进一个未知的全新的道家世界，重新打开属于传说中的真实腹地。青衣人，忘川渡人，棺中人，为何都与他有着一致的面孔？师傅、父母、儿女为何一个个都会离他而去？卓雄和大山的身世，血色的纹身究竟象征着什么？一切之前的所有谜团将会在《最后一个道士3》全部揭晓！"},{"type":null,"bookId":"1337879206630002688","picUrl":"/images/default.gif","bookName":"最后一个道士2","authorName":"夏忆","bookDesc":"　　查文斌——茅山派祖印持有者，正天道最后一代掌教传人。他救人于阴阳之间，却引火烧身，遭天罚阴遣；仗侠肝义胆与一身道术，救活人于阴阳罅隙，渡死人于无间鬼道！身披鱼鳞的远古氐人，复活的神秘君王，真正的扶桑神树······"},{"type":null,"bookId":"1337882606201475072","picUrl":"/images/default.gif","bookName":"尸语者","authorName":"法医秦明","bookDesc":"　　20个挑战心理极限的重口味案发现场，20份公安厅从未公开的法医禁忌档案。残忍、变态、惊悚、刺激、真实、震撼！尸语者，与死者朝夕相处的神秘职业，即将剖开震撼人心的亡灵之声！高速公路上抛下9袋尸块，被割下的膀胱里居然藏有冰碴，2000辆飞驰而过的车里，谁才是真正的凶手？垃圾场里被捆绑的女尸，全身器官都已经蜡化，要如何下手，才能验出她死亡的真相？电话打到一半，话筒里却传来沉闷的挣扎声，潜伏在校园当中的魅影，真的吞噬了那些女孩？资深法医老秦亲自捉刀，首度披露惊悚案发细节，创下悬疑小说从未到达的震撼尺度！荒山残尸、灭门惨案、校园禁地、公路游魂、水上浮骸、天外飞尸……每一案都让你无法入睡！"},{"type":null,"bookId":"1337884719262470144","picUrl":"/images/default.gif","bookName":"古董局中局","authorName":"马伯庸","bookDesc":"　　这是一部关于古董鉴定、收藏、造假、设局的百科全书式小说。字画、青铜、金石、瓷器每一件古董背后，都是深厚的历史积淀和文化传承；而每一件仿冒品背后，都是机关算尽的机巧和匪夷所思的圈套。古董造假、字画仿冒，古已有之。东晋时，康昕仿冒王羲之的书法真迹，连他儿子王献之也辨认不出来；宋朝皇帝宋徽宗喜欢造假，仿制了一大批商代的青铜兵器，摆在宫廷里，乐此不疲。在古董斑驳的纹理中，承载着一个民族的文化，一个时代的风貌，它的价值，不是金钱可以衡量的，但可怜的人类却只会用金钱去衡量它。"},{"type":null,"bookId":"1337949399824781312","picUrl":"/localPic/2020/12/13/e1ffbf0f78ea4fdea06fad26c6c9ce90.jpg","bookName":"港综1986","authorName":"龙升云霄","bookDesc":"　　五十年代，咏春叶问大战西洋拳王，咏春拳在港岛遍地开花。六十年，五亿探长雷洛一手遮天，组建金钱帝国。七十年，各大公司群雄并起，角逐王者宝座。八十年，群魔乱舞，你方唱罢我登场，弄潮儿各领风骚。说英雄谁是英雄，重生者吕泽仰望天空，立誓要谱写属于自己的传奇。"},{"type":null,"bookId":"1337957605418520576","picUrl":"/images/default.gif","bookName":"金丹传","authorName":"淮南居士","bookDesc":"　　瑶池浪、多宝、后羿，他们三个一路为了追杀王子魔，三个上级武者，三个疯狂的上级武者，用他们变态的功力，摧毁了整个悬空城，彻底的打碎了悬空城，悬空城从此以后成为了传说。"},{"type":null,"bookId":"1337958745514233856","picUrl":"/localPic/2020/12/13/b024b2fab49b4bc1a3b9e51d9edc0690.jpg","bookName":"大虞天行","authorName":"叁拾伍","bookDesc":"　　负责降妖除魔的大虞天行府的督丁赵山河醒来后惊骇发现自己竟是被只怨灵害死的。这职业如此危险他正惶恐，忽然察觉到自己识海竟有个书架，吸纳足够的情绪值，就能开启亮起的书本掌握本领。比如美食杂志能让他学会烧菜获得好评，反馈更多的情绪值。比如历代大家附录里的诗词能够提升灵符质地，甚至具现名将强军帮他杀敌。而他每学习一本，书籍还会自动更新其他的新书出来。这厮顿时振奋，于是天下妖魔就此倒了血霉。PS：我叫赵山河，我在大虞很红，因为我是个挂哔。"},{"type":null,"bookId":"1337960531323047936","picUrl":"/localPic/2020/12/13/b41b17ca8b564a69b11196414e5f0484.jpg","bookName":"脑海里飘来一座废品收购站","authorName":"鬼谷仙师","bookDesc":"　　物品：雄鹰展翅图！介绍：唐府遗弃之物，唐寅闲暇所作……完整度：20％修复需消耗财富值：50W。——陈牧羽，一个普普通通收破烂的，本以为一生注定平凡，没想到脑海里莫名其妙的飘来一座万界废品收购站，从此，世界变得不同了起来……"},{"type":null,"bookId":"1337961040297644032","picUrl":"/images/default.gif","bookName":"帝王之武修都市","authorName":"奇玄子","bookDesc":"　　一个纵横商界的奇葩人物，意外邂逅一块奇异石头，从此攻城略地崔营拔寨，钱财滚滚美女缠身，成就都市逍遥帝王！"},{"type":null,"bookId":"1337968514828390400","picUrl":"/images/default.gif","bookName":"极品记者斗僵尸","authorName":"浪子月生","bookDesc":"　　\"一个胯下有巨物的记者在调查一桩变态的凶杀案时，意外邂逅一名村姑美少妇。从此记者神魂颠倒，千方百计想把少妇泡到手骗上床。不幸的是，每次都是失败而终。正当记者通过不懈努力，一步步接近成功时，一场山村里的僵尸玩过界，正在悄然上演……于是记者展开了一边泡少妇一边斗僵尸的奇异之旅。随着他在两方都一步步接近成功时，最终的僵尸之祖旱魃逐渐在山村中复苏……\""},{"type":null,"bookId":"1337971702436515840","picUrl":"/localPic/2020/12/13/c88be458ca764bc1810770edcd7fd588.jpg","bookName":"我真不是角色球员","authorName":"易文三不知","bookDesc":"　　最好的蓝领，最完美的拼图，最佳帮手，最优质的的角色球员……《混子》，《夺冠第六人》，《运气论》，《抱腿大师》……李恪：我真不是！"}],"ok":true}
+2024-11-24 16:45:50,027 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 9a5be3c1f6416456
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/localPic/2020/12/03/d307192479a34d79adae6a1f7521aefa.jpg HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 8e6ab702-fb7f-4adc-baa4-19f65d21e969
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 16:45:50,030 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 9a5be3c1f6416456
+Duration: 43 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=3AE0E3757322811422A7531833F48139; Path=/; HttpOnly
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 16:46:08,566 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c247cc5d9f762815
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+cookie: JSESSIONID=3AE0E3757322811422A7531833F48139
+host: localhost:9999
+postman-token: 65d84b1a-7324-4c0d-847a-b5710e2d3650
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 16:46:08,567 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c247cc5d9f762815
+Duration: 11 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-24 16:46:38,904 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a348c66bd9181530
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=3AE0E3757322811422A7531833F48139
+host: localhost:9999
+postman-token: 50759e30-9c21-412e-b168-d430ecb92062
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 16:46:38,931 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a348c66bd9181530
+Duration: 18 ms
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Sun, 24 Nov 2024 08:46:38 GMT
+Expires: 0
+Keep-Alive: timeout=60
+Pragma: no-cache
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+
+{"code":"00000","message":"一切 ok","data":[{"type":null,"bookId":"1334318182169681920","picUrl":"/localPic/2020/12/03/d307192479a34d79adae6a1f7521aefa.jpg","bookName":"我给战神王爷寄刀片","authorName":"汐娴阳光","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;她是冉府的嫡长女确被迫从小离开冉府，他是纪国的战神，更是纪国女子心中的男神。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;多年后，她学得一身本事再回冉府为母报仇，成了冉府的一抹黑月光，一场巧遇，这抹黑月光成了战神王爷的心尖宝，看黑月光和战神王爷碰撞的爱情火花是闪瞎你的眼还是甜进你的心？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;有喜欢阳光的小可......爱们，可以加阳光的qq群哟：807833254【展开】【收起】"},{"type":null,"bookId":"1334318497132552192","picUrl":"/localPic/2020/12/03/c734eb38ee9d4968988642d0665d7e22.jpg","bookName":"我有家诸天最强当铺","authorName":"白袍小飞","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;诸天万界最强当铺，本店物资丰富、价格公道、童叟无欺，只有您想不到的，没有本店没有的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只要您能拿出有价值的东西来典当，本店保证，什么神仙皇帝，在您面前都得靠边站。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;本店营业地址不定，联系方式暂无，如需交易，请在心中默念：第一当铺，诸天最强，我要交易，快快现身。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第一页：经营当铺？小意思，不就是做奸商吗，没有人比我更懂做奸商。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第二页：我从没想过赚穷人的钱，干翻那些大人物，他们的钱就是我的了。"},{"type":null,"bookId":"1334318818323963904","picUrl":"/localPic/2020/12/03/78c9dcfe5b5d4b70a04b34df4659fc59.jpg","bookName":"名侦探修炼手册","authorName":"肥瓜","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;请谨记，永远不要去挖掘那些未被解开的谜题。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因为你永远不会知道，当时的人们为了将其掩盖，付出了多大的代价。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;虚假平静的表面之下，大多数的真相都是残酷的......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;好吧，我说的再明白点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;如果有一天，你在下班的路上看到一本书掉在地上，拴住你的好奇心，千万不要去碰它。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;很遗憾，最初的周言并没有认识到这一点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;所以他将那本书捡了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;那书有个很别扭的名字———《名侦探修炼手册》<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;至于作者......叫肥瓜。"},{"type":null,"bookId":"1334328310788882432","picUrl":"/localPic/2020/12/03/775d5845493d4be8b3254a29cfd9e05e.jpg","bookName":"北国谍影","authorName":"寻青藤","bookDesc":"　　一九三九春，中共地下党员，军统情报站特工许诚言，奉命前往太原锄奸，眼见日寇的残暴，为抗击日寇决定深入敌后，化身蝰蛇，刺杀敌酋，清除汉奸，潜伏敌营，收集情报，在这片北国大地上，续写谍战传奇！北国谍影官方1群：833528943北国谍影官方2群：879936725"},{"type":null,"bookId":"1334334734843609088","picUrl":"/localPic/2020/12/03/850e3ee448324e66942c46014db0a0c8.jpg","bookName":"家里来了个野原琳","authorName":"冰镇菠萝吹雪","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;“你愿意获得强大的力量吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意和一个小美女同居吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意时不时来一场其它位面双人游吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我都......愿意，可你能给我吗?问这么多。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“契约达成，力量、美女、系统马上发放。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;呃……于是乎，主角苏白开局成为十尾人柱力，开启轮回眼仙人体，同时拥有了十二符咒的力量，还有了一个名叫野原琳的同居女友，瞬间这辈子走上了人生巅峰。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只是为啥大部分都处于封印中？这要是遇上了带土那个偏执狂怎么办？【展开】【收起】"},{"type":null,"bookId":"1334335471568912384","picUrl":"/localPic/2020/12/03/108fcc33987b4ab8a205c8cfc7c7dc30.jpg","bookName":"我辈的江湖","authorName":"钟无涯","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;下载客户端，查看完整作品简介。"},{"type":null,"bookId":"1337759637059973121","picUrl":"/images/default.gif","bookName":"檀香刑","authorName":"莫言","bookDesc":"　　《檀香刑》是莫言潜心五年完成的一部长篇力作。在这部神品妙构的小说中，莫言以1900年德国人在山东修建胶济铁路、袁世凯镇压山东义和团运动、八国联军攻陷北京、慈禧仓皇出逃为历史背景，用摇曳多姿的笔触，大悲大喜的激情，高瞻深睿的思想，活龙活现的讲述了发生在\"高密东北乡\"的一场可歌可泣的兵荒马乱的运动，一桩骇人听闻的酷刑，一段惊心动魄的爱情。"},{"type":null,"bookId":"1337759773395824640","picUrl":"/localPic/2020/12/12/484c1a4d03094614a02742a154cbd8f3.jpg","bookName":"从今天开始做藩王","authorName":"背着家的蜗牛","bookDesc":"　　一闭眼，一睁眼。赵煦发现自己成了一名皇子。美人妖娆，封地很远，国家很乱。而他只想守着自己的封土逍遥自在。只是若有敌人敢来犯，只让他有来无回，心胆寒……"},{"type":null,"bookId":"1337762752513486849","picUrl":"/images/default.gif","bookName":"明朝那些事儿7:　大结局","authorName":"当年明月","bookDesc":"　　《明朝那些事儿7:大结局》是对这样一段历史进行了分析梳理，引人思索：明朝最后一位皇帝，自来有许多传说。关于崇祯究竟是一个昏庸无能的皇帝，还是一个力图奋起的人，一直众说纷纭。不管怎么说，这是一个残酷的时代，也是一个精彩的时代。在这一时期，北方的后金势力崛起，经过努尔哈赤的经营，势力急剧壮大。努尔哈赤死后，皇太极即位。袁崇焕就在这一时期迈上了历史的舞台。本文作者告诉我们，袁崇焕这个民族英雄，在历史上不过是个二流角色。"},{"type":null,"bookId":"1337872061003993088","picUrl":"/images/default.gif","bookName":"酒楼","authorName":"许春樵","bookDesc":"　　天德酒楼传到了齐家三兄弟一代，却被老大一人独占。老三齐立言不愿接受兄长的施舍，也不堪老大的精神虐待，在造汽车的白日梦幻灭后，从最底层做起，历经穷困潦倒和各种打击，终于创办了自己的酒楼，吞并了老大的酒楼。成功后的齐立言却变了，由诚笃奋发的创业者变成了狡诈贪心的资本野心家……"},{"type":null,"bookId":"1337872316667793408","picUrl":"/images/default.gif","bookName":"大唐太子李建成","authorName":"龙耳东","bookDesc":"　　小说根据宋朝范祖禹、明末清初王夫之，近代章太炎、陈寅恪、郭沫若以及当今世界知名史学家牛致功、胡戟、胡如雷等人的历史研究成果，拨开历史迷雾，还原历史真相。通过李建成短暂而悲剧的人生，告诉您一个波澜壮阔的时代发生的一些惊心动魄的事件，无不令您感慨万千，气荡回肠，掩卷深思，受益良多……"},{"type":null,"bookId":"1337872488235798528","picUrl":"/images/default.gif","bookName":"我的唐山","authorName":"林那北","bookDesc":"　　本书是第一部史诗性再现唐山过台湾历史的长篇巨作。宏大的视野，观照恢弘历史中的纵横捭阖，细致的笔触，抚摸往昔岁月里的爱恨情仇。小说通过一对貌合神离的兄弟和两个性情迥异的女子之间爱恨情仇、波澜起伏的人生悲欢展现整个唐山过台湾斑驳、丰饶而跌宕的历史画卷……"},{"type":null,"bookId":"1337872597996539904","picUrl":"/images/default.gif","bookName":"火蓝刀锋","authorName":"冯骥","bookDesc":"　　一次危险的水下救援，将爱吹牛的草根渔民蒋小鱼阴差阳错地进了以残酷训练而著称的“兽营”，在这里，他遇到了一批绝世天才：能在丛林中徒手搏狼的野孩子张冲，全国大学生游泳冠军鲁炎，打遍兽营无敌手的“兽王”巴郎，在海盗窝里艰辛成长的“战神”向羽，草原上的神枪女猎人乌云格日乐等人。"},{"type":null,"bookId":"1337872898115768320","picUrl":"/images/default.gif","bookName":"出手","authorName":"陈建波","bookDesc":"　　民国时期，陈仓城，随着陈仓守将党玉昆的覆灭，缙绅名流孙伯啸突然成为各方势力关注的焦点——相传党玉昆曾交他保管一大批藏宝。孙府周围频频上演各种明争暗斗的好戏，共产党、国民党、土匪、日本人、美国人等多方势力互相交错。迷雾重重之中，各方势力一一出手，鹿死谁手？谁能得手？"},{"type":null,"bookId":"1337873148071120896","picUrl":"/images/default.gif","bookName":"污点","authorName":"武和平","bookDesc":"　　小说作者既是行动者，又是书写者，还是思想者。他一手用枪，一手用笔，集战士与诗人于一身。他把经验的亲历与人性的剖析结合在一起。他的长篇小说充满正义的激情、直观社会的勇气和法的尊严。小说讲述了一个文物失窃案如何历尽千辛终被破获的故事。其中有动人的爱情故事和感人至深的亲情……"},{"type":null,"bookId":"1337874646456864768","picUrl":"/images/default.gif","bookName":"黑白道3：渗透","authorName":"朱维坚","bookDesc":"　　洪水中接连出现一男一女两具尸体，李斌良和战友们经缜密侦查，确认二人都是本市应届高中毕业生。为查明真相，他的足迹随着作家的笔迹奔走于各个校园之间，由此他涉足到一个从未涉及过的领域——教育……"},{"type":null,"bookId":"1337874812798767104","picUrl":"/images/default.gif","bookName":"噬魂","authorName":"通吃小墨墨","bookDesc":"　　这个世界绝对没有绝对的事情，也没有不可能的事。一把充满灵性的枪，一个有着特殊异能的警察，一个能走在人间和冥界的IT人士。一件件无法用现代科学去解释的事件。是世间的恶灵，还是人的心魔？凶手是谁？说不定，他就在看着你……"},{"type":null,"bookId":"1337874951365988352","picUrl":"/images/default.gif","bookName":"远征·流在缅北的血","authorName":"金满","bookDesc":"　　远征军第一次入缅作战大溃败，狙击手岳昆仑为追寻大部队孤身进入野人山。在地狱般的野人山中岳昆仑历经生死，与一群战友结下生死情谊。在印度兰姆伽基地整训后岳昆仑跟随部队踏上反攻缅甸的征程，与为兄报仇的天才狙击手藤原冷野不期而遇。"},{"type":null,"bookId":"1337875255574663168","picUrl":"/images/default.gif","bookName":"洪荒修圣","authorName":"轩影九变","bookDesc":"　　在他第一次练功的时候，产生的能量波动和天地灵气达到了共振，产生了一个黑洞，将云谣一下子吸了进去。而到的哪个时候，竟然是盘古还没有开天的洪荒时代。那时机遇不断，危险不断的时代。且看现代人云谣怎样玩转圣人，玩转洪荒……"},{"type":null,"bookId":"1337876581629038592","picUrl":"/localPic/2020/12/13/cb57c519e71b4e1b9cbc5eb7e4cbfcf0.jpg","bookName":"诸天之我是沙悟净","authorName":"目自翕张","bookDesc":"　　骆天明本是个农民工，穿越后的身份也和农民工类似，成了挑担子的沙悟净。好在天无绝人之路，他还有个穿越者的标配——系统。只是这个系统也是平民版的，简陋的让人无法直视。骆天明就依靠这个系统，穿越各个位面，见识各种各样的人和事，不断的炼心炼体，一步步走上巅峰！"},{"type":null,"bookId":"1337879143543476224","picUrl":"/images/default.gif","bookName":"最后一个道士3","authorName":"夏忆","bookDesc":"　　查文斌，凌正阳二十七代传人，茅山天正道掌门，一个因救人触犯了天罚的道士，一个源自生活的人物原型。将带领我们走进一个未知的全新的道家世界，重新打开属于传说中的真实腹地。青衣人，忘川渡人，棺中人，为何都与他有着一致的面孔？师傅、父母、儿女为何一个个都会离他而去？卓雄和大山的身世，血色的纹身究竟象征着什么？一切之前的所有谜团将会在《最后一个道士3》全部揭晓！"},{"type":null,"bookId":"1337879206630002688","picUrl":"/images/default.gif","bookName":"最后一个道士2","authorName":"夏忆","bookDesc":"　　查文斌——茅山派祖印持有者，正天道最后一代掌教传人。他救人于阴阳之间，却引火烧身，遭天罚阴遣；仗侠肝义胆与一身道术，救活人于阴阳罅隙，渡死人于无间鬼道！身披鱼鳞的远古氐人，复活的神秘君王，真正的扶桑神树······"},{"type":null,"bookId":"1337882606201475072","picUrl":"/images/default.gif","bookName":"尸语者","authorName":"法医秦明","bookDesc":"　　20个挑战心理极限的重口味案发现场，20份公安厅从未公开的法医禁忌档案。残忍、变态、惊悚、刺激、真实、震撼！尸语者，与死者朝夕相处的神秘职业，即将剖开震撼人心的亡灵之声！高速公路上抛下9袋尸块，被割下的膀胱里居然藏有冰碴，2000辆飞驰而过的车里，谁才是真正的凶手？垃圾场里被捆绑的女尸，全身器官都已经蜡化，要如何下手，才能验出她死亡的真相？电话打到一半，话筒里却传来沉闷的挣扎声，潜伏在校园当中的魅影，真的吞噬了那些女孩？资深法医老秦亲自捉刀，首度披露惊悚案发细节，创下悬疑小说从未到达的震撼尺度！荒山残尸、灭门惨案、校园禁地、公路游魂、水上浮骸、天外飞尸……每一案都让你无法入睡！"},{"type":null,"bookId":"1337884719262470144","picUrl":"/images/default.gif","bookName":"古董局中局","authorName":"马伯庸","bookDesc":"　　这是一部关于古董鉴定、收藏、造假、设局的百科全书式小说。字画、青铜、金石、瓷器每一件古董背后，都是深厚的历史积淀和文化传承；而每一件仿冒品背后，都是机关算尽的机巧和匪夷所思的圈套。古董造假、字画仿冒，古已有之。东晋时，康昕仿冒王羲之的书法真迹，连他儿子王献之也辨认不出来；宋朝皇帝宋徽宗喜欢造假，仿制了一大批商代的青铜兵器，摆在宫廷里，乐此不疲。在古董斑驳的纹理中，承载着一个民族的文化，一个时代的风貌，它的价值，不是金钱可以衡量的，但可怜的人类却只会用金钱去衡量它。"},{"type":null,"bookId":"1337949399824781312","picUrl":"/localPic/2020/12/13/e1ffbf0f78ea4fdea06fad26c6c9ce90.jpg","bookName":"港综1986","authorName":"龙升云霄","bookDesc":"　　五十年代，咏春叶问大战西洋拳王，咏春拳在港岛遍地开花。六十年，五亿探长雷洛一手遮天，组建金钱帝国。七十年，各大公司群雄并起，角逐王者宝座。八十年，群魔乱舞，你方唱罢我登场，弄潮儿各领风骚。说英雄谁是英雄，重生者吕泽仰望天空，立誓要谱写属于自己的传奇。"},{"type":null,"bookId":"1337957605418520576","picUrl":"/images/default.gif","bookName":"金丹传","authorName":"淮南居士","bookDesc":"　　瑶池浪、多宝、后羿，他们三个一路为了追杀王子魔，三个上级武者，三个疯狂的上级武者，用他们变态的功力，摧毁了整个悬空城，彻底的打碎了悬空城，悬空城从此以后成为了传说。"},{"type":null,"bookId":"1337958745514233856","picUrl":"/localPic/2020/12/13/b024b2fab49b4bc1a3b9e51d9edc0690.jpg","bookName":"大虞天行","authorName":"叁拾伍","bookDesc":"　　负责降妖除魔的大虞天行府的督丁赵山河醒来后惊骇发现自己竟是被只怨灵害死的。这职业如此危险他正惶恐，忽然察觉到自己识海竟有个书架，吸纳足够的情绪值，就能开启亮起的书本掌握本领。比如美食杂志能让他学会烧菜获得好评，反馈更多的情绪值。比如历代大家附录里的诗词能够提升灵符质地，甚至具现名将强军帮他杀敌。而他每学习一本，书籍还会自动更新其他的新书出来。这厮顿时振奋，于是天下妖魔就此倒了血霉。PS：我叫赵山河，我在大虞很红，因为我是个挂哔。"},{"type":null,"bookId":"1337960531323047936","picUrl":"/localPic/2020/12/13/b41b17ca8b564a69b11196414e5f0484.jpg","bookName":"脑海里飘来一座废品收购站","authorName":"鬼谷仙师","bookDesc":"　　物品：雄鹰展翅图！介绍：唐府遗弃之物，唐寅闲暇所作……完整度：20％修复需消耗财富值：50W。——陈牧羽，一个普普通通收破烂的，本以为一生注定平凡，没想到脑海里莫名其妙的飘来一座万界废品收购站，从此，世界变得不同了起来……"},{"type":null,"bookId":"1337961040297644032","picUrl":"/images/default.gif","bookName":"帝王之武修都市","authorName":"奇玄子","bookDesc":"　　一个纵横商界的奇葩人物，意外邂逅一块奇异石头，从此攻城略地崔营拔寨，钱财滚滚美女缠身，成就都市逍遥帝王！"},{"type":null,"bookId":"1337968514828390400","picUrl":"/images/default.gif","bookName":"极品记者斗僵尸","authorName":"浪子月生","bookDesc":"　　\"一个胯下有巨物的记者在调查一桩变态的凶杀案时，意外邂逅一名村姑美少妇。从此记者神魂颠倒，千方百计想把少妇泡到手骗上床。不幸的是，每次都是失败而终。正当记者通过不懈努力，一步步接近成功时，一场山村里的僵尸玩过界，正在悄然上演……于是记者展开了一边泡少妇一边斗僵尸的奇异之旅。随着他在两方都一步步接近成功时，最终的僵尸之祖旱魃逐渐在山村中复苏……\""},{"type":null,"bookId":"1337971702436515840","picUrl":"/localPic/2020/12/13/c88be458ca764bc1810770edcd7fd588.jpg","bookName":"我真不是角色球员","authorName":"易文三不知","bookDesc":"　　最好的蓝领，最完美的拼图，最佳帮手，最优质的的角色球员……《混子》，《夺冠第六人》，《运气论》，《抱腿大师》……李恪：我真不是！"}],"ok":true}
+2024-11-24 19:59:40,617 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-24 19:59:40,624 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-24 19:59:49,145 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-24 19:59:49,164 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 24636 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-24 19:59:49,164 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-24 19:59:49,165 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-24 19:59:50,454 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 19:59:50,455 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-24 19:59:50,468 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-24 19:59:50,470 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 19:59:50,471 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-24 19:59:50,473 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-24 19:59:50,478 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-24 19:59:50,479 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-24 19:59:50,486 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-24 19:59:51,203 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-24 19:59:51,210 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-24 19:59:51,211 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-24 19:59:51,212 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-24 19:59:51,251 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-24 19:59:51,252 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1907 ms
+2024-11-24 19:59:51,987 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-24 19:59:52,079 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70ccb3bf
+2024-11-24 19:59:52,081 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-24 19:59:52,106 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-24 19:59:52,141 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-24 19:59:52,151 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-24 19:59:52,153 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-24 19:59:52,294 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-24 19:59:52,475 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 19:59:52,505 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-24 19:59:53,679 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 19:59:53,746 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24c8b86, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c21c296, org.springframework.security.web.context.SecurityContextHolderFilter@16fc3be9, org.springframework.security.web.header.HeaderWriterFilter@40e28324, org.springframework.web.filter.CorsFilter@5e8698c0, org.springframework.security.web.csrf.CsrfFilter@ddb59b6, org.springframework.security.web.authentication.logout.LogoutFilter@57064d38, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33681da, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@13437ce5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@13ecedf6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61b5c8a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@377d66f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2105c11b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@435d74ba, org.springframework.security.web.access.ExceptionTranslationFilter@3ef2816a, org.springframework.security.web.access.intercept.AuthorizationFilter@7e2cebdf]
+2024-11-24 19:59:53,866 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-24 19:59:53,966 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-24 19:59:53,972 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-24 19:59:53,981 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 5.15 seconds (process running for 12.526)
+2024-11-24 19:59:53,987 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-24 19:59:53,987 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-24 19:59:53,988 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-24 19:59:53,989 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-24 19:59:53,989 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-24 20:00:01,222 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 20:00:01,222 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-24 20:00:01,223 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-24 20:00:01,392 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 9dd82af77c1350c8
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=3AE0E3757322811422A7531833F48139
+host: localhost:9999
+postman-token: 1ce1698c-ab62-4358-9236-2159e65cfc30
+user-agent: PostmanRuntime/7.42.0
+2024-11-24 20:00:01,445 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,type,sort,book_id,create_time,update_time FROM home_book
+2024-11-24 20:00:01,455 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 
+2024-11-24 20:00:01,474 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2024-11-24 20:00:01,503 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?))
+2024-11-24 20:00:01,505 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334318182169681920(Long), 1334318497132552192(Long), 1334318818323963904(Long), 1334328310788882432(Long), 1334334734843609088(Long), 1334335471568912384(Long), 1337759637059973121(Long), 1337759773395824640(Long), 1337762752513486849(Long), 1337872061003993088(Long), 1337872316667793408(Long), 1337872488235798528(Long), 1337872597996539904(Long), 1337872898115768320(Long), 1337873148071120896(Long), 1337874646456864768(Long), 1337874812798767104(Long), 1337874951365988352(Long), 1337875255574663168(Long), 1337876581629038592(Long), 1337879143543476224(Long), 1337879206630002688(Long), 1337882606201475072(Long), 1337884719262470144(Long), 1337949399824781312(Long), 1337957605418520576(Long), 1337958745514233856(Long), 1337960531323047936(Long), 1337961040297644032(Long), 1337968514828390400(Long), 1337971702436515840(Long)
+2024-11-24 20:00:01,512 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2024-11-24 20:00:01,541 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 9dd82af77c1350c8
+Duration: 148 ms
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Sun, 24 Nov 2024 12:00:01 GMT
+Expires: 0
+Keep-Alive: timeout=60
+Pragma: no-cache
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+
+{"code":"00000","message":"一切 ok","data":[{"type":null,"bookId":"1334318182169681920","picUrl":"/localPic/2020/12/03/d307192479a34d79adae6a1f7521aefa.jpg","bookName":"我给战神王爷寄刀片","authorName":"汐娴阳光","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;她是冉府的嫡长女确被迫从小离开冉府，他是纪国的战神，更是纪国女子心中的男神。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;多年后，她学得一身本事再回冉府为母报仇，成了冉府的一抹黑月光，一场巧遇，这抹黑月光成了战神王爷的心尖宝，看黑月光和战神王爷碰撞的爱情火花是闪瞎你的眼还是甜进你的心？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;有喜欢阳光的小可......爱们，可以加阳光的qq群哟：807833254【展开】【收起】"},{"type":null,"bookId":"1334318497132552192","picUrl":"/localPic/2020/12/03/c734eb38ee9d4968988642d0665d7e22.jpg","bookName":"我有家诸天最强当铺","authorName":"白袍小飞","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;诸天万界最强当铺，本店物资丰富、价格公道、童叟无欺，只有您想不到的，没有本店没有的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只要您能拿出有价值的东西来典当，本店保证，什么神仙皇帝，在您面前都得靠边站。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;本店营业地址不定，联系方式暂无，如需交易，请在心中默念：第一当铺，诸天最强，我要交易，快快现身。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第一页：经营当铺？小意思，不就是做奸商吗，没有人比我更懂做奸商。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第二页：我从没想过赚穷人的钱，干翻那些大人物，他们的钱就是我的了。"},{"type":null,"bookId":"1334318818323963904","picUrl":"/localPic/2020/12/03/78c9dcfe5b5d4b70a04b34df4659fc59.jpg","bookName":"名侦探修炼手册","authorName":"肥瓜","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;请谨记，永远不要去挖掘那些未被解开的谜题。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因为你永远不会知道，当时的人们为了将其掩盖，付出了多大的代价。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;虚假平静的表面之下，大多数的真相都是残酷的......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;好吧，我说的再明白点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;如果有一天，你在下班的路上看到一本书掉在地上，拴住你的好奇心，千万不要去碰它。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;很遗憾，最初的周言并没有认识到这一点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;所以他将那本书捡了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;那书有个很别扭的名字———《名侦探修炼手册》<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;至于作者......叫肥瓜。"},{"type":null,"bookId":"1334328310788882432","picUrl":"/localPic/2020/12/03/775d5845493d4be8b3254a29cfd9e05e.jpg","bookName":"北国谍影","authorName":"寻青藤","bookDesc":"　　一九三九春，中共地下党员，军统情报站特工许诚言，奉命前往太原锄奸，眼见日寇的残暴，为抗击日寇决定深入敌后，化身蝰蛇，刺杀敌酋，清除汉奸，潜伏敌营，收集情报，在这片北国大地上，续写谍战传奇！北国谍影官方1群：833528943北国谍影官方2群：879936725"},{"type":null,"bookId":"1334334734843609088","picUrl":"/localPic/2020/12/03/850e3ee448324e66942c46014db0a0c8.jpg","bookName":"家里来了个野原琳","authorName":"冰镇菠萝吹雪","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;“你愿意获得强大的力量吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意和一个小美女同居吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意时不时来一场其它位面双人游吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我都......愿意，可你能给我吗?问这么多。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“契约达成，力量、美女、系统马上发放。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;呃……于是乎，主角苏白开局成为十尾人柱力，开启轮回眼仙人体，同时拥有了十二符咒的力量，还有了一个名叫野原琳的同居女友，瞬间这辈子走上了人生巅峰。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只是为啥大部分都处于封印中？这要是遇上了带土那个偏执狂怎么办？【展开】【收起】"},{"type":null,"bookId":"1334335471568912384","picUrl":"/localPic/2020/12/03/108fcc33987b4ab8a205c8cfc7c7dc30.jpg","bookName":"我辈的江湖","authorName":"钟无涯","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;下载客户端，查看完整作品简介。"},{"type":null,"bookId":"1337759637059973121","picUrl":"/images/default.gif","bookName":"檀香刑","authorName":"莫言","bookDesc":"　　《檀香刑》是莫言潜心五年完成的一部长篇力作。在这部神品妙构的小说中，莫言以1900年德国人在山东修建胶济铁路、袁世凯镇压山东义和团运动、八国联军攻陷北京、慈禧仓皇出逃为历史背景，用摇曳多姿的笔触，大悲大喜的激情，高瞻深睿的思想，活龙活现的讲述了发生在\"高密东北乡\"的一场可歌可泣的兵荒马乱的运动，一桩骇人听闻的酷刑，一段惊心动魄的爱情。"},{"type":null,"bookId":"1337759773395824640","picUrl":"/localPic/2020/12/12/484c1a4d03094614a02742a154cbd8f3.jpg","bookName":"从今天开始做藩王","authorName":"背着家的蜗牛","bookDesc":"　　一闭眼，一睁眼。赵煦发现自己成了一名皇子。美人妖娆，封地很远，国家很乱。而他只想守着自己的封土逍遥自在。只是若有敌人敢来犯，只让他有来无回，心胆寒……"},{"type":null,"bookId":"1337762752513486849","picUrl":"/images/default.gif","bookName":"明朝那些事儿7:　大结局","authorName":"当年明月","bookDesc":"　　《明朝那些事儿7:大结局》是对这样一段历史进行了分析梳理，引人思索：明朝最后一位皇帝，自来有许多传说。关于崇祯究竟是一个昏庸无能的皇帝，还是一个力图奋起的人，一直众说纷纭。不管怎么说，这是一个残酷的时代，也是一个精彩的时代。在这一时期，北方的后金势力崛起，经过努尔哈赤的经营，势力急剧壮大。努尔哈赤死后，皇太极即位。袁崇焕就在这一时期迈上了历史的舞台。本文作者告诉我们，袁崇焕这个民族英雄，在历史上不过是个二流角色。"},{"type":null,"bookId":"1337872061003993088","picUrl":"/images/default.gif","bookName":"酒楼","authorName":"许春樵","bookDesc":"　　天德酒楼传到了齐家三兄弟一代，却被老大一人独占。老三齐立言不愿接受兄长的施舍，也不堪老大的精神虐待，在造汽车的白日梦幻灭后，从最底层做起，历经穷困潦倒和各种打击，终于创办了自己的酒楼，吞并了老大的酒楼。成功后的齐立言却变了，由诚笃奋发的创业者变成了狡诈贪心的资本野心家……"},{"type":null,"bookId":"1337872316667793408","picUrl":"/images/default.gif","bookName":"大唐太子李建成","authorName":"龙耳东","bookDesc":"　　小说根据宋朝范祖禹、明末清初王夫之，近代章太炎、陈寅恪、郭沫若以及当今世界知名史学家牛致功、胡戟、胡如雷等人的历史研究成果，拨开历史迷雾，还原历史真相。通过李建成短暂而悲剧的人生，告诉您一个波澜壮阔的时代发生的一些惊心动魄的事件，无不令您感慨万千，气荡回肠，掩卷深思，受益良多……"},{"type":null,"bookId":"1337872488235798528","picUrl":"/images/default.gif","bookName":"我的唐山","authorName":"林那北","bookDesc":"　　本书是第一部史诗性再现唐山过台湾历史的长篇巨作。宏大的视野，观照恢弘历史中的纵横捭阖，细致的笔触，抚摸往昔岁月里的爱恨情仇。小说通过一对貌合神离的兄弟和两个性情迥异的女子之间爱恨情仇、波澜起伏的人生悲欢展现整个唐山过台湾斑驳、丰饶而跌宕的历史画卷……"},{"type":null,"bookId":"1337872597996539904","picUrl":"/images/default.gif","bookName":"火蓝刀锋","authorName":"冯骥","bookDesc":"　　一次危险的水下救援，将爱吹牛的草根渔民蒋小鱼阴差阳错地进了以残酷训练而著称的“兽营”，在这里，他遇到了一批绝世天才：能在丛林中徒手搏狼的野孩子张冲，全国大学生游泳冠军鲁炎，打遍兽营无敌手的“兽王”巴郎，在海盗窝里艰辛成长的“战神”向羽，草原上的神枪女猎人乌云格日乐等人。"},{"type":null,"bookId":"1337872898115768320","picUrl":"/images/default.gif","bookName":"出手","authorName":"陈建波","bookDesc":"　　民国时期，陈仓城，随着陈仓守将党玉昆的覆灭，缙绅名流孙伯啸突然成为各方势力关注的焦点——相传党玉昆曾交他保管一大批藏宝。孙府周围频频上演各种明争暗斗的好戏，共产党、国民党、土匪、日本人、美国人等多方势力互相交错。迷雾重重之中，各方势力一一出手，鹿死谁手？谁能得手？"},{"type":null,"bookId":"1337873148071120896","picUrl":"/images/default.gif","bookName":"污点","authorName":"武和平","bookDesc":"　　小说作者既是行动者，又是书写者，还是思想者。他一手用枪，一手用笔，集战士与诗人于一身。他把经验的亲历与人性的剖析结合在一起。他的长篇小说充满正义的激情、直观社会的勇气和法的尊严。小说讲述了一个文物失窃案如何历尽千辛终被破获的故事。其中有动人的爱情故事和感人至深的亲情……"},{"type":null,"bookId":"1337874646456864768","picUrl":"/images/default.gif","bookName":"黑白道3：渗透","authorName":"朱维坚","bookDesc":"　　洪水中接连出现一男一女两具尸体，李斌良和战友们经缜密侦查，确认二人都是本市应届高中毕业生。为查明真相，他的足迹随着作家的笔迹奔走于各个校园之间，由此他涉足到一个从未涉及过的领域——教育……"},{"type":null,"bookId":"1337874812798767104","picUrl":"/images/default.gif","bookName":"噬魂","authorName":"通吃小墨墨","bookDesc":"　　这个世界绝对没有绝对的事情，也没有不可能的事。一把充满灵性的枪，一个有着特殊异能的警察，一个能走在人间和冥界的IT人士。一件件无法用现代科学去解释的事件。是世间的恶灵，还是人的心魔？凶手是谁？说不定，他就在看着你……"},{"type":null,"bookId":"1337874951365988352","picUrl":"/images/default.gif","bookName":"远征·流在缅北的血","authorName":"金满","bookDesc":"　　远征军第一次入缅作战大溃败，狙击手岳昆仑为追寻大部队孤身进入野人山。在地狱般的野人山中岳昆仑历经生死，与一群战友结下生死情谊。在印度兰姆伽基地整训后岳昆仑跟随部队踏上反攻缅甸的征程，与为兄报仇的天才狙击手藤原冷野不期而遇。"},{"type":null,"bookId":"1337875255574663168","picUrl":"/images/default.gif","bookName":"洪荒修圣","authorName":"轩影九变","bookDesc":"　　在他第一次练功的时候，产生的能量波动和天地灵气达到了共振，产生了一个黑洞，将云谣一下子吸了进去。而到的哪个时候，竟然是盘古还没有开天的洪荒时代。那时机遇不断，危险不断的时代。且看现代人云谣怎样玩转圣人，玩转洪荒……"},{"type":null,"bookId":"1337876581629038592","picUrl":"/localPic/2020/12/13/cb57c519e71b4e1b9cbc5eb7e4cbfcf0.jpg","bookName":"诸天之我是沙悟净","authorName":"目自翕张","bookDesc":"　　骆天明本是个农民工，穿越后的身份也和农民工类似，成了挑担子的沙悟净。好在天无绝人之路，他还有个穿越者的标配——系统。只是这个系统也是平民版的，简陋的让人无法直视。骆天明就依靠这个系统，穿越各个位面，见识各种各样的人和事，不断的炼心炼体，一步步走上巅峰！"},{"type":null,"bookId":"1337879143543476224","picUrl":"/images/default.gif","bookName":"最后一个道士3","authorName":"夏忆","bookDesc":"　　查文斌，凌正阳二十七代传人，茅山天正道掌门，一个因救人触犯了天罚的道士，一个源自生活的人物原型。将带领我们走进一个未知的全新的道家世界，重新打开属于传说中的真实腹地。青衣人，忘川渡人，棺中人，为何都与他有着一致的面孔？师傅、父母、儿女为何一个个都会离他而去？卓雄和大山的身世，血色的纹身究竟象征着什么？一切之前的所有谜团将会在《最后一个道士3》全部揭晓！"},{"type":null,"bookId":"1337879206630002688","picUrl":"/images/default.gif","bookName":"最后一个道士2","authorName":"夏忆","bookDesc":"　　查文斌——茅山派祖印持有者，正天道最后一代掌教传人。他救人于阴阳之间，却引火烧身，遭天罚阴遣；仗侠肝义胆与一身道术，救活人于阴阳罅隙，渡死人于无间鬼道！身披鱼鳞的远古氐人，复活的神秘君王，真正的扶桑神树······"},{"type":null,"bookId":"1337882606201475072","picUrl":"/images/default.gif","bookName":"尸语者","authorName":"法医秦明","bookDesc":"　　20个挑战心理极限的重口味案发现场，20份公安厅从未公开的法医禁忌档案。残忍、变态、惊悚、刺激、真实、震撼！尸语者，与死者朝夕相处的神秘职业，即将剖开震撼人心的亡灵之声！高速公路上抛下9袋尸块，被割下的膀胱里居然藏有冰碴，2000辆飞驰而过的车里，谁才是真正的凶手？垃圾场里被捆绑的女尸，全身器官都已经蜡化，要如何下手，才能验出她死亡的真相？电话打到一半，话筒里却传来沉闷的挣扎声，潜伏在校园当中的魅影，真的吞噬了那些女孩？资深法医老秦亲自捉刀，首度披露惊悚案发细节，创下悬疑小说从未到达的震撼尺度！荒山残尸、灭门惨案、校园禁地、公路游魂、水上浮骸、天外飞尸……每一案都让你无法入睡！"},{"type":null,"bookId":"1337884719262470144","picUrl":"/images/default.gif","bookName":"古董局中局","authorName":"马伯庸","bookDesc":"　　这是一部关于古董鉴定、收藏、造假、设局的百科全书式小说。字画、青铜、金石、瓷器每一件古董背后，都是深厚的历史积淀和文化传承；而每一件仿冒品背后，都是机关算尽的机巧和匪夷所思的圈套。古董造假、字画仿冒，古已有之。东晋时，康昕仿冒王羲之的书法真迹，连他儿子王献之也辨认不出来；宋朝皇帝宋徽宗喜欢造假，仿制了一大批商代的青铜兵器，摆在宫廷里，乐此不疲。在古董斑驳的纹理中，承载着一个民族的文化，一个时代的风貌，它的价值，不是金钱可以衡量的，但可怜的人类却只会用金钱去衡量它。"},{"type":null,"bookId":"1337949399824781312","picUrl":"/localPic/2020/12/13/e1ffbf0f78ea4fdea06fad26c6c9ce90.jpg","bookName":"港综1986","authorName":"龙升云霄","bookDesc":"　　五十年代，咏春叶问大战西洋拳王，咏春拳在港岛遍地开花。六十年，五亿探长雷洛一手遮天，组建金钱帝国。七十年，各大公司群雄并起，角逐王者宝座。八十年，群魔乱舞，你方唱罢我登场，弄潮儿各领风骚。说英雄谁是英雄，重生者吕泽仰望天空，立誓要谱写属于自己的传奇。"},{"type":null,"bookId":"1337957605418520576","picUrl":"/images/default.gif","bookName":"金丹传","authorName":"淮南居士","bookDesc":"　　瑶池浪、多宝、后羿，他们三个一路为了追杀王子魔，三个上级武者，三个疯狂的上级武者，用他们变态的功力，摧毁了整个悬空城，彻底的打碎了悬空城，悬空城从此以后成为了传说。"},{"type":null,"bookId":"1337958745514233856","picUrl":"/localPic/2020/12/13/b024b2fab49b4bc1a3b9e51d9edc0690.jpg","bookName":"大虞天行","authorName":"叁拾伍","bookDesc":"　　负责降妖除魔的大虞天行府的督丁赵山河醒来后惊骇发现自己竟是被只怨灵害死的。这职业如此危险他正惶恐，忽然察觉到自己识海竟有个书架，吸纳足够的情绪值，就能开启亮起的书本掌握本领。比如美食杂志能让他学会烧菜获得好评，反馈更多的情绪值。比如历代大家附录里的诗词能够提升灵符质地，甚至具现名将强军帮他杀敌。而他每学习一本，书籍还会自动更新其他的新书出来。这厮顿时振奋，于是天下妖魔就此倒了血霉。PS：我叫赵山河，我在大虞很红，因为我是个挂哔。"},{"type":null,"bookId":"1337960531323047936","picUrl":"/localPic/2020/12/13/b41b17ca8b564a69b11196414e5f0484.jpg","bookName":"脑海里飘来一座废品收购站","authorName":"鬼谷仙师","bookDesc":"　　物品：雄鹰展翅图！介绍：唐府遗弃之物，唐寅闲暇所作……完整度：20％修复需消耗财富值：50W。——陈牧羽，一个普普通通收破烂的，本以为一生注定平凡，没想到脑海里莫名其妙的飘来一座万界废品收购站，从此，世界变得不同了起来……"},{"type":null,"bookId":"1337961040297644032","picUrl":"/images/default.gif","bookName":"帝王之武修都市","authorName":"奇玄子","bookDesc":"　　一个纵横商界的奇葩人物，意外邂逅一块奇异石头，从此攻城略地崔营拔寨，钱财滚滚美女缠身，成就都市逍遥帝王！"},{"type":null,"bookId":"1337968514828390400","picUrl":"/images/default.gif","bookName":"极品记者斗僵尸","authorName":"浪子月生","bookDesc":"　　\"一个胯下有巨物的记者在调查一桩变态的凶杀案时，意外邂逅一名村姑美少妇。从此记者神魂颠倒，千方百计想把少妇泡到手骗上床。不幸的是，每次都是失败而终。正当记者通过不懈努力，一步步接近成功时，一场山村里的僵尸玩过界，正在悄然上演……于是记者展开了一边泡少妇一边斗僵尸的奇异之旅。随着他在两方都一步步接近成功时，最终的僵尸之祖旱魃逐渐在山村中复苏……\""},{"type":null,"bookId":"1337971702436515840","picUrl":"/localPic/2020/12/13/c88be458ca764bc1810770edcd7fd588.jpg","bookName":"我真不是角色球员","authorName":"易文三不知","bookDesc":"　　最好的蓝领，最完美的拼图，最佳帮手，最优质的的角色球员……《混子》，《夺冠第六人》，《运气论》，《抱腿大师》……李恪：我真不是！"}],"ok":true}
+2024-11-24 20:49:24,058 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: b7fe5dca7b9986ba
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books?continue HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+connection: close
+cookie: JSESSIONID=4B93CD6E1C64B3CF1FD1F0E03E116AB9
+host: localhost:9999
+sec-ch-ua: "Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+x-forwarded-for: 127.0.0.1
+x-forwarded-host: localhost:1024
+x-forwarded-port: 1024
+x-forwarded-proto: http
+2024-11-24 20:49:24,096 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: b7fe5dca7b9986ba
+Duration: 35 ms
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Connection: keep-alive
+Content-Type: application/json
+Date: Sun, 24 Nov 2024 12:49:24 GMT
+Expires: 0
+Keep-Alive: timeout=60
+Pragma: no-cache
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+
+{"code":"00000","message":"一切 ok","data":[{"type":null,"bookId":"1334318182169681920","picUrl":"/localPic/2020/12/03/d307192479a34d79adae6a1f7521aefa.jpg","bookName":"我给战神王爷寄刀片","authorName":"汐娴阳光","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;她是冉府的嫡长女确被迫从小离开冉府，他是纪国的战神，更是纪国女子心中的男神。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;多年后，她学得一身本事再回冉府为母报仇，成了冉府的一抹黑月光，一场巧遇，这抹黑月光成了战神王爷的心尖宝，看黑月光和战神王爷碰撞的爱情火花是闪瞎你的眼还是甜进你的心？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;有喜欢阳光的小可......爱们，可以加阳光的qq群哟：807833254【展开】【收起】"},{"type":null,"bookId":"1334318497132552192","picUrl":"/localPic/2020/12/03/c734eb38ee9d4968988642d0665d7e22.jpg","bookName":"我有家诸天最强当铺","authorName":"白袍小飞","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;诸天万界最强当铺，本店物资丰富、价格公道、童叟无欺，只有您想不到的，没有本店没有的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只要您能拿出有价值的东西来典当，本店保证，什么神仙皇帝，在您面前都得靠边站。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;本店营业地址不定，联系方式暂无，如需交易，请在心中默念：第一当铺，诸天最强，我要交易，快快现身。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第一页：经营当铺？小意思，不就是做奸商吗，没有人比我更懂做奸商。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一当铺掌柜楚河的私密日记第二页：我从没想过赚穷人的钱，干翻那些大人物，他们的钱就是我的了。"},{"type":null,"bookId":"1334318818323963904","picUrl":"/localPic/2020/12/03/78c9dcfe5b5d4b70a04b34df4659fc59.jpg","bookName":"名侦探修炼手册","authorName":"肥瓜","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;请谨记，永远不要去挖掘那些未被解开的谜题。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因为你永远不会知道，当时的人们为了将其掩盖，付出了多大的代价。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;虚假平静的表面之下，大多数的真相都是残酷的......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;好吧，我说的再明白点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;如果有一天，你在下班的路上看到一本书掉在地上，拴住你的好奇心，千万不要去碰它。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;很遗憾，最初的周言并没有认识到这一点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;所以他将那本书捡了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;那书有个很别扭的名字———《名侦探修炼手册》<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;至于作者......叫肥瓜。"},{"type":null,"bookId":"1334328310788882432","picUrl":"/localPic/2020/12/03/775d5845493d4be8b3254a29cfd9e05e.jpg","bookName":"北国谍影","authorName":"寻青藤","bookDesc":"　　一九三九春，中共地下党员，军统情报站特工许诚言，奉命前往太原锄奸，眼见日寇的残暴，为抗击日寇决定深入敌后，化身蝰蛇，刺杀敌酋，清除汉奸，潜伏敌营，收集情报，在这片北国大地上，续写谍战传奇！北国谍影官方1群：833528943北国谍影官方2群：879936725"},{"type":null,"bookId":"1334334734843609088","picUrl":"/localPic/2020/12/03/850e3ee448324e66942c46014db0a0c8.jpg","bookName":"家里来了个野原琳","authorName":"冰镇菠萝吹雪","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;“你愿意获得强大的力量吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意和一个小美女同居吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我愿意。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你愿意时不时来一场其它位面双人游吗?”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我都......愿意，可你能给我吗?问这么多。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“契约达成，力量、美女、系统马上发放。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;呃……于是乎，主角苏白开局成为十尾人柱力，开启轮回眼仙人体，同时拥有了十二符咒的力量，还有了一个名叫野原琳的同居女友，瞬间这辈子走上了人生巅峰。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只是为啥大部分都处于封印中？这要是遇上了带土那个偏执狂怎么办？【展开】【收起】"},{"type":null,"bookId":"1334335471568912384","picUrl":"/localPic/2020/12/03/108fcc33987b4ab8a205c8cfc7c7dc30.jpg","bookName":"我辈的江湖","authorName":"钟无涯","bookDesc":"&nbsp;&nbsp;&nbsp;&nbsp;下载客户端，查看完整作品简介。"},{"type":null,"bookId":"1337759637059973121","picUrl":"/images/default.gif","bookName":"檀香刑","authorName":"莫言","bookDesc":"　　《檀香刑》是莫言潜心五年完成的一部长篇力作。在这部神品妙构的小说中，莫言以1900年德国人在山东修建胶济铁路、袁世凯镇压山东义和团运动、八国联军攻陷北京、慈禧仓皇出逃为历史背景，用摇曳多姿的笔触，大悲大喜的激情，高瞻深睿的思想，活龙活现的讲述了发生在\"高密东北乡\"的一场可歌可泣的兵荒马乱的运动，一桩骇人听闻的酷刑，一段惊心动魄的爱情。"},{"type":null,"bookId":"1337759773395824640","picUrl":"/localPic/2020/12/12/484c1a4d03094614a02742a154cbd8f3.jpg","bookName":"从今天开始做藩王","authorName":"背着家的蜗牛","bookDesc":"　　一闭眼，一睁眼。赵煦发现自己成了一名皇子。美人妖娆，封地很远，国家很乱。而他只想守着自己的封土逍遥自在。只是若有敌人敢来犯，只让他有来无回，心胆寒……"},{"type":null,"bookId":"1337762752513486849","picUrl":"/images/default.gif","bookName":"明朝那些事儿7:　大结局","authorName":"当年明月","bookDesc":"　　《明朝那些事儿7:大结局》是对这样一段历史进行了分析梳理，引人思索：明朝最后一位皇帝，自来有许多传说。关于崇祯究竟是一个昏庸无能的皇帝，还是一个力图奋起的人，一直众说纷纭。不管怎么说，这是一个残酷的时代，也是一个精彩的时代。在这一时期，北方的后金势力崛起，经过努尔哈赤的经营，势力急剧壮大。努尔哈赤死后，皇太极即位。袁崇焕就在这一时期迈上了历史的舞台。本文作者告诉我们，袁崇焕这个民族英雄，在历史上不过是个二流角色。"},{"type":null,"bookId":"1337872061003993088","picUrl":"/images/default.gif","bookName":"酒楼","authorName":"许春樵","bookDesc":"　　天德酒楼传到了齐家三兄弟一代，却被老大一人独占。老三齐立言不愿接受兄长的施舍，也不堪老大的精神虐待，在造汽车的白日梦幻灭后，从最底层做起，历经穷困潦倒和各种打击，终于创办了自己的酒楼，吞并了老大的酒楼。成功后的齐立言却变了，由诚笃奋发的创业者变成了狡诈贪心的资本野心家……"},{"type":null,"bookId":"1337872316667793408","picUrl":"/images/default.gif","bookName":"大唐太子李建成","authorName":"龙耳东","bookDesc":"　　小说根据宋朝范祖禹、明末清初王夫之，近代章太炎、陈寅恪、郭沫若以及当今世界知名史学家牛致功、胡戟、胡如雷等人的历史研究成果，拨开历史迷雾，还原历史真相。通过李建成短暂而悲剧的人生，告诉您一个波澜壮阔的时代发生的一些惊心动魄的事件，无不令您感慨万千，气荡回肠，掩卷深思，受益良多……"},{"type":null,"bookId":"1337872488235798528","picUrl":"/images/default.gif","bookName":"我的唐山","authorName":"林那北","bookDesc":"　　本书是第一部史诗性再现唐山过台湾历史的长篇巨作。宏大的视野，观照恢弘历史中的纵横捭阖，细致的笔触，抚摸往昔岁月里的爱恨情仇。小说通过一对貌合神离的兄弟和两个性情迥异的女子之间爱恨情仇、波澜起伏的人生悲欢展现整个唐山过台湾斑驳、丰饶而跌宕的历史画卷……"},{"type":null,"bookId":"1337872597996539904","picUrl":"/images/default.gif","bookName":"火蓝刀锋","authorName":"冯骥","bookDesc":"　　一次危险的水下救援，将爱吹牛的草根渔民蒋小鱼阴差阳错地进了以残酷训练而著称的“兽营”，在这里，他遇到了一批绝世天才：能在丛林中徒手搏狼的野孩子张冲，全国大学生游泳冠军鲁炎，打遍兽营无敌手的“兽王”巴郎，在海盗窝里艰辛成长的“战神”向羽，草原上的神枪女猎人乌云格日乐等人。"},{"type":null,"bookId":"1337872898115768320","picUrl":"/images/default.gif","bookName":"出手","authorName":"陈建波","bookDesc":"　　民国时期，陈仓城，随着陈仓守将党玉昆的覆灭，缙绅名流孙伯啸突然成为各方势力关注的焦点——相传党玉昆曾交他保管一大批藏宝。孙府周围频频上演各种明争暗斗的好戏，共产党、国民党、土匪、日本人、美国人等多方势力互相交错。迷雾重重之中，各方势力一一出手，鹿死谁手？谁能得手？"},{"type":null,"bookId":"1337873148071120896","picUrl":"/images/default.gif","bookName":"污点","authorName":"武和平","bookDesc":"　　小说作者既是行动者，又是书写者，还是思想者。他一手用枪，一手用笔，集战士与诗人于一身。他把经验的亲历与人性的剖析结合在一起。他的长篇小说充满正义的激情、直观社会的勇气和法的尊严。小说讲述了一个文物失窃案如何历尽千辛终被破获的故事。其中有动人的爱情故事和感人至深的亲情……"},{"type":null,"bookId":"1337874646456864768","picUrl":"/images/default.gif","bookName":"黑白道3：渗透","authorName":"朱维坚","bookDesc":"　　洪水中接连出现一男一女两具尸体，李斌良和战友们经缜密侦查，确认二人都是本市应届高中毕业生。为查明真相，他的足迹随着作家的笔迹奔走于各个校园之间，由此他涉足到一个从未涉及过的领域——教育……"},{"type":null,"bookId":"1337874812798767104","picUrl":"/images/default.gif","bookName":"噬魂","authorName":"通吃小墨墨","bookDesc":"　　这个世界绝对没有绝对的事情，也没有不可能的事。一把充满灵性的枪，一个有着特殊异能的警察，一个能走在人间和冥界的IT人士。一件件无法用现代科学去解释的事件。是世间的恶灵，还是人的心魔？凶手是谁？说不定，他就在看着你……"},{"type":null,"bookId":"1337874951365988352","picUrl":"/images/default.gif","bookName":"远征·流在缅北的血","authorName":"金满","bookDesc":"　　远征军第一次入缅作战大溃败，狙击手岳昆仑为追寻大部队孤身进入野人山。在地狱般的野人山中岳昆仑历经生死，与一群战友结下生死情谊。在印度兰姆伽基地整训后岳昆仑跟随部队踏上反攻缅甸的征程，与为兄报仇的天才狙击手藤原冷野不期而遇。"},{"type":null,"bookId":"1337875255574663168","picUrl":"/images/default.gif","bookName":"洪荒修圣","authorName":"轩影九变","bookDesc":"　　在他第一次练功的时候，产生的能量波动和天地灵气达到了共振，产生了一个黑洞，将云谣一下子吸了进去。而到的哪个时候，竟然是盘古还没有开天的洪荒时代。那时机遇不断，危险不断的时代。且看现代人云谣怎样玩转圣人，玩转洪荒……"},{"type":null,"bookId":"1337876581629038592","picUrl":"/localPic/2020/12/13/cb57c519e71b4e1b9cbc5eb7e4cbfcf0.jpg","bookName":"诸天之我是沙悟净","authorName":"目自翕张","bookDesc":"　　骆天明本是个农民工，穿越后的身份也和农民工类似，成了挑担子的沙悟净。好在天无绝人之路，他还有个穿越者的标配——系统。只是这个系统也是平民版的，简陋的让人无法直视。骆天明就依靠这个系统，穿越各个位面，见识各种各样的人和事，不断的炼心炼体，一步步走上巅峰！"},{"type":null,"bookId":"1337879143543476224","picUrl":"/images/default.gif","bookName":"最后一个道士3","authorName":"夏忆","bookDesc":"　　查文斌，凌正阳二十七代传人，茅山天正道掌门，一个因救人触犯了天罚的道士，一个源自生活的人物原型。将带领我们走进一个未知的全新的道家世界，重新打开属于传说中的真实腹地。青衣人，忘川渡人，棺中人，为何都与他有着一致的面孔？师傅、父母、儿女为何一个个都会离他而去？卓雄和大山的身世，血色的纹身究竟象征着什么？一切之前的所有谜团将会在《最后一个道士3》全部揭晓！"},{"type":null,"bookId":"1337879206630002688","picUrl":"/images/default.gif","bookName":"最后一个道士2","authorName":"夏忆","bookDesc":"　　查文斌——茅山派祖印持有者，正天道最后一代掌教传人。他救人于阴阳之间，却引火烧身，遭天罚阴遣；仗侠肝义胆与一身道术，救活人于阴阳罅隙，渡死人于无间鬼道！身披鱼鳞的远古氐人，复活的神秘君王，真正的扶桑神树······"},{"type":null,"bookId":"1337882606201475072","picUrl":"/images/default.gif","bookName":"尸语者","authorName":"法医秦明","bookDesc":"　　20个挑战心理极限的重口味案发现场，20份公安厅从未公开的法医禁忌档案。残忍、变态、惊悚、刺激、真实、震撼！尸语者，与死者朝夕相处的神秘职业，即将剖开震撼人心的亡灵之声！高速公路上抛下9袋尸块，被割下的膀胱里居然藏有冰碴，2000辆飞驰而过的车里，谁才是真正的凶手？垃圾场里被捆绑的女尸，全身器官都已经蜡化，要如何下手，才能验出她死亡的真相？电话打到一半，话筒里却传来沉闷的挣扎声，潜伏在校园当中的魅影，真的吞噬了那些女孩？资深法医老秦亲自捉刀，首度披露惊悚案发细节，创下悬疑小说从未到达的震撼尺度！荒山残尸、灭门惨案、校园禁地、公路游魂、水上浮骸、天外飞尸……每一案都让你无法入睡！"},{"type":null,"bookId":"1337884719262470144","picUrl":"/images/default.gif","bookName":"古董局中局","authorName":"马伯庸","bookDesc":"　　这是一部关于古董鉴定、收藏、造假、设局的百科全书式小说。字画、青铜、金石、瓷器每一件古董背后，都是深厚的历史积淀和文化传承；而每一件仿冒品背后，都是机关算尽的机巧和匪夷所思的圈套。古董造假、字画仿冒，古已有之。东晋时，康昕仿冒王羲之的书法真迹，连他儿子王献之也辨认不出来；宋朝皇帝宋徽宗喜欢造假，仿制了一大批商代的青铜兵器，摆在宫廷里，乐此不疲。在古董斑驳的纹理中，承载着一个民族的文化，一个时代的风貌，它的价值，不是金钱可以衡量的，但可怜的人类却只会用金钱去衡量它。"},{"type":null,"bookId":"1337949399824781312","picUrl":"/localPic/2020/12/13/e1ffbf0f78ea4fdea06fad26c6c9ce90.jpg","bookName":"港综1986","authorName":"龙升云霄","bookDesc":"　　五十年代，咏春叶问大战西洋拳王，咏春拳在港岛遍地开花。六十年，五亿探长雷洛一手遮天，组建金钱帝国。七十年，各大公司群雄并起，角逐王者宝座。八十年，群魔乱舞，你方唱罢我登场，弄潮儿各领风骚。说英雄谁是英雄，重生者吕泽仰望天空，立誓要谱写属于自己的传奇。"},{"type":null,"bookId":"1337957605418520576","picUrl":"/images/default.gif","bookName":"金丹传","authorName":"淮南居士","bookDesc":"　　瑶池浪、多宝、后羿，他们三个一路为了追杀王子魔，三个上级武者，三个疯狂的上级武者，用他们变态的功力，摧毁了整个悬空城，彻底的打碎了悬空城，悬空城从此以后成为了传说。"},{"type":null,"bookId":"1337958745514233856","picUrl":"/localPic/2020/12/13/b024b2fab49b4bc1a3b9e51d9edc0690.jpg","bookName":"大虞天行","authorName":"叁拾伍","bookDesc":"　　负责降妖除魔的大虞天行府的督丁赵山河醒来后惊骇发现自己竟是被只怨灵害死的。这职业如此危险他正惶恐，忽然察觉到自己识海竟有个书架，吸纳足够的情绪值，就能开启亮起的书本掌握本领。比如美食杂志能让他学会烧菜获得好评，反馈更多的情绪值。比如历代大家附录里的诗词能够提升灵符质地，甚至具现名将强军帮他杀敌。而他每学习一本，书籍还会自动更新其他的新书出来。这厮顿时振奋，于是天下妖魔就此倒了血霉。PS：我叫赵山河，我在大虞很红，因为我是个挂哔。"},{"type":null,"bookId":"1337960531323047936","picUrl":"/localPic/2020/12/13/b41b17ca8b564a69b11196414e5f0484.jpg","bookName":"脑海里飘来一座废品收购站","authorName":"鬼谷仙师","bookDesc":"　　物品：雄鹰展翅图！介绍：唐府遗弃之物，唐寅闲暇所作……完整度：20％修复需消耗财富值：50W。——陈牧羽，一个普普通通收破烂的，本以为一生注定平凡，没想到脑海里莫名其妙的飘来一座万界废品收购站，从此，世界变得不同了起来……"},{"type":null,"bookId":"1337961040297644032","picUrl":"/images/default.gif","bookName":"帝王之武修都市","authorName":"奇玄子","bookDesc":"　　一个纵横商界的奇葩人物，意外邂逅一块奇异石头，从此攻城略地崔营拔寨，钱财滚滚美女缠身，成就都市逍遥帝王！"},{"type":null,"bookId":"1337968514828390400","picUrl":"/images/default.gif","bookName":"极品记者斗僵尸","authorName":"浪子月生","bookDesc":"　　\"一个胯下有巨物的记者在调查一桩变态的凶杀案时，意外邂逅一名村姑美少妇。从此记者神魂颠倒，千方百计想把少妇泡到手骗上床。不幸的是，每次都是失败而终。正当记者通过不懈努力，一步步接近成功时，一场山村里的僵尸玩过界，正在悄然上演……于是记者展开了一边泡少妇一边斗僵尸的奇异之旅。随着他在两方都一步步接近成功时，最终的僵尸之祖旱魃逐渐在山村中复苏……\""},{"type":null,"bookId":"1337971702436515840","picUrl":"/localPic/2020/12/13/c88be458ca764bc1810770edcd7fd588.jpg","bookName":"我真不是角色球员","authorName":"易文三不知","bookDesc":"　　最好的蓝领，最完美的拼图，最佳帮手，最优质的的角色球员……《混子》，《夺冠第六人》，《运气论》，《抱腿大师》……李恪：我真不是！"}],"ok":true}
+2024-11-24 21:30:49,821 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-24 21:30:49,830 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.

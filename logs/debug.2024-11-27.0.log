@@ -1,0 +1,1207 @@
+2024-11-27 15:13:22,525 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 15:13:22,556 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 13068 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 15:13:22,556 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 15:13:22,556 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 15:13:23,843 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 15:13:23,847 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 15:13:23,869 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-11-27 15:13:24,559 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 15:13:24,571 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:13:24,572 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 15:13:24,572 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 15:13:24,610 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 15:13:24,610 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2025 ms
+2024-11-27 15:13:25,344 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 15:13:25,466 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@593354fa
+2024-11-27 15:13:25,468 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 15:13:25,503 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 15:13:25,564 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.029s)
+2024-11-27 15:13:25,572 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 15:13:25,579 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 15:13:25,694 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 15:13:25,930 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:13:25,988 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:13:26,769 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 15:13:26,822 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:13:26,827 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 15:13:26,836 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.753 seconds (process running for 6.28)
+2024-11-27 15:13:26,840 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 15:13:26,840 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 15:13:26,840 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 15:13:26,841 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 15:13:26,841 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 15:13:27,460 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 15:13:27,460 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 15:13:27,462 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 15:13:33,142 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c7c1c5173d65af86
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 3ce2ef8a-024e-4698-b5f4-9bc7d2b56857
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 15:13:33,265 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-27 15:13:33,274 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-27 15:13:33,284 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:13:33,349 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c7c1c5173d65af86
+Duration: 210 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:13:33 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-27 15:19:10,524 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ec7f5cb5ed7e5b7b
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 424
+content-type: application/json
+host: localhost:9999
+postman-token: 7eccad51-0dac-4983-9af1-3c08f9342911
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":"13632345678","bookId":"1334334734843609088","commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 15:19:10,531 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-27 15:19:10,533 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: null, null
+2024-11-27 15:19:10,537 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:19:10,541 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( create_time, update_time ) VALUES ( ?, ? )
+2024-11-27 15:19:10,542 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 2024-11-27T15:19:10.538678300(LocalDateTime), 2024-11-27T15:19:10.538678300(LocalDateTime)
+2024-11-27 15:19:10,667 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'book_id' doesn't have a default value
+### The error may exist in com/aoyouao/novel/dao/mapper/BookCommentMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.BookCommentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO book_comment  ( create_time, update_time )  VALUES (  ?, ?  )
+### Cause: java.sql.SQLException: Field 'book_id' doesn't have a default value
+; Field 'book_id' doesn't have a default value
+2024-11-27 15:19:10,669 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ec7f5cb5ed7e5b7b
+Duration: 145 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:19:10 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 15:29:53,116 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 15:29:53,124 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 15:29:54,821 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 15:29:54,843 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 12448 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 15:29:54,843 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 15:29:54,844 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 15:29:55,438 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 15:29:55,439 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 15:29:55,457 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-11-27 15:29:56,025 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 15:29:56,031 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:29:56,032 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 15:29:56,032 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 15:29:56,072 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 15:29:56,072 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1204 ms
+2024-11-27 15:29:56,763 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 15:29:56,860 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fea095b
+2024-11-27 15:29:56,862 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 15:29:56,889 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 15:29:56,915 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.012s)
+2024-11-27 15:29:56,924 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 15:29:56,926 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 15:29:57,022 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 15:29:57,197 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:29:57,225 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:29:57,902 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 15:29:57,953 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:29:57,957 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 15:29:57,965 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.433 seconds (process running for 3.811)
+2024-11-27 15:29:57,969 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 15:29:57,970 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 15:29:57,970 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 15:29:57,970 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 15:29:57,970 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 15:29:58,281 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 15:29:58,281 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 15:29:58,282 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 15:30:06,361 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8cb2cb60fe50bd22
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: d42f348a-ebf0-4e97-a3f4-22c6c13dbabf
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 15:30:06,472 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-27 15:30:06,480 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-27 15:30:06,491 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:30:06,526 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8cb2cb60fe50bd22
+Duration: 169 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:30:06 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-27 15:30:18,059 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e4a9bcf3195b4281
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 424
+content-type: application/json
+host: localhost:9999
+postman-token: a0a6acca-8b2f-49f2-b8ff-70c51b331b05
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":"13632345678","bookId":"1334334734843609088","commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 15:30:18,073 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-27 15:30:18,075 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: null, 1334334734843609088(Long)
+2024-11-27 15:30:18,077 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:30:18,079 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ? )
+2024-11-27 15:30:18,080 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334334734843609088(Long), 是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-27T15:30:18.077489(LocalDateTime), 2024-11-27T15:30:18.077489(LocalDateTime)
+2024-11-27 15:30:18,170 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/aoyouao/novel/dao/mapper/BookCommentMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.BookCommentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO book_comment  ( book_id,  comment_content,   create_time, update_time )  VALUES (  ?,  ?,   ?, ?  )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value
+2024-11-27 15:30:18,172 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e4a9bcf3195b4281
+Duration: 113 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:30:18 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 15:40:24,977 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c27b710771ee0dc0
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 422
+content-type: application/json
+host: localhost:9999
+postman-token: af8aa4b9-06c3-4eaa-972f-88ae49683b05
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":"1334334734843609088","commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 15:40:24,982 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-27 15:40:24,984 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: null, 1334334734843609088(Long)
+2024-11-27 15:40:24,986 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:40:24,987 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ? )
+2024-11-27 15:40:24,989 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334334734843609088(Long), 是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-27T15:40:24.987122300(LocalDateTime), 2024-11-27T15:40:24.987122300(LocalDateTime)
+2024-11-27 15:40:24,992 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/aoyouao/novel/dao/mapper/BookCommentMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.BookCommentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO book_comment  ( book_id,  comment_content,   create_time, update_time )  VALUES (  ?,  ?,   ?, ?  )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value
+2024-11-27 15:40:24,994 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c27b710771ee0dc0
+Duration: 17 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:40:24 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 15:42:39,437 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 15:42:39,443 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 15:42:42,128 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 15:42:42,150 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 21784 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 15:42:42,151 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 15:42:42,151 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 15:42:42,759 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 15:42:42,761 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 15:42:42,778 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-11-27 15:42:43,350 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 15:42:43,356 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:42:43,357 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 15:42:43,358 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 15:42:43,396 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 15:42:43,396 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1221 ms
+2024-11-27 15:42:43,995 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 15:42:44,082 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fea095b
+2024-11-27 15:42:44,083 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 15:42:44,106 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 15:42:44,133 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-27 15:42:44,146 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 15:42:44,147 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 15:42:44,250 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 15:42:44,417 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:42:44,448 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:42:45,151 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 15:42:45,200 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:42:45,204 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 15:42:45,212 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.351 seconds (process running for 3.702)
+2024-11-27 15:42:45,216 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 15:42:45,216 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 15:42:45,216 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 15:42:45,217 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 15:42:45,217 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 15:42:45,652 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 15:42:45,652 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 15:42:45,653 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 15:42:50,616 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: aa1294ea17072656
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 7f56f92b-e28c-4e33-a929-609618c530f3
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 15:42:50,736 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-27 15:42:50,744 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-27 15:42:50,755 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:42:50,785 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: aa1294ea17072656
+Duration: 172 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:42:50 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-27 15:42:59,041 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: d0fc8e6ba9cac875
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 420
+content-type: application/json
+host: localhost:9999
+postman-token: f8a6bfef-f5b4-40eb-9d2c-f5106a5972f8
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334334734843609088,"commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 15:42:59,050 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-27 15:42:59,051 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: null, 1334334734843609088(Long)
+2024-11-27 15:42:59,053 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:42:59,055 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ? )
+2024-11-27 15:42:59,056 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334334734843609088(Long), 是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-27T15:42:59.053432100(LocalDateTime), 2024-11-27T15:42:59.053432100(LocalDateTime)
+2024-11-27 15:42:59,149 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/aoyouao/novel/dao/mapper/BookCommentMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.BookCommentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO book_comment  ( book_id,  comment_content,   create_time, update_time )  VALUES (  ?,  ?,   ?, ?  )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value
+2024-11-27 15:42:59,151 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: d0fc8e6ba9cac875
+Duration: 109 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:42:59 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 15:50:01,521 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 15:50:01,526 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 15:50:04,296 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 15:50:04,317 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 15072 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 15:50:04,318 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 15:50:04,318 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 15:50:04,925 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 15:50:04,927 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 15:50:04,945 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-11-27 15:50:05,517 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 15:50:05,524 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:50:05,525 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 15:50:05,525 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 15:50:05,560 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 15:50:05,561 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1217 ms
+2024-11-27 15:50:06,144 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 15:50:06,235 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dfca9e6
+2024-11-27 15:50:06,237 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 15:50:06,260 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 15:50:06,290 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-27 15:50:06,299 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 15:50:06,302 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 15:50:06,399 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 15:50:06,574 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:50:06,606 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:50:07,273 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 15:50:07,324 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:50:07,329 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 15:50:07,338 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.325 seconds (process running for 3.687)
+2024-11-27 15:50:07,342 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 15:50:07,342 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 15:50:07,342 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 15:50:07,342 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 15:50:07,343 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 15:50:07,806 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 15:50:07,806 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 15:50:07,807 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 15:50:28,408 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e2a8595ef3634a77
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 420
+content-type: application/json
+host: localhost:9999
+postman-token: f53d8aa0-a534-43b9-b686-96030718fb70
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334334734843609088,"commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 15:50:28,513 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-27 15:50:28,522 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: null, 1334334734843609088(Long)
+2024-11-27 15:50:28,531 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:50:28,532 INFO (BookServiceImpl.java:33)- Saving comment for userId: null and bookId: 1334334734843609088
+2024-11-27 15:50:28,535 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ? )
+2024-11-27 15:50:28,536 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334334734843609088(Long), 是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-27T15:50:28.532128100(LocalDateTime), 2024-11-27T15:50:28.532128100(LocalDateTime)
+2024-11-27 15:50:28,625 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/aoyouao/novel/dao/mapper/BookCommentMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.BookCommentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO book_comment  ( book_id,  comment_content,   create_time, update_time )  VALUES (  ?,  ?,   ?, ?  )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value
+2024-11-27 15:50:28,640 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e2a8595ef3634a77
+Duration: 236 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:50:28 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 15:54:35,639 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 15:54:35,644 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 15:54:38,702 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 15:54:38,722 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 11224 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 15:54:38,722 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 15:54:38,724 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 15:54:39,306 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 15:54:39,308 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 15:54:39,326 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-11-27 15:54:39,905 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 15:54:39,912 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:54:39,913 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 15:54:39,913 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 15:54:39,950 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 15:54:39,950 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1203 ms
+2024-11-27 15:54:40,531 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 15:54:40,622 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62f305bc
+2024-11-27 15:54:40,623 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 15:54:40,646 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 15:54:40,674 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-27 15:54:40,683 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 15:54:40,685 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 15:54:40,783 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 15:54:40,945 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:54:40,982 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:54:41,688 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 15:54:41,739 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:54:41,743 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 15:54:41,754 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.314 seconds (process running for 3.669)
+2024-11-27 15:54:41,758 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 15:54:41,758 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 15:54:41,758 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 15:54:41,759 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 15:54:41,759 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 15:54:42,218 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 15:54:42,218 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 15:54:42,219 INFO (FrameworkServlet.java:554)- Completed initialization in 0 ms
+2024-11-27 15:54:51,919 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 15:54:51,924 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 15:54:55,083 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 15:54:55,100 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 26440 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 15:54:55,101 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 15:54:55,101 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 15:54:55,694 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 15:54:55,696 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 15:54:55,716 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-11-27 15:54:56,298 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 15:54:56,304 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:54:56,305 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 15:54:56,305 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 15:54:56,339 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 15:54:56,340 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1213 ms
+2024-11-27 15:54:56,920 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 15:54:57,004 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@729c8def
+2024-11-27 15:54:57,005 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 15:54:57,030 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 15:54:57,062 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-27 15:54:57,072 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 15:54:57,074 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 15:54:57,172 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 15:54:57,337 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:54:57,367 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 15:54:58,056 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 15:54:58,118 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 15:54:58,124 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 15:54:58,132 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.318 seconds (process running for 3.661)
+2024-11-27 15:54:58,137 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 15:54:58,137 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 15:54:58,137 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 15:54:58,137 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 15:54:58,137 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 15:54:58,592 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 15:54:58,593 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 15:54:58,594 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 15:55:01,084 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: adacd7fe6c25a93a
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 420
+content-type: application/json
+host: localhost:9999
+postman-token: 0650a118-6ce1-4a88-b2c6-bafc2c717c73
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334334734843609088,"commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 15:55:01,138 INFO (UserController.java:46)- 1Saving comment for userId: null 
+2024-11-27 15:55:01,138 INFO (UserController.java:48)- 2Saving comment for userId: null 
+2024-11-27 15:55:01,187 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-27 15:55:01,196 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: null, 1334334734843609088(Long)
+2024-11-27 15:55:01,204 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:55:01,205 INFO (BookServiceImpl.java:33)- Saving comment for userId: null and bookId: 1334334734843609088
+2024-11-27 15:55:01,207 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ? )
+2024-11-27 15:55:01,208 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334334734843609088(Long), 是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-27T15:55:01.205794100(LocalDateTime), 2024-11-27T15:55:01.205794100(LocalDateTime)
+2024-11-27 15:55:01,296 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/aoyouao/novel/dao/mapper/BookCommentMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.BookCommentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO book_comment  ( book_id,  comment_content,   create_time, update_time )  VALUES (  ?,  ?,   ?, ?  )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value
+2024-11-27 15:55:01,310 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: adacd7fe6c25a93a
+Duration: 229 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:55:01 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 15:57:29,070 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: aed45dfac8434939
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 643e45ac-5685-4ad7-9924-e1297dcf8c77
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 15:57:29,130 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-27 15:57:29,130 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-27 15:57:29,140 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:57:29,180 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: aed45dfac8434939
+Duration: 130 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:57:29 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-27 15:57:42,309 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a3ee9157a40ca40f
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 420
+content-type: application/json
+host: localhost:9999
+postman-token: c0f45ba0-6054-4395-8eb3-963971676a63
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334334734843609088,"commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 15:57:42,311 INFO (UserController.java:46)- 1Saving comment for userId: null 
+2024-11-27 15:57:42,311 INFO (UserController.java:48)- 2Saving comment for userId: null 
+2024-11-27 15:57:42,312 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-27 15:57:42,313 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: null, 1334334734843609088(Long)
+2024-11-27 15:57:42,315 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-27 15:57:42,315 INFO (BookServiceImpl.java:33)- Saving comment for userId: null and bookId: 1334334734843609088
+2024-11-27 15:57:42,315 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ? )
+2024-11-27 15:57:42,316 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334334734843609088(Long), 是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-27T15:57:42.315097800(LocalDateTime), 2024-11-27T15:57:42.315097800(LocalDateTime)
+2024-11-27 15:57:42,317 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/aoyouao/novel/dao/mapper/BookCommentMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.BookCommentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO book_comment  ( book_id,  comment_content,   create_time, update_time )  VALUES (  ?,  ?,   ?, ?  )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value
+2024-11-27 15:57:42,320 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a3ee9157a40ca40f
+Duration: 10 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 07:57:42 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 18:00:50,184 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 18:00:50,193 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 20:38:38,748 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 20:38:38,768 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 14316 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 20:38:38,768 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 20:38:38,768 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 20:38:40,327 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 20:38:40,328 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 20:38:40,349 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-11-27 20:38:40,999 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 20:38:41,006 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 20:38:41,007 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 20:38:41,007 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 20:38:41,055 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 20:38:41,056 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2258 ms
+2024-11-27 20:38:41,768 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 20:38:41,869 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3294102e
+2024-11-27 20:38:41,870 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 20:38:41,896 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 20:38:41,929 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.016s)
+2024-11-27 20:38:41,939 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 20:38:41,945 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 20:38:42,055 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 20:38:42,227 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 20:38:42,258 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 20:38:42,955 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 20:38:43,023 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 20:38:43,029 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 20:38:43,046 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.621 seconds (process running for 6.259)
+2024-11-27 20:38:43,050 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 20:38:43,050 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 20:38:43,050 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 20:38:43,050 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 20:38:43,050 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 20:38:53,370 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 20:38:53,370 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 20:38:53,371 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 20:38:53,390 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: cc83a91996763aad
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 87ad1659-1dac-4fec-8dc7-bb782d2614bf
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 20:38:53,399 ERROR (CommonExceptionHandler.java:35)- a != java.lang.String
+2024-11-27 20:38:53,420 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: cc83a91996763aad
+Duration: 33 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 12:38:53 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 20:49:57,537 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 20:49:57,549 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 20:49:59,555 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 20:49:59,572 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 25092 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 20:49:59,572 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 20:49:59,573 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 20:50:00,230 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 20:50:00,231 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 20:50:00,248 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-11-27 20:50:00,847 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 20:50:00,853 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 20:50:00,854 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 20:50:00,854 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 20:50:00,890 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 20:50:00,890 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1293 ms
+2024-11-27 20:50:01,465 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 20:50:01,563 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f310675
+2024-11-27 20:50:01,565 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 20:50:01,588 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 20:50:01,615 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-27 20:50:01,624 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 20:50:01,626 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 20:50:01,723 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 20:50:01,890 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 20:50:01,918 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 20:50:02,631 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 20:50:02,679 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 20:50:02,684 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 20:50:02,693 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.412 seconds (process running for 3.767)
+2024-11-27 20:50:02,697 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 20:50:02,697 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 20:50:02,697 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 20:50:02,697 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 20:50:02,698 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 20:50:03,099 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 20:50:03,099 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 20:50:03,100 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 20:50:06,036 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e7cee88dd44ba6a9
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: ffe640cd-6331-41d5-8054-44e6f7bb5b14
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 20:50:06,045 ERROR (CommonExceptionHandler.java:35)- a != java.lang.String
+2024-11-27 20:50:06,060 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e7cee88dd44ba6a9
+Duration: 27 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 12:50:06 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 21:04:24,824 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 21:04:24,830 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 21:04:26,281 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 21:04:26,300 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 4208 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 21:04:26,300 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 21:04:26,301 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 21:04:26,987 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 21:04:26,988 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 21:04:27,008 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-11-27 21:04:27,622 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 21:04:27,630 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:04:27,631 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 21:04:27,631 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 21:04:27,666 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 21:04:27,666 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1337 ms
+2024-11-27 21:04:28,262 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 21:04:28,348 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f310675
+2024-11-27 21:04:28,350 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 21:04:28,373 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 21:04:28,400 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-27 21:04:28,410 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 21:04:28,412 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 21:04:28,512 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 21:04:28,683 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:04:28,714 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:04:29,403 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 21:04:29,474 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:04:29,479 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 21:04:29,487 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.523 seconds (process running for 3.878)
+2024-11-27 21:04:29,490 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 21:04:29,491 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 21:04:29,491 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 21:04:29,491 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 21:04:29,491 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 21:04:29,766 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:04:29,767 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:04:29,768 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 21:04:33,266 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ef2885dc00d2d156
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 594a5d66-7733-4cd8-9d35-c928a8a2d2c5
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 21:04:33,277 ERROR (CommonExceptionHandler.java:35)- a != java.lang.String
+2024-11-27 21:04:33,291 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ef2885dc00d2d156
+Duration: 28 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Wed, 27 Nov 2024 13:04:33 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
+2024-11-27 21:13:40,524 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 21:13:40,531 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 21:13:42,626 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 21:13:42,644 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 25508 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 21:13:42,645 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 21:13:42,645 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 21:13:43,232 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 21:13:43,234 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 21:13:43,253 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-11-27 21:13:43,846 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 21:13:43,853 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:13:43,854 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 21:13:43,854 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 21:13:43,889 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 21:13:43,889 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1219 ms
+2024-11-27 21:13:44,532 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 21:13:44,618 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@424ec990
+2024-11-27 21:13:44,619 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 21:13:44,642 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 21:13:44,676 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.015s)
+2024-11-27 21:13:44,687 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 21:13:44,693 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 21:13:44,799 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 21:13:44,974 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:13:45,008 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:13:45,741 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 21:13:45,791 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:13:45,796 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 21:13:45,804 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.458 seconds (process running for 3.81)
+2024-11-27 21:13:45,807 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 21:13:45,808 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 21:13:45,808 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 21:13:45,808 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 21:13:45,808 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 21:13:46,136 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:13:46,136 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:13:46,137 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 21:13:52,895 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ed99ce4923034545
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 92a98aa7-1d85-4b35-b616-b1d42609c986
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 21:13:52,908 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ed99ce4923034545
+Duration: 16 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:13:52 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:14:08,281 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 9dce4f4f040e414f
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: ec80bed5-0130-44b6-b49a-0e050c31fae9
+user-agent: PostmanRuntime/7.43.0
+2024-11-27 21:14:08,305 WARN (JwtUtils.java:56)- jwt解析失败:Basic RU5EUE9JTlRfQURNSU46RU5EUE9JTlRfQURNSU4=
+2024-11-27 21:14:08,306 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 9dce4f4f040e414f
+Duration: 25 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:14:08 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:14:22,745 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8e173cc95b85237a
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: e21ba46e-0133-47ce-ac51-e05d71d29333
+user-agent: PostmanRuntime/7.43.0
+2024-11-27 21:14:22,750 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8e173cc95b85237a
+Duration: 3 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:14:22 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:15:36,820 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 86edb6a360395f23
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: f831b357-8722-415d-9a4f-b9cf80151cd2
+user-agent: PostmanRuntime/7.43.0
+2024-11-27 21:15:36,822 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 86edb6a360395f23
+Duration: 2 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:15:36 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:18:47,777 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 21:18:47,782 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 21:19:03,424 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 21:19:03,446 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 7952 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 21:19:03,446 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 21:19:03,446 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 21:19:04,050 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 21:19:04,052 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 21:19:04,070 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-11-27 21:19:04,639 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 21:19:04,645 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:19:04,647 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 21:19:04,647 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 21:19:04,683 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 21:19:04,683 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1213 ms
+2024-11-27 21:19:05,279 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 21:19:05,369 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@424ec990
+2024-11-27 21:19:05,371 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 21:19:05,394 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 21:19:05,421 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-27 21:19:05,432 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 21:19:05,434 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 21:19:05,538 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 21:19:05,713 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:19:05,745 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:19:06,463 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 21:19:06,525 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:19:06,529 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 21:19:06,537 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.381 seconds (process running for 3.734)
+2024-11-27 21:19:06,541 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 21:19:06,541 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 21:19:06,541 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 21:19:06,541 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 21:19:06,542 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 21:19:07,021 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:19:07,021 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:19:07,022 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 21:19:20,799 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c1d422ade1236656
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 67646ce1-212f-4279-bf93-af768087a348
+user-agent: PostmanRuntime/7.43.0
+2024-11-27 21:19:20,815 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c1d422ade1236656
+Duration: 19 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:19:20 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:23:44,141 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ebf19ef146ac3731
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 51a3dc9c-c06d-4ef8-8aa9-5ff902aea52e
+user-agent: PostmanRuntime/7.43.0
+2024-11-27 21:23:44,147 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ebf19ef146ac3731
+Duration: 6 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:23:44 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:33:35,167 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: bb59868d3edd42fe
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 5dddc014-b897-4a23-b64e-7c52f0ed2c85
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 21:33:35,176 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: bb59868d3edd42fe
+Duration: 7 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:33:35 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:37:33,605 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8b182d48e15096e1
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 056bc7d2-3ebe-4505-bceb-50cb9f9d89e7
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 21:37:33,609 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8b182d48e15096e1
+Duration: 2 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:37:33 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:47:23,011 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 21:47:23,019 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 21:47:25,876 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 21:47:25,895 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 13068 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 21:47:25,895 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 21:47:25,896 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 21:47:26,483 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 21:47:26,485 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 21:47:26,504 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-11-27 21:47:27,135 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 21:47:27,142 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:47:27,143 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 21:47:27,143 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 21:47:27,177 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 21:47:27,177 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1257 ms
+2024-11-27 21:47:27,740 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 21:47:27,823 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@84becbe
+2024-11-27 21:47:27,824 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 21:47:27,847 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 21:47:27,871 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.011s)
+2024-11-27 21:47:27,880 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 21:47:27,881 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 21:47:27,972 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 21:47:28,147 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:47:28,175 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:47:28,937 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 21:47:28,989 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:47:28,993 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 21:47:29,001 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.407 seconds (process running for 3.77)
+2024-11-27 21:47:29,005 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 21:47:29,006 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 21:47:29,006 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 21:47:29,006 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 21:47:29,006 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 21:47:29,384 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:47:29,384 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:47:29,385 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 21:47:48,266 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e2b1844c746969fd
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 80b5d75b-0226-4dfa-8fc3-a20130fb6d0b
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 21:47:48,279 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e2b1844c746969fd
+Duration: 18 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:47:48 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:52:04,620 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 21:52:04,626 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-27 21:52:06,361 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-27 21:52:06,383 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 18504 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-27 21:52:06,383 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-27 21:52:06,384 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-27 21:52:06,990 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 21:52:06,992 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-27 21:52:07,013 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-11-27 21:52:07,591 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-27 21:52:07,598 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:52:07,599 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-27 21:52:07,599 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-27 21:52:07,632 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-27 21:52:07,632 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1224 ms
+2024-11-27 21:52:08,220 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-27 21:52:08,306 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f310675
+2024-11-27 21:52:08,307 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-27 21:52:08,329 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-27 21:52:08,362 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.015s)
+2024-11-27 21:52:08,375 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-27 21:52:08,377 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-27 21:52:08,477 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-27 21:52:08,651 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:52:08,683 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-27 21:52:09,394 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-27 21:52:09,442 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-27 21:52:09,447 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-27 21:52:09,455 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.375 seconds (process running for 3.759)
+2024-11-27 21:52:09,458 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-27 21:52:09,459 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-27 21:52:09,459 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-27 21:52:09,459 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-27 21:52:09,459 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-27 21:52:09,837 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:52:09,837 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:52:09,838 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-27 21:52:38,010 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a2a677f9e3c214b0
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: aac7a98d-7a14-46c2-8d42-98aed4904a48
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-27 21:52:38,055 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a2a677f9e3c214b0
+Duration: 49 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:52:38 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:52:44,532 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ddadb8937966d809
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 420
+content-type: application/json
+host: localhost:9999
+postman-token: 8f0dddf4-8022-4d04-9166-482b8beb0e92
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334334734843609088,"commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-27 21:52:44,536 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ddadb8937966d809
+Duration: 7 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:52:44 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 21:53:03,747 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f73d4a70738c918c
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: c8d94d57-ea95-4729-a5c2-58ae9db17d4f
+user-agent: PostmanRuntime/7.43.0
+2024-11-27 21:53:03,754 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f73d4a70738c918c
+Duration: 6 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 27 Nov 2024 13:53:03 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-27 22:06:18,767 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-27 22:06:18,770 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.

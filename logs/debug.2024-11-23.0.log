@@ -1,0 +1,560 @@
+2024-11-23 19:45:56,638 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 19:45:56,656 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 13040 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 19:45:56,657 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 19:45:56,657 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 19:45:58,076 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 19:45:58,077 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 19:45:58,098 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 19:45:58,102 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 19:45:58,102 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 19:45:58,104 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 19:45:58,109 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 19:45:58,110 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 19:45:58,116 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-23 19:45:58,464 WARN (PostProcessorRegistrationDelegate.java:437)- Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [transactionTypeScanner]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-23 19:45:58,465 WARN (PostProcessorRegistrationDelegate.java:437)- Bean 'org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration' of type [org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [transactionTypeScanner]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-23 19:45:58,465 WARN (PostProcessorRegistrationDelegate.java:437)- Bean 'stringOrNumberMigrationVersionConverter' of type [org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$StringOrNumberToMigrationVersionConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [transactionTypeScanner]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-23 19:45:58,472 WARN (PostProcessorRegistrationDelegate.java:437)- Bean 'spring.shardingsphere-org.apache.shardingsphere.spring.boot.prop.SpringBootPropertiesConfiguration' of type [org.apache.shardingsphere.spring.boot.prop.SpringBootPropertiesConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [transactionTypeScanner]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-23 19:45:58,692 WARN (PostProcessorRegistrationDelegate.java:429)- Bean 'org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration' of type [org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [transactionTypeScanner] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-23 19:45:59,151 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 19:45:59,173 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 19:45:59,175 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 19:45:59,176 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 19:45:59,236 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 19:45:59,237 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2458 ms
+2024-11-23 19:45:59,773 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 19:45:59,957 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 19:45:59,987 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 19:46:00,405 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 19:46:00,586 INFO (HikariPool.java:554)- HikariPool-1 - Added connection conn0: url=jdbc:h2:./.h2/shardingsphere user=SA
+2024-11-23 19:46:00,588 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 19:46:00,616 WARN (AbstractApplicationContext.java:632)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shardingSphereDataSource' defined in class path resource [org/apache/shardingsphere/spring/boot/ShardingSphereAutoConfiguration.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'shardingSphereDataSource' threw exception with message: org.yaml.snakeyaml.representer.Representer: method 'void <init>()' not found
+2024-11-23 19:46:00,632 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2024-11-23 19:46:00,643 INFO (ConditionEvaluationReportLogger.java:82)- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-23 19:46:00,652 ERROR (SpringApplication.java:859)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shardingSphereDataSource' defined in class path resource [org/apache/shardingsphere/spring/boot/ShardingSphereAutoConfiguration.class]: Failed to instantiate [javax.sql.DataSource]: Factory method 'shardingSphereDataSource' threw exception with message: org.yaml.snakeyaml.representer.Representer: method 'void <init>()' not found
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.aoyouao.novel.NovelApplication.main(NovelApplication.java:23)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'shardingSphereDataSource' threw exception with message: org.yaml.snakeyaml.representer.Representer: method 'void <init>()' not found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 19 common frames omitted
+Caused by: java.lang.NoSuchMethodError: org.yaml.snakeyaml.representer.Representer: method 'void <init>()' not found
+	at org.apache.shardingsphere.infra.util.yaml.representer.ShardingSphereYamlRepresenter.<init>(ShardingSphereYamlRepresenter.java:41)
+	at org.apache.shardingsphere.infra.util.yaml.YamlEngine.marshal(YamlEngine.java:113)
+	at org.apache.shardingsphere.mode.metadata.persist.service.config.global.PropertiesPersistService.persist(PropertiesPersistService.java:45)
+	at org.apache.shardingsphere.mode.metadata.persist.service.config.global.PropertiesPersistService.conditionalPersist(PropertiesPersistService.java:39)
+	at org.apache.shardingsphere.mode.metadata.persist.MetaDataPersistService.persistConfigurations(MetaDataPersistService.java:86)
+	at org.apache.shardingsphere.mode.manager.standalone.StandaloneContextManagerBuilder.persistConfigurations(StandaloneContextManagerBuilder.java:55)
+	at org.apache.shardingsphere.mode.manager.standalone.StandaloneContextManagerBuilder.build(StandaloneContextManagerBuilder.java:46)
+	at org.apache.shardingsphere.driver.jdbc.core.datasource.ShardingSphereDataSource.createContextManager(ShardingSphereDataSource.java:76)
+	at org.apache.shardingsphere.driver.jdbc.core.datasource.ShardingSphereDataSource.<init>(ShardingSphereDataSource.java:64)
+	at org.apache.shardingsphere.driver.api.ShardingSphereDataSourceFactory.createDataSource(ShardingSphereDataSourceFactory.java:93)
+	at org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration.shardingSphereDataSource(ShardingSphereAutoConfiguration.java:91)
+	at org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration$$SpringCGLIB$$0.CGLIB$shardingSphereDataSource$3(<generated>)
+	at org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:339)
+	at org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration$$SpringCGLIB$$0.shardingSphereDataSource(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 20 common frames omitted
+2024-11-23 19:53:19,152 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 19:53:19,172 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 26500 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 19:53:19,172 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 19:53:19,174 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 19:53:19,964 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 19:53:19,966 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 19:53:19,978 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 19:53:19,982 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 19:53:19,982 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 19:53:19,985 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 19:53:19,992 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 19:53:19,993 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 19:53:19,999 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-23 19:53:20,665 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 19:53:20,671 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 19:53:20,672 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 19:53:20,672 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 19:53:20,715 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 19:53:20,716 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1431 ms
+2024-11-23 19:53:21,042 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 19:53:21,217 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 19:53:21,247 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 19:53:22,176 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 19:53:22,293 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c8469fe
+2024-11-23 19:53:22,296 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 19:53:22,359 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-23 19:53:22,386 INFO (Slf4jLog.java:37)- Schema history table `novel`.`flyway_schema_history` does not exist yet
+2024-11-23 19:53:22,387 INFO (Slf4jLog.java:37)- Successfully validated 0 migrations (execution time 00:00.007s)
+2024-11-23 19:53:22,387 WARN (Slf4jLog.java:41)- No migrations found. Are your locations set up correctly?
+2024-11-23 19:53:22,402 INFO (Slf4jLog.java:37)- Creating Schema History table `novel`.`flyway_schema_history` with baseline ...
+2024-11-23 19:53:22,496 INFO (Slf4jLog.java:37)- Successfully baselined schema with version: 1
+2024-11-23 19:53:22,513 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-23 19:53:22,519 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-23 19:53:23,356 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-23 19:53:23,427 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71e064b2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b16aa6f, org.springframework.security.web.context.SecurityContextHolderFilter@56c72fff, org.springframework.security.web.header.HeaderWriterFilter@2caf182e, org.springframework.web.filter.CorsFilter@2de96eba, org.springframework.security.web.csrf.CsrfFilter@435d74ba, org.springframework.security.web.authentication.logout.LogoutFilter@507c33cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46b4d4e7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5fb7b227, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@40406a3f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@b15da69, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e17219, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6dd729, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d58550c, org.springframework.security.web.access.ExceptionTranslationFilter@106a6a1b, org.springframework.security.web.access.intercept.AuthorizationFilter@7d3d89fb]
+2024-11-23 19:53:23,540 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-23 19:53:23,650 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-23 19:53:23,655 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-23 19:53:23,664 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.8 seconds (process running for 5.201)
+2024-11-23 19:53:23,670 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-23 19:53:23,670 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-23 19:53:23,670 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-23 19:53:23,670 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-23 19:53:23,670 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-23 19:53:24,218 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 19:53:24,219 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-23 19:53:24,220 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-23 20:33:59,769 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-23 20:33:59,774 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-23 21:24:16,601 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 21:24:16,620 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 19168 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 21:24:16,620 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 21:24:16,620 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 21:24:17,465 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:24:17,466 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 21:24:17,479 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 21:24:17,482 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:24:17,482 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 21:24:17,485 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 21:24:17,490 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:24:17,492 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 21:24:17,499 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-23 21:24:18,140 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 21:24:18,149 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 21:24:18,150 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 21:24:18,151 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 21:24:18,188 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 21:24:18,188 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1455 ms
+2024-11-23 21:24:18,812 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 21:24:18,905 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b3b2290
+2024-11-23 21:24:18,906 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 21:24:18,931 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-23 21:24:18,973 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.019s)
+2024-11-23 21:24:18,984 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-23 21:24:18,986 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-23 21:24:19,115 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 21:24:19,307 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 21:24:19,341 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 21:24:20,418 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-23 21:24:20,493 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7aadb5e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f8060ac, org.springframework.security.web.context.SecurityContextHolderFilter@65f809cb, org.springframework.security.web.header.HeaderWriterFilter@524a96f5, org.springframework.web.filter.CorsFilter@2f2f92f, org.springframework.security.web.csrf.CsrfFilter@54832ad9, org.springframework.security.web.authentication.logout.LogoutFilter@21eb33d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d5cb059, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2dad7323, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@308a2eb0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@559baea1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20f1e26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f7bb581, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1df1bd44, org.springframework.security.web.access.ExceptionTranslationFilter@20382851, org.springframework.security.web.access.intercept.AuthorizationFilter@6dac64ea]
+2024-11-23 21:24:20,611 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-23 21:24:20,734 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-23 21:24:20,739 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-23 21:24:20,748 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.433 seconds (process running for 4.818)
+2024-11-23 21:24:20,753 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-23 21:24:20,753 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-23 21:24:20,753 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-23 21:24:20,753 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-23 21:24:20,753 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-23 21:24:21,061 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 21:24:21,061 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-23 21:24:21,062 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-23 21:26:11,841 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f6aed5c6a58f6060
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: b7652d80-6e13-473b-99c1-7f141b1d0204
+user-agent: PostmanRuntime/7.42.0
+2024-11-23 21:26:11,847 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f6aed5c6a58f6060
+Duration: 90 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=A7FEFA277E4C784C3556367CD5BA3041; Path=/; HttpOnly
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-23 21:37:53,125 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-23 21:37:53,132 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-23 21:37:54,888 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 21:37:54,907 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 27008 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 21:37:54,907 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 21:37:54,907 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 21:37:55,890 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:37:55,892 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 21:37:55,906 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 21:37:55,909 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:37:55,909 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 21:37:55,912 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 21:37:55,917 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:37:55,918 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 21:37:55,925 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-23 21:37:56,655 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 21:37:56,665 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 21:37:56,666 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 21:37:56,666 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 21:37:56,724 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 21:37:56,724 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1533 ms
+2024-11-23 21:37:57,426 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 21:37:57,539 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@729d1428
+2024-11-23 21:37:57,541 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 21:37:57,571 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-23 21:37:57,617 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-23 21:37:57,625 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-23 21:37:57,632 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-23 21:37:57,760 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 21:37:57,957 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 21:37:57,988 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 21:37:59,241 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-23 21:37:59,311 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@752957da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b1505c3, org.springframework.security.web.context.SecurityContextHolderFilter@2295535f, org.springframework.security.web.header.HeaderWriterFilter@b517988, org.springframework.web.filter.CorsFilter@6e12f38c, org.springframework.security.web.csrf.CsrfFilter@445760e0, org.springframework.security.web.authentication.logout.LogoutFilter@1e072d67, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3087b35f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7e3ccedb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c6a5712, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@eb8d539, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d3d89fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5757ef9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73c71083, org.springframework.security.web.access.ExceptionTranslationFilter@4d13b552, org.springframework.security.web.access.intercept.AuthorizationFilter@5168f69d]
+2024-11-23 21:37:59,432 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-23 21:37:59,553 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-23 21:37:59,558 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-23 21:37:59,568 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.987 seconds (process running for 5.484)
+2024-11-23 21:37:59,574 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-23 21:37:59,574 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-23 21:37:59,574 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-23 21:37:59,574 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-23 21:37:59,574 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-23 21:37:59,786 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 21:37:59,787 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-23 21:37:59,789 INFO (FrameworkServlet.java:554)- Completed initialization in 2 ms
+2024-11-23 21:38:07,892 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8a9872a81934d941
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+cookie: JSESSIONID=A7FEFA277E4C784C3556367CD5BA3041
+host: localhost:9999
+postman-token: 4fffeb49-2d3d-46d5-9bcf-4040bf2acc3f
+user-agent: PostmanRuntime/7.42.0
+2024-11-23 21:38:07,896 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8a9872a81934d941
+Duration: 34 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=98ECB007C357530F6A480EF2777236D7; Path=/; HttpOnly
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-23 21:43:23,578 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-23 21:43:23,587 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-23 21:43:25,367 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 21:43:25,387 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 21084 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 21:43:25,387 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 21:43:25,387 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 21:43:26,302 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:43:26,305 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 21:43:26,319 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 11 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 21:43:26,322 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:43:26,322 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 21:43:26,325 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 21:43:26,331 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 21:43:26,331 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 21:43:26,339 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-23 21:43:27,025 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 21:43:27,032 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 21:43:27,033 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 21:43:27,033 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 21:43:27,079 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 21:43:27,079 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1571 ms
+2024-11-23 21:43:27,706 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 21:43:27,806 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ab8610
+2024-11-23 21:43:27,807 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 21:43:27,836 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-23 21:43:27,866 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-23 21:43:27,877 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-23 21:43:27,878 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-23 21:43:27,999 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 21:43:28,176 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 21:43:28,206 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 21:43:29,342 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-23 21:43:29,420 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d5cb059, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23591a2c, org.springframework.security.web.context.SecurityContextHolderFilter@63ae7031, org.springframework.security.web.header.HeaderWriterFilter@295d8b70, org.springframework.web.filter.CorsFilter@1f1ffc18, org.springframework.security.web.csrf.CsrfFilter@62b71cfa, org.springframework.security.web.authentication.logout.LogoutFilter@664f1c53, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b4f7e1c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72fb922c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@431782fe, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49a6b730, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@731660c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61d8a98b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e16fcaf, org.springframework.security.web.access.ExceptionTranslationFilter@d58550c, org.springframework.security.web.access.intercept.AuthorizationFilter@5c26ab0a]
+2024-11-23 21:43:29,539 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-23 21:43:29,647 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-23 21:43:29,652 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-23 21:43:29,660 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.593 seconds (process running for 4.989)
+2024-11-23 21:43:29,666 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-23 21:43:29,666 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-23 21:43:29,667 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-23 21:43:29,667 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-23 21:43:29,667 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-23 21:43:29,826 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 21:43:29,826 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-23 21:43:29,828 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-23 21:43:36,428 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e83adcad38a5edf3
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+cookie: JSESSIONID=98ECB007C357530F6A480EF2777236D7
+host: localhost:9999
+postman-token: 6a12fe6e-7777-4567-bfbb-fdeb824dd522
+user-agent: PostmanRuntime/7.42.0
+2024-11-23 21:43:36,432 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e83adcad38a5edf3
+Duration: 36 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=83A0CFDE30F9B20A71ED5912F3EC1D7E; Path=/; HttpOnly
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-23 22:00:41,175 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: fca7e02954cf0d96
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=83A0CFDE30F9B20A71ED5912F3EC1D7E
+host: localhost:9999
+postman-token: 17e99f3c-db7d-42b0-812e-daf038c3e995
+user-agent: PostmanRuntime/7.42.0
+2024-11-23 22:00:41,179 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: fca7e02954cf0d96
+Duration: 387 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-23 22:01:44,388 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-23 22:01:44,402 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-23 22:01:46,007 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 22:01:46,025 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 25148 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 22:01:46,026 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 22:01:46,026 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 22:01:46,830 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:01:46,831 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 22:01:46,843 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 22:01:46,846 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:01:46,846 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 22:01:46,849 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 22:01:46,855 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:01:46,856 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 22:01:46,867 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-23 22:01:47,516 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 22:01:47,522 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 22:01:47,523 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 22:01:47,524 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 22:01:47,568 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 22:01:47,568 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1427 ms
+2024-11-23 22:01:48,172 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 22:01:48,267 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ab8610
+2024-11-23 22:01:48,268 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 22:01:48,294 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-23 22:01:48,325 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-11-23 22:01:48,337 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-23 22:01:48,339 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-23 22:01:48,459 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 22:01:48,643 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 22:01:48,670 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 22:01:49,793 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-23 22:01:49,861 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1dbb3001, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@184b8899, org.springframework.security.web.context.SecurityContextHolderFilter@7fef75e1, org.springframework.security.web.header.HeaderWriterFilter@54832ad9, org.springframework.web.filter.CorsFilter@1f1ffc18, org.springframework.security.web.csrf.CsrfFilter@660b8572, org.springframework.security.web.authentication.logout.LogoutFilter@5168f69d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@519f6adb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f5475d7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@718aa49a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4374c051, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@295d8b70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b4433dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4992e34f, org.springframework.security.web.access.ExceptionTranslationFilter@6818c0a6, org.springframework.security.web.access.intercept.AuthorizationFilter@5e4d55a6]
+2024-11-23 22:01:49,988 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-23 22:01:50,094 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-23 22:01:50,099 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-23 22:01:50,107 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.384 seconds (process running for 4.793)
+2024-11-23 22:01:50,112 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-23 22:01:50,112 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-23 22:01:50,113 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-23 22:01:50,113 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-23 22:01:50,113 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-23 22:01:50,438 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 22:01:50,438 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-23 22:01:50,439 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-23 22:02:01,299 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ae8747a4d2b440c2
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=83A0CFDE30F9B20A71ED5912F3EC1D7E
+host: localhost:9999
+postman-token: 9c162aac-1563-486d-8cdc-026d63a997bd
+user-agent: PostmanRuntime/7.42.0
+2024-11-23 22:02:01,302 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ae8747a4d2b440c2
+Duration: 155 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-23 22:06:20,564 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-23 22:06:20,569 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-23 22:06:22,361 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 22:06:22,380 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 1348 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 22:06:22,381 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 22:06:22,381 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 22:06:23,348 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:06:23,351 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 22:06:23,365 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 11 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 22:06:23,368 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:06:23,368 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 22:06:23,371 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 22:06:23,379 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:06:23,380 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 22:06:23,388 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-23 22:06:24,071 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 22:06:24,078 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 22:06:24,079 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 22:06:24,079 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 22:06:24,121 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 22:06:24,122 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1612 ms
+2024-11-23 22:06:24,818 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 22:06:24,929 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5003c114
+2024-11-23 22:06:24,934 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 22:06:24,970 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-23 22:06:25,005 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-23 22:06:25,016 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-23 22:06:25,018 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-23 22:06:25,157 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 22:06:25,356 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 22:06:25,386 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 22:06:26,627 WARN (UserDetailsServiceAutoConfiguration.java:86)- 
+
+Using generated security password: db265e82-7453-45c5-9213-4d3826ca0867
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-23 22:06:26,641 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-23 22:06:26,715 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b1505c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c6a5712, org.springframework.security.web.context.SecurityContextHolderFilter@188f626a, org.springframework.security.web.header.HeaderWriterFilter@7cb7ca06, org.springframework.web.filter.CorsFilter@39109603, org.springframework.security.web.csrf.CsrfFilter@22152da0, org.springframework.security.web.authentication.logout.LogoutFilter@5b4433dc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26cd77cc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7469d13a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73c71083, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@20e1ce62, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ec22804, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58da6f7d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cef1ea6, org.springframework.security.web.access.ExceptionTranslationFilter@15d844b2, org.springframework.security.web.access.intercept.AuthorizationFilter@6c6a7553]
+2024-11-23 22:06:26,830 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-23 22:06:26,945 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-23 22:06:26,960 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-23 22:06:26,972 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.926 seconds (process running for 5.323)
+2024-11-23 22:06:26,985 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-23 22:06:26,986 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-23 22:06:26,986 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-23 22:06:26,986 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-23 22:06:26,986 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-23 22:06:27,293 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 22:06:27,294 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-23 22:06:27,295 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-23 22:06:39,455 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ebdf071914a9df0c
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+cookie: JSESSIONID=7EDF0A99BEA28B627C752CC8F32CE677
+host: localhost:9999
+postman-token: 2472ca15-985c-40dc-89f1-3d0364951a66
+user-agent: PostmanRuntime/7.42.0
+2024-11-23 22:06:39,458 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ebdf071914a9df0c
+Duration: 37 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Set-Cookie: JSESSIONID=B9379815B31D495122E007538CDEEB44; Path=/; HttpOnly
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-23 22:08:31,760 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-23 22:08:31,767 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-23 22:08:33,661 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-23 22:08:33,679 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 14176 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-23 22:08:33,679 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-23 22:08:33,679 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-23 22:08:34,498 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:08:34,499 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2024-11-23 22:08:34,512 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2024-11-23 22:08:34,515 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:08:34,515 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2024-11-23 22:08:34,519 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2024-11-23 22:08:34,524 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-23 22:08:34,524 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-23 22:08:34,532 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-11-23 22:08:35,175 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-23 22:08:35,183 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-23 22:08:35,184 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-23 22:08:35,184 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-23 22:08:35,219 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-23 22:08:35,219 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1425 ms
+2024-11-23 22:08:35,844 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-23 22:08:35,950 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1372696b
+2024-11-23 22:08:35,951 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-23 22:08:35,975 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-23 22:08:36,000 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.012s)
+2024-11-23 22:08:36,011 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-23 22:08:36,013 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-23 22:08:36,130 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-23 22:08:36,311 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 22:08:36,338 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-23 22:08:37,445 INFO (InitializeUserDetailsBeanManagerConfigurer.java:113)- Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-23 22:08:37,522 INFO (DefaultSecurityFilterChain.java:54)- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f953e51, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b0a6c53, org.springframework.security.web.context.SecurityContextHolderFilter@20382851, org.springframework.security.web.header.HeaderWriterFilter@731660c1, org.springframework.web.filter.CorsFilter@6b94c200, org.springframework.security.web.csrf.CsrfFilter@7e3ccedb, org.springframework.security.web.authentication.logout.LogoutFilter@eb8d539, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7828111d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1db077a4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15beb40b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4de3a1ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e02cc02, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dc74211, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bc41170, org.springframework.security.web.access.ExceptionTranslationFilter@5b4433dc, org.springframework.security.web.access.intercept.AuthorizationFilter@4374c051]
+2024-11-23 22:08:37,640 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-23 22:08:37,740 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-23 22:08:37,745 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-23 22:08:37,754 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.396 seconds (process running for 4.808)
+2024-11-23 22:08:37,760 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-23 22:08:37,760 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-23 22:08:37,762 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-23 22:08:37,762 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-23 22:08:37,762 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-23 22:08:38,081 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 22:08:38,081 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-23 22:08:38,082 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-23 22:11:19,584 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: d7d4c4342aecb5b5
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/books HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+cookie: JSESSIONID=B9379815B31D495122E007538CDEEB44
+host: localhost:9999
+postman-token: 4ab4e1d6-6cab-457b-abbc-7c6ea1585d4d
+user-agent: PostmanRuntime/7.42.0
+2024-11-23 22:11:19,587 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: d7d4c4342aecb5b5
+Duration: 156 ms
+HTTP/1.1 401 Unauthorized
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+WWW-Authenticate: Basic realm="Realm"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+2024-11-23 22:11:29,635 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-23 22:11:29,639 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
