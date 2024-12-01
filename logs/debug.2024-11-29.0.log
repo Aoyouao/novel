@@ -1,0 +1,1715 @@
+2024-11-29 13:23:22,167 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 13:23:22,199 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 31696 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 13:23:22,199 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 13:23:22,199 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 13:23:23,551 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 13:23:23,554 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 13:23:23,580 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-11-29 13:23:24,409 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 13:23:24,418 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 13:23:24,419 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 13:23:24,419 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 13:23:24,466 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 13:23:24,466 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2231 ms
+2024-11-29 13:23:25,300 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 13:23:25,516 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c247363
+2024-11-29 13:23:25,518 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 13:23:25,588 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 13:23:25,655 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.038s)
+2024-11-29 13:23:25,666 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 13:23:25,670 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 13:23:25,810 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 13:23:26,053 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 13:23:26,099 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 13:23:26,860 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 13:23:26,912 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 13:23:26,917 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 13:23:26,925 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 5.137 seconds (process running for 5.811)
+2024-11-29 13:23:26,929 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 13:23:26,930 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 13:23:26,930 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 13:23:26,930 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 13:23:26,930 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 13:23:27,167 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 13:23:27,167 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 13:23:27,167 INFO (FrameworkServlet.java:554)- Completed initialization in 0 ms
+2024-11-29 13:23:32,206 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ccc29bfc5331617b
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 420
+content-type: application/json
+host: localhost:9999
+postman-token: 88286ab7-1e1e-4111-91a2-7fba9e86ccfd
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334334734843609088,"commentContent":"是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-29 13:23:32,212 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:23:32,212 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:23:32,213 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:23:32,213 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:23:32,213 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:23:32,213 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:23:32,295 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:23:32,362 INFO (UserController.java:50)- UserId from UserHolder: 1
+2024-11-29 13:23:32,434 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:23:32,444 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long), 1334334734843609088(Long)
+2024-11-29 13:23:32,468 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:23:32,470 INFO (BookServiceImpl.java:45)- Saving comment for userId: 1 and bookId: 1334334734843609088
+2024-11-29 13:23:32,474 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 13:23:32,475 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334334734843609088(Long), 1(Long), 是一部引人深思的作品，它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-29T13:23:32.470776600(LocalDateTime), 2024-11-29T13:23:32.470776600(LocalDateTime)
+2024-11-29 13:23:32,491 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:23:32,510 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ccc29bfc5331617b
+Duration: 308 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:23:32 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:24:43,286 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: d3ca8e9e577bfdd3
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 387
+content-type: application/json
+host: localhost:9999
+postman-token: a3e0aff3-b4e3-42e7-98b3-f723a3b480a2
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334318182169681920,"commentContent":"它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-29 13:24:43,289 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:24:43,289 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:24:43,290 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:24:43,291 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:24:43,291 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:24:43,292 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:24:43,322 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:24:43,323 INFO (UserController.java:50)- UserId from UserHolder: 1
+2024-11-29 13:24:43,326 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:24:43,326 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long), 1334318182169681920(Long)
+2024-11-29 13:24:43,328 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:24:43,329 INFO (BookServiceImpl.java:45)- Saving comment for userId: 1 and bookId: 1334318182169681920
+2024-11-29 13:24:43,330 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 13:24:43,331 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334318182169681920(Long), 1(Long), 它不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-29T13:24:43.329982300(LocalDateTime), 2024-11-29T13:24:43.329982300(LocalDateTime)
+2024-11-29 13:24:43,353 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:24:43,356 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: d3ca8e9e577bfdd3
+Duration: 70 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:24:43 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:25:19,139 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c39208c8373a02c2
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 384
+content-type: application/json
+host: localhost:9999
+postman-token: 3b985f34-7a9e-4c34-ba6f-9ff10eb34f7f
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334318818323963904,"commentContent":"不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-29 13:25:19,139 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:25:19,140 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:25:19,140 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:25:19,140 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:25:19,140 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:25:19,140 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:25:19,142 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:25:19,143 INFO (UserController.java:50)- UserId from UserHolder: 1
+2024-11-29 13:25:19,145 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:25:19,145 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long), 1334318818323963904(Long)
+2024-11-29 13:25:19,147 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:25:19,147 INFO (BookServiceImpl.java:45)- Saving comment for userId: 1 and bookId: 1334318818323963904
+2024-11-29 13:25:19,148 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 13:25:19,149 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334318818323963904(Long), 1(Long), 不仅展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-29T13:25:19.147437800(LocalDateTime), 2024-11-29T13:25:19.147437800(LocalDateTime)
+2024-11-29 13:25:19,160 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:25:19,164 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c39208c8373a02c2
+Duration: 24 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:25:19 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:25:58,739 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: aefbd3f3ba3942b9
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 378
+content-type: application/json
+host: localhost:9999
+postman-token: 8676ad11-d9c4-4aa6-adca-7aae3a1b6ac3
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1334334734843609088,"commentContent":"展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-29 13:25:58,743 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:25:58,744 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:25:58,744 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:25:58,745 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:25:58,745 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:25:58,745 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:25:58,750 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:25:58,752 INFO (UserController.java:50)- UserId from UserHolder: 1
+2024-11-29 13:25:58,755 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:25:58,756 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long), 1334334734843609088(Long)
+2024-11-29 13:25:58,758 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:25:58,766 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: aefbd3f3ba3942b9
+Duration: 26 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:25:58 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A2001","message":"用户已发表评论","data":null,"ok":false}
+2024-11-29 13:26:40,500 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: feee33ebdd170963
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 378
+content-type: application/json
+host: localhost:9999
+postman-token: 1fcd0704-9b12-4d32-b5dd-4588c32a70cf
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1337759637059973121,"commentContent":"展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-29 13:26:40,501 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:26:40,501 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:26:40,501 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:26:40,502 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:26:40,502 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:26:40,502 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:26:40,507 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:26:40,509 INFO (UserController.java:50)- UserId from UserHolder: 1
+2024-11-29 13:26:40,512 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:26:40,513 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long), 1337759637059973121(Long)
+2024-11-29 13:26:40,514 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:26:40,515 INFO (BookServiceImpl.java:45)- Saving comment for userId: 1 and bookId: 1337759637059973121
+2024-11-29 13:26:40,516 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 13:26:40,516 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337759637059973121(Long), 1(Long), 展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-29T13:26:40.515311500(LocalDateTime), 2024-11-29T13:26:40.515311500(LocalDateTime)
+2024-11-29 13:26:40,519 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:26:40,521 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: feee33ebdd170963
+Duration: 22 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:26:40 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:26:55,354 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e30a7f0f1ec4ad84
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 378
+content-type: application/json
+host: localhost:9999
+postman-token: 853c8fab-4ac7-4f9d-99ad-4524922c16f0
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1337759773395824640,"commentContent":"展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-29 13:26:55,355 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:26:55,355 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:26:55,356 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:26:55,357 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:26:55,357 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:26:55,358 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:26:55,363 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:26:55,364 INFO (UserController.java:50)- UserId from UserHolder: 1
+2024-11-29 13:26:55,366 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:26:55,366 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long), 1337759773395824640(Long)
+2024-11-29 13:26:55,370 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:26:55,371 INFO (BookServiceImpl.java:45)- Saving comment for userId: 1 and bookId: 1337759773395824640
+2024-11-29 13:26:55,373 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 13:26:55,375 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337759773395824640(Long), 1(Long), 展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-29T13:26:55.372200600(LocalDateTime), 2024-11-29T13:26:55.372200600(LocalDateTime)
+2024-11-29 13:26:55,395 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:26:55,402 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e30a7f0f1ec4ad84
+Duration: 45 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:26:55 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:27:21,000 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a660744d0d157501
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 339
+content-type: application/json
+host: localhost:9999
+postman-token: 2dff267d-cbac-4b37-9a26-af00bb94e1b8
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"bookId":1337872061003993088,"commentContent":"探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。"}
+2024-11-29 13:27:21,001 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:27:21,001 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:27:21,002 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:27:21,002 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:27:21,003 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:27:21,003 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:27:21,008 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:27:21,010 INFO (UserController.java:50)- UserId from UserHolder: 1
+2024-11-29 13:27:21,013 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:27:21,013 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long), 1337872061003993088(Long)
+2024-11-29 13:27:21,016 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:27:21,016 INFO (BookServiceImpl.java:45)- Saving comment for userId: 1 and bookId: 1337872061003993088
+2024-11-29 13:27:21,017 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 13:27:21,018 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long), 1(Long), 探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。(String), 2024-11-29T13:27:21.016225400(LocalDateTime), 2024-11-29T13:27:21.016225400(LocalDateTime)
+2024-11-29 13:27:21,024 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:27:21,027 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a660744d0d157501
+Duration: 26 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:27:21 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:28:15,431 TRACE (CompactingJsonBodyFilter.java:37)- Unable to compact body, is it a JSON?. Keep it as-is: `Unrecognized token '展示了艺术与生活的冲突': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 12]`
+2024-11-29 13:28:15,431 TRACE (JacksonJsonFieldBodyFilter.java:69)- Unable to filter body for fields [], compacting result. `Unrecognized token '展示了艺术与生活的冲突': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 12]`
+2024-11-29 13:28:15,432 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: cc49a3d4a444aba9
+Remote: 0:0:0:0:0:0:0:1
+PUT http://localhost:9999/api/front/home/comment/1337759637059973121 HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 289
+content-type: application/json
+host: localhost:9999
+postman-token: 0171643a-7843-40b7-a5f4-36af5b8d6bc7
+user-agent: PostmanRuntime/7.43.0
+
+展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。
+2024-11-29 13:28:15,432 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:28:15,433 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:28:15,433 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:28:15,433 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:28:15,433 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:28:15,433 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:28:15,436 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:28:15,448 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: UPDATE book_comment SET comment_content=? WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:28:15,450 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 
+展示了艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。
+(String), 1(Long), 1337759637059973121(Long)
+2024-11-29 13:28:15,454 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:28:15,457 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: cc49a3d4a444aba9
+Duration: 27 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:28:15 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:28:30,986 TRACE (CompactingJsonBodyFilter.java:37)- Unable to compact body, is it a JSON?. Keep it as-is: `Unrecognized token '艺术与生活的冲突': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 9]`
+2024-11-29 13:28:30,986 TRACE (JacksonJsonFieldBodyFilter.java:69)- Unable to filter body for fields [], compacting result. `Unrecognized token '艺术与生活的冲突': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 9]`
+2024-11-29 13:28:30,986 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f0d3da015a2af77c
+Remote: 0:0:0:0:0:0:0:1
+PUT http://localhost:9999/api/front/home/comment/1337759637059973121 HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 278
+content-type: application/json
+host: localhost:9999
+postman-token: b60162f0-132c-46f3-b8c2-3e042a2dfc46
+user-agent: PostmanRuntime/7.43.0
+
+艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。
+2024-11-29 13:28:30,987 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:28:30,987 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:28:30,987 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:28:30,987 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:28:30,987 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:28:30,988 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:28:30,992 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:28:30,994 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: UPDATE book_comment SET comment_content=? WHERE (user_id = ? AND book_id = ?)
+2024-11-29 13:28:30,994 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。
+(String), 1(Long), 1337759637059973121(Long)
+2024-11-29 13:28:31,000 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 13:28:31,002 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f0d3da015a2af77c
+Duration: 16 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:28:31 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 13:38:46,987 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: b68e9102f633e4dd
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/book/comment/newest_lit?bookId=1337759637059973121 HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: 2885241b-93c3-4c20-bed7-79c52c6cf8a3
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 13:38:46,991 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:38:46,991 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:38:46,991 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:38:46,991 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:38:46,991 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:38:46,991 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 13:38:46,995 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 13:38:46,999 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (book_id = ?)
+2024-11-29 13:38:47,000 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337759637059973121(Long)
+2024-11-29 13:38:47,001 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:38:47,014 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,book_id,user_id,comment_content,reply_count,audit_status,create_time,update_time FROM book_comment WHERE (book_id = ?) ORDER BY create_time DESC limit 5
+2024-11-29 13:38:47,014 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337759637059973121(Long)
+2024-11-29 13:38:47,020 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:38:47,023 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (id IN (?))
+2024-11-29 13:38:47,024 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long)
+2024-11-29 13:38:47,037 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 13:38:47,047 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: b68e9102f633e4dd
+Duration: 59 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 05:38:47 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"commentTotal":"1","comments":[{"id":"5","commentContent":"艺术与生活的冲突，也探讨了人性的复杂性和道德的相对性。通过斯特里克兰德的故事，毛姆向我们传达了一个深刻的信息：追求梦想和实现自我价值是人生中最重要的事情，即使这意味着要付出巨大的代价。\r\n","commentUser":"13632345678","commentUserId":"1","commentTime":"2024-11-29 13:26:41"}]},"ok":true}
+2024-11-29 13:59:44,823 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a2104c10dee605d7
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: d7fef33b-0711-41d2-846f-25a855a74559
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 13:59:44,825 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 13:59:44,825 INFO (AuthInterceptor.java:48)- Authorization Header: null
+2024-11-29 13:59:44,826 WARN (AuthInterceptor.java:50)- Authorization header is missing!
+2024-11-29 13:59:44,827 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 13:59:44,827 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 13:59:44,827 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: null
+2024-11-29 13:59:44,832 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a2104c10dee605d7
+Duration: 9 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Fri, 29 Nov 2024 05:59:44 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-29 14:03:02,240 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 14:03:02,244 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 14:03:04,135 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 14:03:04,156 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 32632 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 14:03:04,156 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 14:03:04,157 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 14:03:04,903 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 14:03:04,905 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 14:03:04,934 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-11-29 14:03:05,643 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 14:03:05,650 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:03:05,651 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 14:03:05,652 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 14:03:05,692 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 14:03:05,693 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1512 ms
+2024-11-29 14:03:06,446 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 14:03:06,545 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a24390b
+2024-11-29 14:03:06,547 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 14:03:06,574 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 14:03:06,605 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.015s)
+2024-11-29 14:03:06,620 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 14:03:06,624 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 14:03:06,732 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 14:03:06,919 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:03:06,957 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:03:07,662 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 14:03:07,733 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:03:07,737 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 14:03:07,746 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.955 seconds (process running for 4.443)
+2024-11-29 14:03:07,750 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 14:03:07,751 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 14:03:07,751 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 14:03:07,751 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 14:03:07,751 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 14:03:08,026 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 14:03:08,026 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 14:03:08,027 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-29 14:03:12,987 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8aa047ffc893e544
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: a923bfab-7778-46d5-8121-a58d16ae601a
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:03:12,995 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:03:12,995 INFO (AuthInterceptor.java:48)- Authorization Header: null
+2024-11-29 14:03:12,996 WARN (AuthInterceptor.java:50)- Authorization header is missing!
+2024-11-29 14:03:12,996 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:03:12,996 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:03:12,996 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: null
+2024-11-29 14:03:13,003 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8aa047ffc893e544
+Duration: 17 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Fri, 29 Nov 2024 06:03:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-29 14:04:08,384 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a42952cccf5de408
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: c920b7cc-4e2a-4ae5-a895-72e83eebdc55
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-29 14:04:08,385 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:04:08,385 INFO (AuthInterceptor.java:48)- Authorization Header: null
+2024-11-29 14:04:08,385 WARN (AuthInterceptor.java:50)- Authorization header is missing!
+2024-11-29 14:04:08,385 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:04:08,385 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:04:08,385 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: null
+2024-11-29 14:04:08,386 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a42952cccf5de408
+Duration: 2 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Fri, 29 Nov 2024 06:04:08 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-29 14:05:06,802 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: fb733ba6a5b084aa
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 0f8bd236-95c6-4d6a-a8ce-0d4324206860
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-29 14:05:06,803 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:05:06,803 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:05:06,803 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:05:06,803 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:05:06,803 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:05:06,803 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:05:06,847 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:05:06,964 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-29 14:05:06,973 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-29 14:05:06,985 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:05:07,003 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: fb733ba6a5b084aa
+Duration: 200 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:05:07 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-29 14:06:01,047 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 14:06:01,052 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 14:06:03,870 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 14:06:03,890 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 31912 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 14:06:03,891 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 14:06:03,891 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 14:06:04,573 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 14:06:04,575 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 14:06:04,601 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-11-29 14:06:05,257 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 14:06:05,263 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:06:05,264 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 14:06:05,265 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 14:06:05,301 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 14:06:05,302 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1384 ms
+2024-11-29 14:06:05,907 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 14:06:06,003 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f95158a
+2024-11-29 14:06:06,004 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 14:06:06,028 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 14:06:06,055 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.012s)
+2024-11-29 14:06:06,067 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 14:06:06,069 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 14:06:06,174 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 14:06:06,348 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:06:06,379 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:06:07,104 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 14:06:07,153 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:06:07,163 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 14:06:07,171 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.611 seconds (process running for 3.995)
+2024-11-29 14:06:07,175 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 14:06:07,175 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 14:06:07,175 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 14:06:07,175 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 14:06:07,175 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 14:06:07,346 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 14:06:07,346 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 14:06:07,348 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-29 14:06:17,613 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c199f2216e01098c
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/home/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: d0ed0549-8160-4dfc-97ef-10bb677ee5fe
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-29 14:06:17,620 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:06:17,620 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:06:17,620 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:06:17,620 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:06:17,621 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:06:17,621 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:06:17,657 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:06:17,757 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-29 14:06:17,765 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-29 14:06:17,776 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:06:17,797 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c199f2216e01098c
+Duration: 187 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:06:17 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-29 14:06:21,465 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f418401c0cd9c995
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/home/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 6bb700ca-87a7-46ab-814a-eee049a795b9
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:06:21,467 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:06:21,467 INFO (AuthInterceptor.java:48)- Authorization Header: null
+2024-11-29 14:06:21,467 WARN (AuthInterceptor.java:50)- Authorization header is missing!
+2024-11-29 14:06:21,468 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:06:21,468 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:06:21,468 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: null
+2024-11-29 14:06:21,470 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f418401c0cd9c995
+Duration: 3 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Fri, 29 Nov 2024 06:06:21 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-29 14:14:30,234 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 14:14:30,239 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 14:14:33,077 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 14:14:33,101 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 11440 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 14:14:33,101 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 14:14:33,102 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 14:14:33,810 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 14:14:33,811 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 14:14:33,834 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-11-29 14:14:34,452 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 14:14:34,459 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:14:34,460 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 14:14:34,461 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 14:14:34,513 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 14:14:34,515 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1384 ms
+2024-11-29 14:14:35,174 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 14:14:35,265 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fb219dd
+2024-11-29 14:14:35,266 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 14:14:35,288 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 14:14:35,315 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-29 14:14:35,324 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 14:14:35,326 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 14:14:35,434 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 14:14:35,614 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:14:35,648 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:14:36,374 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 14:14:36,433 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:14:36,438 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 14:14:36,453 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.688 seconds (process running for 4.079)
+2024-11-29 14:14:36,458 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 14:14:36,458 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 14:14:36,458 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 14:14:36,458 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 14:14:36,458 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 14:14:37,002 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 14:14:37,003 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 14:14:37,005 INFO (FrameworkServlet.java:554)- Completed initialization in 2 ms
+2024-11-29 14:16:10,179 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e9f5d820d47adc47
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/resource/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 497f6bd4-1477-4c36-a3c5-9d047922bccf
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:16:10,189 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:16:10,189 INFO (AuthInterceptor.java:48)- Authorization Header: null
+2024-11-29 14:16:10,189 WARN (AuthInterceptor.java:50)- Authorization header is missing!
+2024-11-29 14:16:10,189 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:16:10,190 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:16:10,190 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: null
+2024-11-29 14:16:10,198 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e9f5d820d47adc47
+Duration: 19 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Fri, 29 Nov 2024 06:16:10 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2024-11-29 14:18:20,612 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8e5f3e807acbf1dd
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: a9949965-989c-4d96-8b49-322adcbb0119
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-29 14:18:20,727 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-29 14:18:20,736 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-29 14:18:20,747 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:18:20,772 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8e5f3e807acbf1dd
+Duration: 161 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:18:20 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-29 14:19:35,979 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 14:19:35,984 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 14:19:38,778 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 14:19:38,800 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 20284 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 14:19:38,801 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 14:19:38,801 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 14:19:39,525 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 14:19:39,528 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 14:19:39,549 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-11-29 14:19:40,156 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 14:19:40,162 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:19:40,163 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 14:19:40,163 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 14:19:40,198 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 14:19:40,198 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1366 ms
+2024-11-29 14:19:40,803 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 14:19:40,894 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fb219dd
+2024-11-29 14:19:40,895 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 14:19:40,919 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 14:19:40,946 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.012s)
+2024-11-29 14:19:40,955 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 14:19:40,957 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 14:19:41,061 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 14:19:41,242 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:19:41,271 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:19:42,047 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 14:19:42,098 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:19:42,103 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 14:19:42,112 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.645 seconds (process running for 4.046)
+2024-11-29 14:19:42,115 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 14:19:42,116 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 14:19:42,116 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 14:19:42,116 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 14:19:42,116 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 14:19:42,210 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 14:19:42,210 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 14:19:42,211 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-29 14:19:49,319 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ab9b27d016cf79f1
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/resource/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 57e749fe-0d3d-4527-9003-c54567a43d0e
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:19:50,015 DEBUG (VerifyCodeManager.java:28)- Storing code: 4086
+2024-11-29 14:19:50,438 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ab9b27d016cf79f1
+Duration: 1120 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:19:50 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"sessionId":"daca217eb3be8624204b92083413d706","img":"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"},"ok":true}
+2024-11-29 14:22:27,934 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: c3cfed444216d326
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/register HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 144
+content-type: application/json
+host: localhost:9999
+postman-token: 91807361-bfdd-4d18-a98c-edd0f1bd4b03
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13186090685","password":"123456","velCode":"4086","sessionId":"daca217eb3be8624204b92083413d706"}
+2024-11-29 14:22:28,019 DEBUG (VerifyCodeManager.java:37)- Retrieved code: 4086
+2024-11-29 14:22:28,112 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM user_info WHERE (username = ?)
+2024-11-29 14:22:28,127 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090685(String)
+2024-11-29 14:22:28,141 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:22:28,148 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO user_info ( username, password, salt, nick_name, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ? )
+2024-11-29 14:22:28,150 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090685(String), e10adc3949ba59abbe56e057f20f883e(String), 0(String), 13186090685(String), 2024-11-29T14:22:28.143828400(LocalDateTime), 2024-11-29T14:22:28.143828400(LocalDateTime)
+2024-11-29 14:22:28,158 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:22:28,188 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: c3cfed444216d326
+Duration: 253 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:22:28 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"2","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIyIn0.0HPOZxUGuP84E9VHGF3Fb0rxz2ZTuFAhTuH0bJWxLp4"},"ok":true}
+2024-11-29 14:26:25,546 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: dde243a5b64290c0
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 497
+content-type: application/json
+host: localhost:9999
+postman-token: 76af82ba-946d-4037-8cf2-1295d8078676
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13186090685,"bookId":1337872061003993088,"commentContent":"其实这一段时间可能都没有一个很好的一个状态吧，然后包括今天在场上也是觉得会要比之前的比赛更投入，或者说更敢于去纠缠也好， 敢于并住也好，不会去因为某一个球去影响自己的心情，可能自己更专注的是去想赢下每一分， 而不是去考虑很多一些其他的因素吧我觉得，杂念会这场球相对少了一些"}
+2024-11-29 14:26:25,547 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:26:25,547 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIyIn0.0HPOZxUGuP84E9VHGF3Fb0rxz2ZTuFAhTuH0bJWxLp4
+2024-11-29 14:26:25,547 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIyIn0.0HPOZxUGuP84E9VHGF3Fb0rxz2ZTuFAhTuH0bJWxLp4
+2024-11-29 14:26:25,548 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:26:25,549 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:26:25,549 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIyIn0.0HPOZxUGuP84E9VHGF3Fb0rxz2ZTuFAhTuH0bJWxLp4
+2024-11-29 14:26:25,566 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-11-29 14:26:25,567 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 2(Long)
+2024-11-29 14:26:25,571 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:26:25,579 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:26:25,588 INFO (UserController.java:50)- UserId from UserHolder: 2
+2024-11-29 14:26:25,590 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 14:26:25,590 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 2(Long), 1337872061003993088(Long)
+2024-11-29 14:26:25,592 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:26:25,592 INFO (BookServiceImpl.java:45)- Saving comment for userId: 2 and bookId: 1337872061003993088
+2024-11-29 14:26:25,593 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 14:26:25,594 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long), 2(Long), 其实这一段时间可能都没有一个很好的一个状态吧，然后包括今天在场上也是觉得会要比之前的比赛更投入，或者说更敢于去纠缠也好， 敢于并住也好，不会去因为某一个球去影响自己的心情，可能自己更专注的是去想赢下每一分， 而不是去考虑很多一些其他的因素吧我觉得，杂念会这场球相对少了一些(String), 2024-11-29T14:26:25.592603800(LocalDateTime), 2024-11-29T14:26:25.592603800(LocalDateTime)
+2024-11-29 14:26:25,598 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:26:25,601 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: dde243a5b64290c0
+Duration: 56 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:26:25 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 14:26:37,421 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a70482797b62c72e
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/resource/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 72253900-605d-4073-84ad-f016eba62fd9
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:26:37,429 DEBUG (VerifyCodeManager.java:28)- Storing code: 1734
+2024-11-29 14:26:37,432 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a70482797b62c72e
+Duration: 9 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:26:37 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"sessionId":"1974f29b2a618f475416dc109db0b3ea","img":"/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAmAGQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+ikOdp2gE44BOKSOQSIGGRyQQexBwRQBQ1TVrbSGtGupgou7hLWJCpO6Vs7QCAcE4PXA9x3feajaWFub+5u4YLRCEmeWQIqEkAEk8A5OOcdfYCvN/FWiT2XiDSNV1LUri9nfxHbLbmR9sdtAcnYqdATtXLY52djnPo95Y22qx3FreQQzREqDFNGHSRRhhuVuCN2fy4xWk4pJNMehQXxt4VYsP+Ek0cbTjJvoueM8fN71sx3NvLapdRzxPbyKHSVXBRlPQg9CDkc15v4j8NeH7vxBa+E9O0jTbS4uomubu6j0+HfBalipKMcYdnCopAYqGJwMAnuNW0eS90aPS9PvG0uENGpe1Xa6RKR8kZBAQ4AGcEAZGDWZVRJRvE0TIRcJHxhkZj+BH+NOcsFOwAt2BOBXmFzpWlaJ4p0iDwXM8d39r26lBZ3LTgQKcSGVSWC7c4GecscDIGPQru5hsdNuNRuNQkW0t4nmlkCqwVFBLHAUk4APSgxhJy0J3nliCmWEYLBfkYtjrz0Ht+dTCRDH5m4bcZJPGPXPpXjvhLxH4i134i3N3fXM6abdaM9/p1lKDGEgW6VY2dBx5jBS24ZyHGDjAHrskIlRmjYEOvzDPyuMd/w7j264pJ3NJK2hKrq+drBsHBwc4PpSSyeUoYjK5G4+g9f89qqqHlghm8vc5jUl0ba+cenQjvgnHtUwlyojlhlG4bfmUNu+u3IH44piJ6KKKACoZAY381ASCf3ijnIx1A9en4evFSggkgEEg4PtS0AcV41sry+vNAe3glnW3161eQRIW2IASWbA+6M9T0z78dikQSVnXABRVCgdMZ/xqSiqcrpLsBwHhb/ibeJvF/iGb70OoLpkSP8AOYIrfaXKt2VydxUDqO5rqfEGtPoVlFefY3uIPOUXLKxHkQ/xS4AJbb12jnGT0BrQnjlljmQOm10KqNpyCR3Of6U+WPzFAB2sCGU+h/zx9DUjm3LbQ898VTaBcWgm8KyaZJ4okukezfTmjMzSFsuWK9VKb92/5fXtT/ilpniPV7PTtO0TRotS06e4EmrQ+ekLzRxsjJHvZgVDfNyuSNo5HIPXadpekWEyzWOk2VnPIjIzwW6IeCMpkAZ5H/jua0mdVKgnBY4HucZ/pSsRTTi+ZnjtnrniW5+NkMt54QFvcPoq29xbf2jFL5VsbgFp8gYbGceWOTXrtkQbKHBBwgU49Rwf5VTl0exHiBddSAHVBa/ZTJvOWg3bioXO37xBzjPbODVmF44yFiI8gkjjjY3932znv0PHcChGkncsRxiNSozgsW59zn+tOoqOQujbxlkx8ygcj3Hr9Py92SSUUgIZQykEEZBHeigCKX91Isw7lUceoJwP1P5E+1MjNxLEkiyxYdQwzEe//AqKKALNFFFABRRRQBDJBkO0ZxISHGem4f4jg+1RyyF47adFG0urfMcEbuOnfhj3oooAW7Uu1uFYqfNyCPZWP5VE8UMp8+SFG3nynBGSDu25B+v6Y9MUUUAWCTbWpZiX8tcknqQP64/M+lR2z5uruM8srhsgYGCox/KiigCTypUJEMiKpJbDIWwTye4ooooA/9k="},"ok":true}
+2024-11-29 14:27:46,353 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8f3869f030bb3461
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/register HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 144
+content-type: application/json
+host: localhost:9999
+postman-token: 9fa38223-eb19-4317-908a-e38c51c7ef5d
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13186090681","password":"123456","velCode":"1734","sessionId":"1974f29b2a618f475416dc109db0b3ea"}
+2024-11-29 14:27:46,356 DEBUG (VerifyCodeManager.java:37)- Retrieved code: 1734
+2024-11-29 14:27:46,357 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM user_info WHERE (username = ?)
+2024-11-29 14:27:46,357 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090681(String)
+2024-11-29 14:27:46,358 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:27:46,359 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO user_info ( username, password, salt, nick_name, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ? )
+2024-11-29 14:27:46,359 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090681(String), e10adc3949ba59abbe56e057f20f883e(String), 0(String), 13186090681(String), 2024-11-29T14:27:46.358355500(LocalDateTime), 2024-11-29T14:27:46.358355500(LocalDateTime)
+2024-11-29 14:27:46,369 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:27:46,373 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8f3869f030bb3461
+Duration: 21 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:27:46 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"3","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIzIn0.QSXyZHZKhjra5n9IO2yDl8lT2kinsu61BAJUPEwxFHo"},"ok":true}
+2024-11-29 14:28:20,353 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ea8d0732fff5c531
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 592
+content-type: application/json
+host: localhost:9999
+postman-token: 2cf5b4d3-b50f-4c16-a441-1820714240c5
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13186090681,"bookId":1337872061003993088,"commentContent":"我觉得弗朗西斯卡也是世界上最优秀的选手之一吧，可能自己上一次跟他打也是非常的艰苦，非常的胶着，我觉得这一次也是同样的，虽然说看似3-1,但是每一局的比分都很纠缠很胶着，也是我们两个都有发挥好有不好的时候，我觉得可能更多的是自己在第二局我认为是最关键的吧，可能他有一些很多的这种运气，但是自己能嬴赢下那一局，对于后面的比赛会有很大的一个释放"}
+2024-11-29 14:28:20,354 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:28:20,354 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIyIn0.0HPOZxUGuP84E9VHGF3Fb0rxz2ZTuFAhTuH0bJWxLp4
+2024-11-29 14:28:20,354 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIyIn0.0HPOZxUGuP84E9VHGF3Fb0rxz2ZTuFAhTuH0bJWxLp4
+2024-11-29 14:28:20,354 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:28:20,354 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:28:20,354 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIyIn0.0HPOZxUGuP84E9VHGF3Fb0rxz2ZTuFAhTuH0bJWxLp4
+2024-11-29 14:28:20,358 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:28:20,359 INFO (UserController.java:50)- UserId from UserHolder: 2
+2024-11-29 14:28:20,360 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 14:28:20,360 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 2(Long), 1337872061003993088(Long)
+2024-11-29 14:28:20,361 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:28:20,362 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ea8d0732fff5c531
+Duration: 9 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:28:20 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A2001","message":"用户已发表评论","data":null,"ok":false}
+2024-11-29 14:30:05,460 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 9dc9747ef655d822
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 592
+content-type: application/json
+host: localhost:9999
+postman-token: df0ef907-3cc2-4399-bf40-cf19d42eab79
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13186090681,"bookId":1337872061003993088,"commentContent":"我觉得弗朗西斯卡也是世界上最优秀的选手之一吧，可能自己上一次跟他打也是非常的艰苦，非常的胶着，我觉得这一次也是同样的，虽然说看似3-1,但是每一局的比分都很纠缠很胶着，也是我们两个都有发挥好有不好的时候，我觉得可能更多的是自己在第二局我认为是最关键的吧，可能他有一些很多的这种运气，但是自己能嬴赢下那一局，对于后面的比赛会有很大的一个释放"}
+2024-11-29 14:30:05,461 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:30:05,461 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIzIn0.QSXyZHZKhjra5n9IO2yDl8lT2kinsu61BAJUPEwxFHo
+2024-11-29 14:30:05,462 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIzIn0.QSXyZHZKhjra5n9IO2yDl8lT2kinsu61BAJUPEwxFHo
+2024-11-29 14:30:05,462 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:30:05,463 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:30:05,464 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIzIn0.QSXyZHZKhjra5n9IO2yDl8lT2kinsu61BAJUPEwxFHo
+2024-11-29 14:30:05,470 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-11-29 14:30:05,471 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 3(Long)
+2024-11-29 14:30:05,472 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:30:05,473 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:30:05,474 INFO (UserController.java:50)- UserId from UserHolder: 3
+2024-11-29 14:30:05,476 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 14:30:05,477 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 3(Long), 1337872061003993088(Long)
+2024-11-29 14:30:05,478 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:30:05,478 INFO (BookServiceImpl.java:45)- Saving comment for userId: 3 and bookId: 1337872061003993088
+2024-11-29 14:30:05,479 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 14:30:05,479 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long), 3(Long), 我觉得弗朗西斯卡也是世界上最优秀的选手之一吧，可能自己上一次跟他打也是非常的艰苦，非常的胶着，我觉得这一次也是同样的，虽然说看似3-1,但是每一局的比分都很纠缠很胶着，也是我们两个都有发挥好有不好的时候，我觉得可能更多的是自己在第二局我认为是最关键的吧，可能他有一些很多的这种运气，但是自己能嬴赢下那一局，对于后面的比赛会有很大的一个释放(String), 2024-11-29T14:30:05.478268100(LocalDateTime), 2024-11-29T14:30:05.478268100(LocalDateTime)
+2024-11-29 14:30:05,485 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:30:05,487 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 9dc9747ef655d822
+Duration: 26 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:30:05 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 14:30:24,137 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 90c23ce34a9d15ac
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/resource/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 01a530ab-5650-42c0-9c5b-823a4e630afe
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:30:24,144 DEBUG (VerifyCodeManager.java:28)- Storing code: 3560
+2024-11-29 14:30:24,147 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 90c23ce34a9d15ac
+Duration: 9 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:30:24 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"sessionId":"f912b536f890b5882f57e6c830ca6087","img":"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"},"ok":true}
+2024-11-29 14:32:00,681 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 8098ce58e1b1a62d
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/register HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 144
+content-type: application/json
+host: localhost:9999
+postman-token: 685a80bc-b4e9-463c-aec1-4ba2a3dee706
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13186090682","password":"123456","velCode":"3560","sessionId":"f912b536f890b5882f57e6c830ca6087"}
+2024-11-29 14:32:00,683 DEBUG (VerifyCodeManager.java:37)- Retrieved code: 3560
+2024-11-29 14:32:00,684 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM user_info WHERE (username = ?)
+2024-11-29 14:32:00,684 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090682(String)
+2024-11-29 14:32:00,685 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:32:00,686 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO user_info ( username, password, salt, nick_name, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ? )
+2024-11-29 14:32:00,686 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090682(String), e10adc3949ba59abbe56e057f20f883e(String), 0(String), 13186090682(String), 2024-11-29T14:32:00.685654900(LocalDateTime), 2024-11-29T14:32:00.685654900(LocalDateTime)
+2024-11-29 14:32:00,692 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:32:00,696 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 8098ce58e1b1a62d
+Duration: 15 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:32:00 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"4","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI0In0.-V4U66jRpIQfnKma6SBy05HpGjaSuG6Htht7BdSSGl0"},"ok":true}
+2024-11-29 14:32:38,015 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 84889eb8311096a7
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 598
+content-type: application/json
+host: localhost:9999
+postman-token: 2d92190f-5a05-419d-a08a-7615eb5dc154
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13186090682,"bookId":1337872061003993088,"commentContent":"自己这一段没怎么赢球，可能到了真要赢的那一刹那，自己还是会出现一些波动、起伏， 但自己也把它想象到了这场比赛的困难当中，我觉得自己现在不会去考虑这一站给自己定下什么样的目标，自己现在要做的就是“重新开始”，并且去珍惜每一场球。我觉得输谁都很正常，以自己目前的这种感觉来说，跟谁自己都努力地去拼，然后去享受比赛，逐渐地找到好的一个竞技状态。"}
+2024-11-29 14:32:38,016 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:32:38,016 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI0In0.-V4U66jRpIQfnKma6SBy05HpGjaSuG6Htht7BdSSGl0
+2024-11-29 14:32:38,017 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI0In0.-V4U66jRpIQfnKma6SBy05HpGjaSuG6Htht7BdSSGl0
+2024-11-29 14:32:38,017 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:32:38,017 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:32:38,017 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI0In0.-V4U66jRpIQfnKma6SBy05HpGjaSuG6Htht7BdSSGl0
+2024-11-29 14:32:38,023 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-11-29 14:32:38,023 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 4(Long)
+2024-11-29 14:32:38,025 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:32:38,026 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:32:38,026 INFO (UserController.java:50)- UserId from UserHolder: 4
+2024-11-29 14:32:38,027 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 14:32:38,027 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 4(Long), 1337872061003993088(Long)
+2024-11-29 14:32:38,028 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:32:38,028 INFO (BookServiceImpl.java:45)- Saving comment for userId: 4 and bookId: 1337872061003993088
+2024-11-29 14:32:38,028 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 14:32:38,029 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long), 4(Long), 自己这一段没怎么赢球，可能到了真要赢的那一刹那，自己还是会出现一些波动、起伏， 但自己也把它想象到了这场比赛的困难当中，我觉得自己现在不会去考虑这一站给自己定下什么样的目标，自己现在要做的就是“重新开始”，并且去珍惜每一场球。我觉得输谁都很正常，以自己目前的这种感觉来说，跟谁自己都努力地去拼，然后去享受比赛，逐渐地找到好的一个竞技状态。(String), 2024-11-29T14:32:38.028745400(LocalDateTime), 2024-11-29T14:32:38.028745400(LocalDateTime)
+2024-11-29 14:32:38,034 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:32:38,036 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 84889eb8311096a7
+Duration: 21 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:32:38 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 14:33:25,024 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: defe67819b650d37
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/resource/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 6e9af2e5-5e1f-47ee-a494-8ac23e59f522
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:33:25,030 DEBUG (VerifyCodeManager.java:28)- Storing code: 9202
+2024-11-29 14:33:25,033 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: defe67819b650d37
+Duration: 9 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:33:25 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"sessionId":"d2d1aa4b4989ce82e8940cf96ed838d4","img":"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"},"ok":true}
+2024-11-29 14:37:19,286 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e5ff07edc1b840ed
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/register HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 144
+content-type: application/json
+host: localhost:9999
+postman-token: 2ddbf77e-a6d0-4784-b03b-703e3224b68c
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13186090683","password":"123456","velCode":"9202","sessionId":"d2d1aa4b4989ce82e8940cf96ed838d4"}
+2024-11-29 14:37:19,288 DEBUG (VerifyCodeManager.java:37)- Retrieved code: 9202
+2024-11-29 14:37:19,290 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM user_info WHERE (username = ?)
+2024-11-29 14:37:19,291 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090683(String)
+2024-11-29 14:37:19,292 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:37:19,293 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO user_info ( username, password, salt, nick_name, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ? )
+2024-11-29 14:37:19,293 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090683(String), e10adc3949ba59abbe56e057f20f883e(String), 0(String), 13186090683(String), 2024-11-29T14:37:19.293776100(LocalDateTime), 2024-11-29T14:37:19.293776100(LocalDateTime)
+2024-11-29 14:37:19,300 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:37:19,304 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e5ff07edc1b840ed
+Duration: 16 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:37:19 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"5","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI1In0.jiy3AL-EIkyyqIrKllJAYYk69tJlcoJ6z-_wxRTKMN0"},"ok":true}
+2024-11-29 14:38:00,023 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: bc1103deca358d9f
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 316
+content-type: application/json
+host: localhost:9999
+postman-token: ad852071-b91d-4cbb-9124-80b94f8b6ae1
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13186090683,"bookId":1337872061003993088,"commentContent":"我觉得莫雷加德也是通过奥运会的洗礼， 他也是实力上也越来越厚实越来越扎实，自己这一场球我觉得也是“下风球”吧，我觉得不论打成什么样，自己都会去全力以赴"}
+2024-11-29 14:38:00,024 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:38:00,024 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI1In0.jiy3AL-EIkyyqIrKllJAYYk69tJlcoJ6z-_wxRTKMN0
+2024-11-29 14:38:00,024 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI1In0.jiy3AL-EIkyyqIrKllJAYYk69tJlcoJ6z-_wxRTKMN0
+2024-11-29 14:38:00,024 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:38:00,024 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:38:00,024 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI1In0.jiy3AL-EIkyyqIrKllJAYYk69tJlcoJ6z-_wxRTKMN0
+2024-11-29 14:38:00,026 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-11-29 14:38:00,027 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 5(Long)
+2024-11-29 14:38:00,028 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:38:00,029 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:38:00,030 INFO (UserController.java:50)- UserId from UserHolder: 5
+2024-11-29 14:38:00,031 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 14:38:00,031 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 5(Long), 1337872061003993088(Long)
+2024-11-29 14:38:00,032 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:38:00,032 INFO (BookServiceImpl.java:45)- Saving comment for userId: 5 and bookId: 1337872061003993088
+2024-11-29 14:38:00,033 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 14:38:00,033 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long), 5(Long), 我觉得莫雷加德也是通过奥运会的洗礼， 他也是实力上也越来越厚实越来越扎实，自己这一场球我觉得也是“下风球”吧，我觉得不论打成什么样，自己都会去全力以赴(String), 2024-11-29T14:38:00.032364900(LocalDateTime), 2024-11-29T14:38:00.032364900(LocalDateTime)
+2024-11-29 14:38:00,037 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:38:00,039 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: bc1103deca358d9f
+Duration: 15 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:38:00 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 14:38:12,669 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: e553c4d28c28900d
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/resource/img_verify_code HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:9999
+postman-token: 08ce7f57-d286-4cf7-80f9-ec7e168ef56e
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:38:12,673 DEBUG (VerifyCodeManager.java:28)- Storing code: 1363
+2024-11-29 14:38:12,678 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: e553c4d28c28900d
+Duration: 7 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:38:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"sessionId":"d721a29beed180e6f261c3c84ca62064","img":"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"},"ok":true}
+2024-11-29 14:39:08,088 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 989e6e6a86c8d3fd
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/register HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 144
+content-type: application/json
+host: localhost:9999
+postman-token: dcb81f0e-88fa-42f3-87f8-ac006f70631e
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13186090684","password":"123456","velCode":"1363","sessionId":"d721a29beed180e6f261c3c84ca62064"}
+2024-11-29 14:39:08,090 DEBUG (VerifyCodeManager.java:37)- Retrieved code: 1363
+2024-11-29 14:39:08,091 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM user_info WHERE (username = ?)
+2024-11-29 14:39:08,091 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090684(String)
+2024-11-29 14:39:08,092 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:39:08,093 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO user_info ( username, password, salt, nick_name, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ? )
+2024-11-29 14:39:08,094 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13186090684(String), e10adc3949ba59abbe56e057f20f883e(String), 0(String), 13186090684(String), 2024-11-29T14:39:08.093456200(LocalDateTime), 2024-11-29T14:39:08.093456200(LocalDateTime)
+2024-11-29 14:39:08,098 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:39:08,100 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 989e6e6a86c8d3fd
+Duration: 12 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:39:08 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"6","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI2In0.Poz0_khEFJpRZI7O21nVzOne-WARTuGq2biVEf9EvZw"},"ok":true}
+2024-11-29 14:39:32,822 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: d28c6c4e1ea02368
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/comment HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 531
+content-type: application/json
+host: localhost:9999
+postman-token: 69f9c048-086b-4af0-8e0c-9998887599da
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13186090683,"bookId":1337872061003993088,"commentContent":"其实这个世界排名第一，对于你刚刚拿到来说，可能你是非常开心激动的，但是当你得到了以后其实并没有多么的重要，更重要的还是比赛的成绩来说吧，当然你能取得世界排名第一可能是因为你的成绩和积分，拿到了很多的冠军才能拿到第一，所以说这也是两面性的东西，但是并没有说一个世界排名第一自己有多去看重多么在意"}
+2024-11-29 14:39:32,822 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:39:32,822 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI2In0.Poz0_khEFJpRZI7O21nVzOne-WARTuGq2biVEf9EvZw
+2024-11-29 14:39:32,822 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI2In0.Poz0_khEFJpRZI7O21nVzOne-WARTuGq2biVEf9EvZw
+2024-11-29 14:39:32,822 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:39:32,822 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:39:32,822 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI2In0.Poz0_khEFJpRZI7O21nVzOne-WARTuGq2biVEf9EvZw
+2024-11-29 14:39:32,825 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-11-29 14:39:32,826 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 6(Long)
+2024-11-29 14:39:32,827 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:39:32,828 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:39:32,828 INFO (UserController.java:50)- UserId from UserHolder: 6
+2024-11-29 14:39:32,829 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (user_id = ? AND book_id = ?)
+2024-11-29 14:39:32,829 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 6(Long), 1337872061003993088(Long)
+2024-11-29 14:39:32,830 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:39:32,830 INFO (BookServiceImpl.java:45)- Saving comment for userId: 6 and bookId: 1337872061003993088
+2024-11-29 14:39:32,830 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: INSERT INTO book_comment ( book_id, user_id, comment_content, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+2024-11-29 14:39:32,831 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long), 6(Long), 其实这个世界排名第一，对于你刚刚拿到来说，可能你是非常开心激动的，但是当你得到了以后其实并没有多么的重要，更重要的还是比赛的成绩来说吧，当然你能取得世界排名第一可能是因为你的成绩和积分，拿到了很多的冠军才能拿到第一，所以说这也是两面性的东西，但是并没有说一个世界排名第一自己有多去看重多么在意(String), 2024-11-29T14:39:32.830818400(LocalDateTime), 2024-11-29T14:39:32.830818400(LocalDateTime)
+2024-11-29 14:39:32,835 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 14:39:32,836 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: d28c6c4e1ea02368
+Duration: 15 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:39:32 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 14:40:14,336 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 937f9bda92ee5434
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/book/comment/newest_lit?bookId=1337872061003993088 HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: bb3cef22-557e-4a2a-a312-66bb14bc943c
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:40:14,337 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:40:14,337 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:40:14,337 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:40:14,337 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:40:14,337 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:40:14,337 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:40:14,339 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:40:14,342 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (book_id = ?)
+2024-11-29 14:40:14,343 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long)
+2024-11-29 14:40:14,345 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:40:14,349 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,book_id,user_id,comment_content,reply_count,audit_status,create_time,update_time FROM book_comment WHERE (book_id = ?) ORDER BY create_time DESC limit 5
+2024-11-29 14:40:14,350 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long)
+2024-11-29 14:40:14,353 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 5
+2024-11-29 14:40:14,355 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (id IN (?,?,?,?,?))
+2024-11-29 14:40:14,355 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 6(Long), 5(Long), 4(Long), 3(Long), 2(Long)
+2024-11-29 14:40:14,356 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 5
+2024-11-29 14:40:14,365 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 937f9bda92ee5434
+Duration: 26 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:40:14 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"commentTotal":"6","comments":[{"id":"12","commentContent":"其实这个世界排名第一，对于你刚刚拿到来说，可能你是非常开心激动的，但是当你得到了以后其实并没有多么的重要，更重要的还是比赛的成绩来说吧，当然你能取得世界排名第一可能是因为你的成绩和积分，拿到了很多的冠军才能拿到第一，所以说这也是两面性的东西，但是并没有说一个世界排名第一自己有多去看重多么在意","commentUser":"13186090684","commentUserId":"6","commentTime":"2024-11-29 14:39:33"},{"id":"11","commentContent":"我觉得莫雷加德也是通过奥运会的洗礼， 他也是实力上也越来越厚实越来越扎实，自己这一场球我觉得也是“下风球”吧，我觉得不论打成什么样，自己都会去全力以赴","commentUser":"13186090683","commentUserId":"5","commentTime":"2024-11-29 14:38:00"},{"id":"10","commentContent":"自己这一段没怎么赢球，可能到了真要赢的那一刹那，自己还是会出现一些波动、起伏， 但自己也把它想象到了这场比赛的困难当中，我觉得自己现在不会去考虑这一站给自己定下什么样的目标，自己现在要做的就是“重新开始”，并且去珍惜每一场球。我觉得输谁都很正常，以自己目前的这种感觉来说，跟谁自己都努力地去拼，然后去享受比赛，逐渐地找到好的一个竞技状态。","commentUser":"13186090682","commentUserId":"4","commentTime":"2024-11-29 14:32:38"},{"id":"9","commentContent":"我觉得弗朗西斯卡也是世界上最优秀的选手之一吧，可能自己上一次跟他打也是非常的艰苦，非常的胶着，我觉得这一次也是同样的，虽然说看似3-1,但是每一局的比分都很纠缠很胶着，也是我们两个都有发挥好有不好的时候，我觉得可能更多的是自己在第二局我认为是最关键的吧，可能他有一些很多的这种运气，但是自己能嬴赢下那一局，对于后面的比赛会有很大的一个释放","commentUser":"13186090681","commentUserId":"3","commentTime":"2024-11-29 14:30:05"},{"id":"8","commentContent":"其实这一段时间可能都没有一个很好的一个状态吧，然后包括今天在场上也是觉得会要比之前的比赛更投入，或者说更敢于去纠缠也好， 敢于并住也好，不会去因为某一个球去影响自己的心情，可能自己更专注的是去想赢下每一分， 而不是去考虑很多一些其他的因素吧我觉得，杂念会这场球相对少了一些","commentUser":"13186090685","commentUserId":"2","commentTime":"2024-11-29 14:26:26"}]},"ok":true}
+2024-11-29 14:40:53,061 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: a934d0fb8cbb96fb
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/book/comment/newest_lit?bookId=1337872061003993088 HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: a67714fb-76e3-4713-bff4-46e906992f27
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:40:53,063 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:40:53,063 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:40:53,063 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:40:53,063 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:40:53,063 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:40:53,064 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:40:53,066 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:40:53,067 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (book_id = ?)
+2024-11-29 14:40:53,067 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long)
+2024-11-29 14:40:53,068 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:40:53,069 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,book_id,user_id,comment_content,reply_count,audit_status,create_time,update_time FROM book_comment WHERE (book_id = ?) ORDER BY create_time DESC limit 5
+2024-11-29 14:40:53,070 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long)
+2024-11-29 14:40:53,072 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 5
+2024-11-29 14:40:53,073 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (id IN (?,?,?,?,?))
+2024-11-29 14:40:53,073 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 6(Long), 5(Long), 4(Long), 3(Long), 2(Long)
+2024-11-29 14:40:53,074 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 5
+2024-11-29 14:40:53,075 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: a934d0fb8cbb96fb
+Duration: 14 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:40:53 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"commentTotal":"6","comments":[{"id":"12","commentContent":"其实这个世界排名第一，对于你刚刚拿到来说，可能你是非常开心激动的，但是当你得到了以后其实并没有多么的重要，更重要的还是比赛的成绩来说吧，当然你能取得世界排名第一可能是因为你的成绩和积分，拿到了很多的冠军才能拿到第一，所以说这也是两面性的东西，但是并没有说一个世界排名第一自己有多去看重多么在意","commentUser":"13186090684","commentUserId":"6","commentTime":"2024-11-29 14:39:33"},{"id":"11","commentContent":"我觉得莫雷加德也是通过奥运会的洗礼， 他也是实力上也越来越厚实越来越扎实，自己这一场球我觉得也是“下风球”吧，我觉得不论打成什么样，自己都会去全力以赴","commentUser":"13186090683","commentUserId":"5","commentTime":"2024-11-29 14:38:00"},{"id":"10","commentContent":"自己这一段没怎么赢球，可能到了真要赢的那一刹那，自己还是会出现一些波动、起伏， 但自己也把它想象到了这场比赛的困难当中，我觉得自己现在不会去考虑这一站给自己定下什么样的目标，自己现在要做的就是“重新开始”，并且去珍惜每一场球。我觉得输谁都很正常，以自己目前的这种感觉来说，跟谁自己都努力地去拼，然后去享受比赛，逐渐地找到好的一个竞技状态。","commentUser":"13186090682","commentUserId":"4","commentTime":"2024-11-29 14:32:38"},{"id":"9","commentContent":"我觉得弗朗西斯卡也是世界上最优秀的选手之一吧，可能自己上一次跟他打也是非常的艰苦，非常的胶着，我觉得这一次也是同样的，虽然说看似3-1,但是每一局的比分都很纠缠很胶着，也是我们两个都有发挥好有不好的时候，我觉得可能更多的是自己在第二局我认为是最关键的吧，可能他有一些很多的这种运气，但是自己能嬴赢下那一局，对于后面的比赛会有很大的一个释放","commentUser":"13186090681","commentUserId":"3","commentTime":"2024-11-29 14:30:05"},{"id":"8","commentContent":"其实这一段时间可能都没有一个很好的一个状态吧，然后包括今天在场上也是觉得会要比之前的比赛更投入，或者说更敢于去纠缠也好， 敢于并住也好，不会去因为某一个球去影响自己的心情，可能自己更专注的是去想赢下每一分， 而不是去考虑很多一些其他的因素吧我觉得，杂念会这场球相对少了一些","commentUser":"13186090685","commentUserId":"2","commentTime":"2024-11-29 14:26:26"}]},"ok":true}
+2024-11-29 14:42:11,869 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 14:42:11,874 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 14:42:14,877 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 14:42:14,896 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 23032 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 14:42:14,897 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 14:42:14,897 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 14:42:15,621 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 14:42:15,622 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 14:42:15,644 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-11-29 14:42:16,292 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 14:42:16,299 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:42:16,300 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 14:42:16,300 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 14:42:16,337 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 14:42:16,338 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1415 ms
+2024-11-29 14:42:16,956 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 14:42:17,054 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fb219dd
+2024-11-29 14:42:17,055 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 14:42:17,080 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 14:42:17,106 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.012s)
+2024-11-29 14:42:17,115 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 14:42:17,117 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 14:42:17,233 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 14:42:17,399 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:42:17,429 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 14:42:18,154 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 14:42:18,203 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 14:42:18,208 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 14:42:18,216 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.642 seconds (process running for 4.021)
+2024-11-29 14:42:18,220 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 14:42:18,220 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 14:42:18,220 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 14:42:18,221 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 14:42:18,221 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 14:42:18,322 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 14:42:18,322 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 14:42:18,323 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-29 14:42:21,725 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: d1a62bfb6a749518
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/book/comment/newest_lit?bookId=1337872061003993088 HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: 2f10cae4-c447-4246-9ce9-edc1dbddb87f
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 14:42:21,738 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 14:42:21,739 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:42:21,739 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:42:21,739 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 14:42:21,739 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 14:42:21,739 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 14:42:21,788 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 14:42:21,854 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT COUNT( * ) AS total FROM book_comment WHERE (book_id = ?)
+2024-11-29 14:42:21,864 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long)
+2024-11-29 14:42:21,875 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 14:42:21,877 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,book_id,user_id,comment_content,reply_count,audit_status,create_time,update_time FROM book_comment WHERE (book_id = ?) ORDER BY create_time DESC limit 5
+2024-11-29 14:42:21,878 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1337872061003993088(Long)
+2024-11-29 14:42:21,881 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 5
+2024-11-29 14:42:21,883 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (id IN (?,?,?,?,?))
+2024-11-29 14:42:21,883 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 6(Long), 5(Long), 4(Long), 3(Long), 2(Long)
+2024-11-29 14:42:21,885 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 5
+2024-11-29 14:42:21,910 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: d1a62bfb6a749518
+Duration: 191 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 06:42:21 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"commentTotal":"6","comments":[{"id":"12","commentContent":"其实这个世界排名第一，对于你刚刚拿到来说，可能你是非常开心激动的，但是当你得到了以后其实并没有多么的重要，更重要的还是比赛的成绩来说吧，当然你能取得世界排名第一可能是因为你的成绩和积分，拿到了很多的冠军才能拿到第一，所以说这也是两面性的东西，但是并没有说一个世界排名第一自己有多去看重多么在意","commentUser":"1318****684","commentUserId":"6","commentTime":"2024-11-29 14:39:33"},{"id":"11","commentContent":"我觉得莫雷加德也是通过奥运会的洗礼， 他也是实力上也越来越厚实越来越扎实，自己这一场球我觉得也是“下风球”吧，我觉得不论打成什么样，自己都会去全力以赴","commentUser":"1318****683","commentUserId":"5","commentTime":"2024-11-29 14:38:00"},{"id":"10","commentContent":"自己这一段没怎么赢球，可能到了真要赢的那一刹那，自己还是会出现一些波动、起伏， 但自己也把它想象到了这场比赛的困难当中，我觉得自己现在不会去考虑这一站给自己定下什么样的目标，自己现在要做的就是“重新开始”，并且去珍惜每一场球。我觉得输谁都很正常，以自己目前的这种感觉来说，跟谁自己都努力地去拼，然后去享受比赛，逐渐地找到好的一个竞技状态。","commentUser":"1318****682","commentUserId":"4","commentTime":"2024-11-29 14:32:38"},{"id":"9","commentContent":"我觉得弗朗西斯卡也是世界上最优秀的选手之一吧，可能自己上一次跟他打也是非常的艰苦，非常的胶着，我觉得这一次也是同样的，虽然说看似3-1,但是每一局的比分都很纠缠很胶着，也是我们两个都有发挥好有不好的时候，我觉得可能更多的是自己在第二局我认为是最关键的吧，可能他有一些很多的这种运气，但是自己能嬴赢下那一局，对于后面的比赛会有很大的一个释放","commentUser":"1318****681","commentUserId":"3","commentTime":"2024-11-29 14:30:05"},{"id":"8","commentContent":"其实这一段时间可能都没有一个很好的一个状态吧，然后包括今天在场上也是觉得会要比之前的比赛更投入，或者说更敢于去纠缠也好， 敢于并住也好，不会去因为某一个球去影响自己的心情，可能自己更专注的是去想赢下每一分， 而不是去考虑很多一些其他的因素吧我觉得，杂念会这场球相对少了一些","commentUser":"1318****685","commentUserId":"2","commentTime":"2024-11-29 14:26:26"}]},"ok":true}
+2024-11-29 14:58:19,179 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 14:58:19,184 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 15:09:44,407 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 15:09:44,429 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 28284 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 15:09:44,429 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 15:09:44,430 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 15:09:45,164 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 15:09:45,166 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 15:09:45,188 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-11-29 15:09:45,789 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 15:09:45,795 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 15:09:45,796 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 15:09:45,796 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 15:09:45,831 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 15:09:45,831 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1375 ms
+2024-11-29 15:09:46,419 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 15:09:46,513 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72c1bf75
+2024-11-29 15:09:46,514 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 15:09:46,538 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 15:09:46,566 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.013s)
+2024-11-29 15:09:46,578 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 15:09:46,580 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 15:09:46,690 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 15:09:46,859 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 15:09:46,888 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 15:09:47,609 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 15:09:47,666 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 15:09:47,671 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 15:09:47,679 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.556 seconds (process running for 3.938)
+2024-11-29 15:09:47,683 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 15:09:47,683 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 15:09:47,683 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 15:09:47,683 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 15:09:47,683 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 15:09:47,899 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 15:09:47,900 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 15:09:47,901 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-29 15:10:06,523 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 950bba9c5b4d3c5d
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:9999/api/front/user/login HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 60
+content-type: application/json
+host: localhost:9999
+postman-token: 93927453-b5a8-475d-aaca-4c5b22e8ae1a
+token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI1In0.jiy3AL-EIkyyqIrKllJAYYk69tJlcoJ6z-_wxRTKMN0
+user-agent: PostmanRuntime/7.43.0
+
+{"username":"13632345678","password":"123456"}
+2024-11-29 15:10:06,711 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE (username = ?)
+2024-11-29 15:10:06,724 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 13632345678(String)
+2024-11-29 15:10:06,743 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 15:10:06,795 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 950bba9c5b4d3c5d
+Duration: 278 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 07:10:06 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"uid":"1","nickName":"13632345678","token":"eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0"},"ok":true}
+2024-11-29 15:13:02,172 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f20443195b035b9c
+Remote: 0:0:0:0:0:0:0:1
+PUT http://localhost:9999/api/front/user HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 75
+content-type: application/json
+host: localhost:9999
+postman-token: 93025283-9963-4bfc-b6aa-b67e5e792baf
+user-agent: PostmanRuntime/7.43.0
+
+{"userId":13632345678,"nickName":"用户1","userSex":0}
+2024-11-29 15:13:02,173 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 15:13:02,173 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 15:13:02,173 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 15:13:02,173 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 15:13:02,173 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 15:13:02,174 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 15:13:02,197 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 15:13:02,210 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: UPDATE user_info SET nick_name=?, user_sex=? WHERE id=?
+2024-11-29 15:13:02,211 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 用户1(String), 0(Integer), 13632345678(Long)
+2024-11-29 15:13:02,213 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 0
+2024-11-29 15:13:02,215 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f20443195b035b9c
+Duration: 43 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 07:13:02 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 15:16:34,963 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 15:16:34,967 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 15:16:36,595 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 15:16:36,619 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 32560 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 15:16:36,620 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 15:16:36,620 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 15:16:37,323 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 15:16:37,324 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 15:16:37,349 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-11-29 15:16:38,017 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 15:16:38,023 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 15:16:38,024 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 15:16:38,024 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 15:16:38,061 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 15:16:38,061 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1414 ms
+2024-11-29 15:16:38,692 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 15:16:38,790 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3922b297
+2024-11-29 15:16:38,791 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 15:16:38,824 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 15:16:38,863 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.015s)
+2024-11-29 15:16:38,873 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 15:16:38,875 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 15:16:38,995 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 15:16:39,182 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 15:16:39,211 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 15:16:39,962 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 15:16:40,017 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 15:16:40,023 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 15:16:40,033 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.792 seconds (process running for 4.176)
+2024-11-29 15:16:40,037 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 15:16:40,038 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 15:16:40,038 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 15:16:40,038 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 15:16:40,038 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 15:16:40,482 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 15:16:40,482 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 15:16:40,483 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-29 15:16:54,124 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: ca411bc7a5276f83
+Remote: 0:0:0:0:0:0:0:1
+PUT http://localhost:9999/api/front/user HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+content-length: 48
+content-type: application/json
+host: localhost:9999
+postman-token: 2aadbffe-639c-41a7-a9ce-14c2a2800947
+user-agent: PostmanRuntime/7.43.0
+
+{"nickName":"用户1","userSex":0}
+2024-11-29 15:16:54,132 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 15:16:54,132 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 15:16:54,132 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 15:16:54,132 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 15:16:54,133 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 15:16:54,133 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 15:16:54,169 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 15:16:54,263 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: UPDATE user_info SET nick_name=?, user_sex=? WHERE id=?
+2024-11-29 15:16:54,273 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 用户1(String), 0(Integer), 1(Long)
+2024-11-29 15:16:54,293 DEBUG (BaseJdbcLogger.java:135)- <==    Updates: 1
+2024-11-29 15:16:54,307 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: ca411bc7a5276f83
+Duration: 189 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 07:16:54 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":null,"ok":true}
+2024-11-29 17:34:53,511 WARN (HikariPool.java:797)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m12s682ms12µs300ns).
+2024-11-29 17:45:20,915 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 17:45:20,917 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-11-29 17:57:00,284 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-11-29 17:57:00,305 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 31416 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-11-29 17:57:00,305 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-11-29 17:57:00,306 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-11-29 17:57:01,526 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-29 17:57:01,527 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-29 17:57:01,556 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-11-29 17:57:02,285 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 9999 (http)
+2024-11-29 17:57:02,293 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9999"]
+2024-11-29 17:57:02,294 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-11-29 17:57:02,294 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-11-29 17:57:02,348 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-11-29 17:57:02,349 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 2015 ms
+2024-11-29 17:57:03,266 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-11-29 17:57:03,395 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65bb4cb9
+2024-11-29 17:57:03,399 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-11-29 17:57:03,434 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-11-29 17:57:03,466 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.016s)
+2024-11-29 17:57:03,477 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-11-29 17:57:03,486 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-11-29 17:57:03,642 INFO (Version.java:41)- Redisson 3.19.1
+2024-11-29 17:57:03,855 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 17:57:03,889 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-11-29 17:57:04,659 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-11-29 17:57:04,711 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9999"]
+2024-11-29 17:57:04,715 INFO (TomcatWebServer.java:243)- Tomcat started on port 9999 (http) with context path '/'
+2024-11-29 17:57:04,724 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 4.799 seconds (process running for 6.028)
+2024-11-29 17:57:04,728 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-11-29 17:57:04,728 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-11-29 17:57:04,728 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-11-29 17:57:04,728 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-11-29 17:57:04,728 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-11-29 17:58:00,110 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 17:58:00,110 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-11-29 17:58:00,112 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-11-29 17:58:00,139 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: b86e1ce409e46fb0
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:9999/api/front/user HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+authorization: XXX
+connection: keep-alive
+host: localhost:9999
+postman-token: 1b4c4151-c9d4-4e43-8e5e-d2343d5742de
+user-agent: PostmanRuntime/7.43.0
+2024-11-29 17:58:00,151 INFO (AuthInterceptor.java:45)- preHandle 方法开始执行
+2024-11-29 17:58:00,151 INFO (AuthInterceptor.java:48)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 17:58:00,152 INFO (AuthInterceptor.java:52)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 17:58:00,152 INFO (AuthInterceptor.java:64)- 正在获取认证策略: frontAuthStrategy
+2024-11-29 17:58:00,152 INFO (FrontAuthStrategy.java:27)- FrontAuthStrategy auth方法被调用
+2024-11-29 17:58:00,152 INFO (FrontAuthStrategy.java:30)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiIxIn0.bjqJ6Rp6PzZ0Y9Sjk53ITn2y-O6eilxNmcKtb2CKrg0
+2024-11-29 17:58:00,246 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-11-29 17:58:00,269 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long)
+2024-11-29 17:58:00,281 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 17:58:00,498 INFO (FrontAuthStrategy.java:36)- authSSO method called successfully.
+2024-11-29 17:58:00,506 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-11-29 17:58:00,506 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1(Long)
+2024-11-29 17:58:00,507 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-11-29 17:58:00,538 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: b86e1ce409e46fb0
+Duration: 400 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Fri, 29 Nov 2024 09:58:00 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"nickName":"用户1","userPhoto":null,"userSex":"0"},"ok":true}
+2024-11-29 18:05:27,411 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2024-11-29 18:05:27,420 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
