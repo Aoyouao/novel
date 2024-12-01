@@ -17,13 +17,13 @@ import java.time.LocalDateTime;
 @TableName("book_info")
     public class BookInfo implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+        private static final long serialVersionUID = 1L;
 
         /**
          * 主键
          */
-                @TableId(value = "id", type = IdType.AUTO)
-                private Long id;
+        @TableId(value = "id", type = IdType.AUTO)
+        private Long id;
 
         /**
          * 作品方向;0-男频 1-女频

@@ -2,7 +2,7 @@ package com.aoyouao.novel.service.impl;
 
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.dto.resp.ImgVerifyCodeRespDto;
-import com.aoyouao.novel.manager.VerifyCodeManager;
+import com.aoyouao.novel.manager.cache.VerifyCodeManager;
 import com.aoyouao.novel.service.ResourceService;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import lombok.RequiredArgsConstructor;

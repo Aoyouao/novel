@@ -2,7 +2,7 @@ package com.aoyouao.novel.core.auth;
 
 import com.aoyouao.novel.core.common.exception.BusinessException;
 import com.aoyouao.novel.core.util.JwtUtils;
-import com.aoyouao.novel.manager.UserInfoCacheManager;
+import com.aoyouao.novel.manager.cache.UserInfoCacheManager;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

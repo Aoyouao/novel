@@ -2,4 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.aoyouao.novel.dao.mapper.BookCommentMapper">
 
+    <update id="addCommentCount" parameterType="long">
+        update book_info
+        set comment_count = comment_count + 1
+        where id = #{bookId}
+    </update>
 </mapper>

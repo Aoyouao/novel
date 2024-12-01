@@ -20,7 +20,7 @@ import java.io.IOException;
 @Tag(name = "ResourceController", description = "前台门户-资源模块")
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(ApiRouterConsts.API_FRONT_HOME_URL_PREFIX)
+@RequestMapping(ApiRouterConsts.API_FRONT_RESOURCE_URL_PREFIX)
 public class ResourceController {
 
     @Autowired

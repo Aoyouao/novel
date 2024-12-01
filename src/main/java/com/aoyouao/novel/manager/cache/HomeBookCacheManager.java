@@ -1,7 +1,8 @@
-package com.aoyouao.novel.manager;
+package com.aoyouao.novel.manager.cache;
 
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.core.constant.CacheConsts;
+import com.aoyouao.novel.core.constant.DatabaseConsts;
 import com.aoyouao.novel.dao.entity.BookInfo;
 import com.aoyouao.novel.dao.entity.HomeBook;
 import com.aoyouao.novel.dao.mapper.BookInfoMapper;
@@ -38,7 +39,9 @@ public class HomeBookCacheManager {
     public List<HomeBookRespDto> listHomeBooks(){
 
         //先查询首页推荐的小说
-        List<HomeBook> homeBooks = homeBookMapper.selectList(null);
+        QueryWrapper<HomeBook> bookQueryWrapper = new QueryWrapper<>();
+        bookQueryWrapper.orderByAsc(DatabaseConsts.CommonColumnEnum.SORT.getName());
+        List<HomeBook> homeBooks = homeBookMapper.selectList(bookQueryWrapper);
 
         //遍历homeBooks获取首页推荐小说的id
         if(!CollectionUtils.isEmpty(homeBooks)) {
@@ -47,7 +50,7 @@ public class HomeBookCacheManager {
 
             //根据id查询小说具体信息
             QueryWrapper<BookInfo> queryWrapper = new QueryWrapper<>();
-            queryWrapper.in("id", bookId);
+            queryWrapper.in(DatabaseConsts.CommonColumnEnum.ID.getName(), bookId);
             List<BookInfo> bookInfos = bookInfoMapper.selectList(queryWrapper);
 
             //将bookInfos封装到HomeBookRespDto
@@ -60,6 +63,7 @@ public class HomeBookCacheManager {
                 return homeBooks.stream().map(v->{
                     BookInfo bookInfo = bookInfoMap.get(v.getBookId());
                     HomeBookRespDto homeBookRespDto = new HomeBookRespDto();
+                    homeBookRespDto.setType(v.getType());
                     homeBookRespDto.setBookId(v.getBookId());
                     homeBookRespDto.setBookName(bookInfo.getBookName());
                     homeBookRespDto.setPicUrl(bookInfo.getPicUrl());

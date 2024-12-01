@@ -32,9 +32,12 @@ public class WebConfig implements WebMvcConfigurer {
                 // 拦截平台后台相关请求接口
                 ApiRouterConsts.API_ADMIN_URL_PREFIX + "/**")
             // 放行登录注册相关请求接口
-            .excludePathPatterns(ApiRouterConsts.API_FRONT_USER_URL_PREFIX + "/register",
-                ApiRouterConsts.API_FRONT_USER_URL_PREFIX + "/login",
-                ApiRouterConsts.API_ADMIN_URL_PREFIX + "/login")
+            .excludePathPatterns(
+                    ApiRouterConsts.API_FRONT_USER_URL_PREFIX + "/register",
+                    ApiRouterConsts.API_FRONT_USER_URL_PREFIX + "/login",
+                    ApiRouterConsts.API_ADMIN_URL_PREFIX + "/login",
+                    ApiRouterConsts.API_FRONT_RESOURCE_URL_PREFIX+"/img_verify_code",
+                    ApiRouterConsts.API_FRONT_HOME_URL_PREFIX + "/**")
             .order(2);
 
     }

@@ -19,8 +19,8 @@ import java.time.LocalDateTime;
 
     private static final long serialVersionUID = 1L;
 
-                @TableId(value = "id", type = IdType.AUTO)
-                private Long id;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Long id;
 
         /**
          * 推荐类型;0-轮播图 1-顶部栏 2-本周推荐 3-热门推荐 4-精品推荐

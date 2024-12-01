@@ -8,6 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.caffeine.CaffeineCache;
 import org.springframework.cache.support.SimpleCacheManager;
 import org.springframework.context.annotation.Bean;
@@ -25,6 +26,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
  * @date 2022/5/12
  */
 @Configuration
+@EnableCaching
 public class CacheConfig {
 
     /**

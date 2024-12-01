@@ -1,4 +1,4 @@
-package com.aoyouao.novel.manager;
+package com.aoyouao.novel.manager.cache;
 
 import com.aoyouao.novel.core.common.util.ImgVerifyCodeUtils;
 import com.aoyouao.novel.core.constant.CacheConsts;

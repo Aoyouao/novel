@@ -7,8 +7,7 @@ import java.util.Objects;
 import com.aoyouao.novel.core.constant.SystemConfigConsts;
 import com.aoyouao.novel.core.util.JwtUtils;
 import com.aoyouao.novel.dto.UserInfoDto;
-import com.aoyouao.novel.manager.UserInfoCacheManager;
-import lombok.extern.slf4j.Slf4j;
+import com.aoyouao.novel.manager.cache.UserInfoCacheManager;
 import org.springframework.util.StringUtils;
 
 /**

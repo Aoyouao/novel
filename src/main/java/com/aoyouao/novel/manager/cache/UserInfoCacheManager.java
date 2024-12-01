@@ -1,4 +1,4 @@
-package com.aoyouao.novel.manager;
+package com.aoyouao.novel.manager.cache;
 
 import com.aoyouao.novel.core.constant.CacheConsts;
 import com.aoyouao.novel.dao.entity.UserInfo;

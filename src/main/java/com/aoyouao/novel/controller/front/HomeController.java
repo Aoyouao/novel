@@ -6,7 +6,9 @@ package com.aoyouao.novel.controller.front;
 
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.core.constant.ApiRouterConsts;
+import com.aoyouao.novel.dao.entity.HomeFriendLink;
 import com.aoyouao.novel.dto.resp.HomeBookRespDto;
+import com.aoyouao.novel.dto.resp.HomeFriendLinkRespDto;
 import com.aoyouao.novel.service.HomeService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -29,5 +31,10 @@ public class HomeController {
     @GetMapping("books")
     public RestResp<List<HomeBookRespDto>> listHomeBooks(){
         return homeService.listHomeWorks();
+    }
+
+    @GetMapping("friend_Link/list")
+    public RestResp<List<HomeFriendLinkRespDto>> listHomeFriendLists(){
+        return homeService.listHomeFriendLists();
     }
 }

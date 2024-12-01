@@ -2,6 +2,7 @@ package com.aoyouao.novel.dao.mapper;
 
 import com.aoyouao.novel.dao.entity.BookComment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
@@ -12,5 +13,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @date 2024/11/23
  */
 public interface BookCommentMapper extends BaseMapper<BookComment> {
-
+    void addCommentCount(@Param("bookId") Long bookId);
 }

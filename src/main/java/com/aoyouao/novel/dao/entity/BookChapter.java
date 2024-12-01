@@ -17,10 +17,10 @@ import java.time.LocalDateTime;
 @TableName("book_chapter")
     public class BookChapter implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+        private static final long serialVersionUID = 1L;
 
-                @TableId(value = "id", type = IdType.AUTO)
-                private Long id;
+        @TableId(value = "id", type = IdType.AUTO)
+        private Long id;
 
         /**
          * 小说ID

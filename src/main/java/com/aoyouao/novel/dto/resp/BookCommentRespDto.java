@@ -1,6 +1,8 @@
 package com.aoyouao.novel.dto.resp;
 
+import com.aoyouao.novel.core.json.serializer.UsernameSerializer;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Builder;
 import lombok.Data;
 
@@ -21,7 +23,7 @@ public class BookCommentRespDto {
     public static class CommentInfo{
         private Long id;
         private String commentContent;
-
+        @JsonSerialize(using = UsernameSerializer.class)
         private String commentUser;
         private long commentUserId;
         @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
