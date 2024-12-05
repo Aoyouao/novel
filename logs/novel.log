@@ -2135,3 +2135,255 @@ Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 {"code":"B0001","message":"系统执行出错","data":null,"ok":false}
 2024-12-05 17:23:09,665 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
 2024-12-05 17:23:09,670 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
+2024-12-05 17:23:12,292 INFO (Version.java:21)- HV000001: Hibernate Validator 8.0.1.Final
+2024-12-05 17:23:12,314 INFO (StartupInfoLogger.java:50)- Starting NovelApplication using Java 21.0.1 with PID 4868 (D:\idea_java_projects\novel\target\classes started by 27189 in D:\idea_java_projects\novel)
+2024-12-05 17:23:12,314 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-12-05 17:23:12,314 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2024-12-05 17:23:12,955 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-05 17:23:12,959 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-05 17:23:12,988 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-12-05 17:23:13,614 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 8888 (http)
+2024-12-05 17:23:13,620 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8888"]
+2024-12-05 17:23:13,621 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2024-12-05 17:23:13,621 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-12-05 17:23:13,661 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2024-12-05 17:23:13,661 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1323 ms
+2024-12-05 17:23:14,270 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2024-12-05 17:23:14,365 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f8da82
+2024-12-05 17:23:14,366 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2024-12-05 17:23:14,391 INFO (Slf4jLog.java:37)- Database: jdbc:mysql://localhost:3306/novel (MySQL 8.0)
+2024-12-05 17:23:14,419 INFO (Slf4jLog.java:37)- Successfully validated 1 migration (execution time 00:00.014s)
+2024-12-05 17:23:14,429 INFO (Slf4jLog.java:37)- Current version of schema `novel`: 1
+2024-12-05 17:23:14,431 INFO (Slf4jLog.java:37)- Schema `novel` is up to date. No migration necessary.
+2024-12-05 17:23:14,584 INFO (Version.java:41)- Redisson 3.19.1
+2024-12-05 17:23:14,750 INFO (ConnectionPool.java:162)- 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-12-05 17:23:14,778 INFO (ConnectionPool.java:162)- 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2024-12-05 17:23:15,483 INFO (EndpointLinksResolver.java:60)- Exposing 16 endpoints beneath base path '/actuator'
+2024-12-05 17:23:15,549 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8888"]
+2024-12-05 17:23:15,554 INFO (TomcatWebServer.java:243)- Tomcat started on port 8888 (http) with context path '/'
+2024-12-05 17:23:15,562 INFO (StartupInfoLogger.java:56)- Started NovelApplication in 3.534 seconds (process running for 3.898)
+2024-12-05 17:23:15,567 INFO (NovelApplication.java:30)- 加载了如下缓存管理器：
+2024-12-05 17:23:15,567 INFO (NovelApplication.java:32)- caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2024-12-05 17:23:15,567 INFO (NovelApplication.java:33)- 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2024-12-05 17:23:15,567 INFO (NovelApplication.java:32)- redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2024-12-05 17:23:15,567 INFO (NovelApplication.java:33)- 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2024-12-05 17:23:18,722 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-05 17:23:18,723 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2024-12-05 17:23:18,724 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2024-12-05 17:23:18,746 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: b2b772edeedc5a88
+Remote: 127.0.0.1
+OPTIONS http://127.0.0.1:8888/api/front/user HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+access-control-request-headers: authorization,x-requested-with
+access-control-request-method: GET
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2024-12-05 17:23:18,759 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: bc9db09fc53d8913
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/user HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+x-requested-with: XMLHttpRequest
+2024-12-05 17:23:18,761 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: b2b772edeedc5a88
+Duration: 16 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: authorization, x-requested-with
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Date: Thu, 05 Dec 2024 09:23:18 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2024-12-05 17:23:18,766 INFO (AuthInterceptor.java:42)- preHandle 方法开始执行
+2024-12-05 17:23:18,767 INFO (AuthInterceptor.java:45)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI3In0.ulw_fDiw2Q88SK6eSI0hFWq_klE1493M6Job2Eukv6A
+2024-12-05 17:23:18,767 INFO (AuthInterceptor.java:49)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI3In0.ulw_fDiw2Q88SK6eSI0hFWq_klE1493M6Job2Eukv6A
+2024-12-05 17:23:18,767 INFO (AuthInterceptor.java:61)- 正在获取认证策略: frontAuthStrategy
+2024-12-05 17:23:18,769 INFO (FrontAuthStrategy.java:24)- FrontAuthStrategy auth方法被调用
+2024-12-05 17:23:18,769 INFO (FrontAuthStrategy.java:27)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI3In0.ulw_fDiw2Q88SK6eSI0hFWq_klE1493M6Job2Eukv6A
+2024-12-05 17:23:18,822 INFO (FrontAuthStrategy.java:33)- authSSO method called successfully.
+2024-12-05 17:23:18,841 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,username,password,salt,nick_name,user_photo,user_sex,status,create_time,update_time FROM user_info WHERE id=?
+2024-12-05 17:23:18,850 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 7(Long)
+2024-12-05 17:23:18,863 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 1
+2024-12-05 17:23:18,876 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: bc9db09fc53d8913
+Duration: 118 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Thu, 05 Dec 2024 09:23:18 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":{"nickName":"13186090686","userPhoto":null,"userSex":null},"ok":true}
+2024-12-05 17:23:20,950 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: bbdb5908f27bd55d
+Remote: 127.0.0.1
+OPTIONS http://127.0.0.1:8888/api/front/resource/image HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+access-control-request-method: POST
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2024-12-05 17:23:20,951 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: bbdb5908f27bd55d
+Duration: 0 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Date: Thu, 05 Dec 2024 09:23:20 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2024-12-05 17:23:20,953 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: 87cf8ff647ed82cd
+Remote: 127.0.0.1
+POST http://127.0.0.1:8888/api/front/resource/image HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+connection: keep-alive
+content-length: 445796
+content-type: multipart/form-data; boundary=----WebKitFormBoundaryqcTQi0Q1ULBTiaz2
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+
+<multipart>
+2024-12-05 17:23:20,969 INFO (AuthInterceptor.java:42)- preHandle 方法开始执行
+2024-12-05 17:23:20,970 INFO (AuthInterceptor.java:45)- Authorization Header: null
+2024-12-05 17:23:20,970 WARN (AuthInterceptor.java:47)- Authorization header is missing!
+2024-12-05 17:23:20,970 INFO (AuthInterceptor.java:61)- 正在获取认证策略: frontAuthStrategy
+2024-12-05 17:23:20,970 INFO (FrontAuthStrategy.java:24)- FrontAuthStrategy auth方法被调用
+2024-12-05 17:23:20,970 INFO (FrontAuthStrategy.java:27)- Calling authSSO with token: null
+2024-12-05 17:23:20,972 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: 87cf8ff647ed82cd
+Duration: 17 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 05 Dec 2024 09:23:20 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0400","message":"用户请求参数错误","data":null,"ok":false}
+2024-12-05 17:23:20,976 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: f741cd9fe45eaf50
+Remote: 127.0.0.1
+OPTIONS http://127.0.0.1:8888/api/front/user HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+access-control-request-headers: authorization,content-type,x-requested-with
+access-control-request-method: PUT
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2024-12-05 17:23:20,977 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: f741cd9fe45eaf50
+Duration: 1 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: authorization, content-type, x-requested-with
+Access-Control-Allow-Methods: PUT
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Date: Thu, 05 Dec 2024 09:23:20 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2024-12-05 17:23:20,980 TRACE (DefaultHttpLogWriter.java:25)- Incoming Request: bd6b4a33ff73a3f3
+Remote: 127.0.0.1
+PUT http://127.0.0.1:8888/api/front/user HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+content-length: 18
+content-type: application/json
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Microsoft Edge";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+x-requested-with: XMLHttpRequest
+
+{"userPhoto":null}
+2024-12-05 17:23:20,981 INFO (AuthInterceptor.java:42)- preHandle 方法开始执行
+2024-12-05 17:23:20,981 INFO (AuthInterceptor.java:45)- Authorization Header: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI3In0.ulw_fDiw2Q88SK6eSI0hFWq_klE1493M6Job2Eukv6A
+2024-12-05 17:23:20,981 INFO (AuthInterceptor.java:49)- Authorization header received: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI3In0.ulw_fDiw2Q88SK6eSI0hFWq_klE1493M6Job2Eukv6A
+2024-12-05 17:23:20,981 INFO (AuthInterceptor.java:61)- 正在获取认证策略: frontAuthStrategy
+2024-12-05 17:23:20,981 INFO (FrontAuthStrategy.java:24)- FrontAuthStrategy auth方法被调用
+2024-12-05 17:23:20,981 INFO (FrontAuthStrategy.java:27)- Calling authSSO with token: eyJzeXN0ZW1LZXlIZWFkZXIiOiJmcm9udCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI3In0.ulw_fDiw2Q88SK6eSI0hFWq_klE1493M6Job2Eukv6A
+2024-12-05 17:23:20,984 INFO (FrontAuthStrategy.java:33)- authSSO method called successfully.
+2024-12-05 17:23:21,041 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: UPDATE user_info WHERE id=?
+2024-12-05 17:23:21,042 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 7(Long)
+2024-12-05 17:23:21,122 ERROR (CommonExceptionHandler.java:35)- 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=7' at line 1
+### The error may exist in com/aoyouao/novel/dao/mapper/UserInfoMapper.java (best guess)
+### The error may involve com.aoyouao.novel.dao.mapper.UserInfoMapper.updateById-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE user_info    WHERE id=?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id=7' at line 1
+; bad SQL grammar []
+2024-12-05 17:23:21,124 TRACE (DefaultHttpLogWriter.java:30)- Outgoing Response: bd6b4a33ff73a3f3
+Duration: 144 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Thu, 05 Dec 2024 09:23:20 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"B0001","message":"系统执行出错","data":null,"ok":false}
