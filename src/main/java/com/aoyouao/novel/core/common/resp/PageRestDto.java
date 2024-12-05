@@ -25,7 +25,7 @@ public class PageRestDto<T> {
 
 
     //泛型方法 用于创建和返回一个分页响应dto对象
-    public <T> PageRestDto<T> of(long pageNum,long pageSize,long total,List<T> list){
+    public static <T> PageRestDto<T> of(long pageNum,long pageSize,long total,List<T> list){
         return new PageRestDto<>(pageNum,pageSize,total,list);
     }
 

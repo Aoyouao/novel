@@ -12,11 +12,11 @@ public class DatabaseConsts {
      */
     public static class UserInfoTable {
 
-        private UserInfoTable() {
-            throw new IllegalStateException(SystemConfigConsts.CONST_INSTANCE_EXCEPTION_MSG);
-        }
+    private UserInfoTable() {
+        throw new IllegalStateException(SystemConfigConsts.CONST_INSTANCE_EXCEPTION_MSG);
+    }
 
-        public static final String COLUMN_USERNAME = "username";
+    public static final String COLUMN_USERNAME = "username";
 
     }
 

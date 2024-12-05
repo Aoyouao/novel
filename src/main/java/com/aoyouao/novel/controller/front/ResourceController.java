@@ -8,9 +8,8 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
@@ -26,9 +25,18 @@ public class ResourceController {
     @Autowired
     private final ResourceService resourceService;
 
-    @Operation(summary = "获取图片验证码接口")
+
+    //获取图片验证码接口
     @GetMapping("img_verify_code")
     public RestResp<ImgVerifyCodeRespDto> getImgVerifyCode() throws IOException {
         return resourceService.getImgVerifyCode();
     }
+
+    //上传图片
+    @PostMapping("/image")
+    public RestResp<String> uploadImage(@RequestParam("file") MultipartFile file){
+        return resourceService.uploadImage(file);
+    }
+
 }
+

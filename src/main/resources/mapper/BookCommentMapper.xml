@@ -7,4 +7,11 @@
         set comment_count = comment_count + 1
         where id = #{bookId}
     </update>
+
+    <update id="desCommentCount" parameterType="long">
+        update book_info
+        set comment_count = comment_count - 1
+        where id = #{bookId}
+    </update>
+
 </mapper>

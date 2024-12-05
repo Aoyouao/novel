@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class BookInfoRespDto {
 
-    private Long bookId;
+    private Long id;
 
     private Long categoryId;
 

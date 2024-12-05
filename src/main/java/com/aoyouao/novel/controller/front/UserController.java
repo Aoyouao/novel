@@ -52,6 +52,7 @@ public class UserController {
         Long userId = UserHolder.getUserId();
         log.info("UserId from UserHolder: {}", userId);  // 打印 userId 值
         dto.setUserId(userId);
+        log.info("Saving comment for userId: {} and bookId: {}", dto.getUserId(), dto.getBookId());
         return bookService.saveComment(dto);
     }
 

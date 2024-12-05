@@ -14,4 +14,6 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface BookCommentMapper extends BaseMapper<BookComment> {
     void addCommentCount(@Param("bookId") Long bookId);
+
+    void desCommentCount(@Param("bookId") Long bookId);
 }

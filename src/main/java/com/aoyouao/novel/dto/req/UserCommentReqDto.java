@@ -13,14 +13,11 @@ import org.hibernate.validator.constraints.Length;
 public class UserCommentReqDto {
 
 
-    @NotNull(message = "User ID cannot be null")
     private Long userId;
 
-    @Schema(description = "小说ID")
     @NotNull(message="小说ID不能为空！")
     private Long bookId;
 
-    @Schema(description = "评论内容")
     @NotNull(message = "评论内容不能为空")
     @Length(min=10,max=512)
     private String commentContent;

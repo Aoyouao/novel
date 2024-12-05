@@ -28,7 +28,7 @@ public class BookRankRespDto implements Serializable {
 
     private String bookDesc;
 
-    private Integer workCount;
+    private Integer wordCount;
 
     private String lastChapterName;
 

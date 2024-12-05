@@ -2,11 +2,9 @@ package com.aoyouao.novel.service;
 
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.dto.req.UserCommentReqDto;
-import com.aoyouao.novel.dto.resp.BookCommentRespDto;
-import com.aoyouao.novel.dto.resp.BookContentAboutRespDto;
-import com.aoyouao.novel.dto.resp.BookInfoRespDto;
-import com.aoyouao.novel.dto.resp.BookRankRespDto;
+import com.aoyouao.novel.dto.resp.*;
 
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 /**
@@ -50,6 +48,31 @@ public interface BookService {
     RestResp<List<BookRankRespDto>> listUpdateRankBooks();
 
     /**
+     * 小说分类列表查询
+     */
+    RestResp<List<BookCategoryRespDto>> listCategory(Integer workDirection);
+
+    /**
+     * 小说推荐列表查询
+     */
+    RestResp<List<BookInfoRespDto>> listRecBooks(Long bookId) throws NoSuchAlgorithmException;
+
+    /**
+     * 小说最新章节相关信息查询
+     */
+    RestResp<BookLastChapterAboutRespDto> getLastChapterAbout(Long bookId);
+
+    /**
+     * 增加小说点击量
+     */
+    RestResp<Long> addVisitCount(Long bookId);
+
+    /**
+     * 小说章节列表查询
+     */
+    RestResp<List<BookChapterRespDto>> listChapters(Long bookId);
+
+    /**
      * 小说信息查询
      */
     RestResp<BookInfoRespDto> getBookById(Long id);
@@ -58,4 +81,14 @@ public interface BookService {
      * 小说内容相关信息查询
      */
     RestResp<BookContentAboutRespDto> getBookContentAbout(Long chapterId);
+
+    /**
+     * 查询上一章节ID
+     */
+    RestResp<Long> getPreChapterId(Long chapterId);
+
+    /**
+     * 查询下一章节ID
+     */
+    RestResp<Long> getNextChapterId(Long chapterId);
 }

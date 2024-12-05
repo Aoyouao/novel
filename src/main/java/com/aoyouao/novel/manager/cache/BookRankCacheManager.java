@@ -4,11 +4,15 @@ import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.core.constant.CacheConsts;
 import com.aoyouao.novel.core.constant.DatabaseConsts;
 import com.aoyouao.novel.dao.entity.BookInfo;
+import com.aoyouao.novel.dao.mapper.BookChapterMapper;
 import com.aoyouao.novel.dao.mapper.BookInfoMapper;
 import com.aoyouao.novel.dto.resp.BookRankRespDto;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
@@ -19,6 +23,7 @@ import java.util.List;
  * */
 @Component
 @RequiredArgsConstructor
+@Slf4j
 public class BookRankCacheManager {
     @Autowired
     private final BookInfoMapper bookInfoMapper;
@@ -29,6 +34,7 @@ public class BookRankCacheManager {
     @Cacheable(cacheManager = CacheConsts.REDIS_CACHE_MANAGER,
                 value = CacheConsts.BOOK_VISIT_RANK_CACHE_NAME)
     public List<BookRankRespDto> listVisitRankBooks(){
+        log.info("listVisitRankBooks开始执行");
         QueryWrapper<BookInfo> bookInfoQueryWrapper = new QueryWrapper<>();
         bookInfoQueryWrapper.orderByDesc(DatabaseConsts.BookTable.COLUMN_VISIT_COUNT);
         return listRankBooks(bookInfoQueryWrapper);
@@ -61,6 +67,7 @@ public class BookRankCacheManager {
     public List<BookRankRespDto> listRankBooks(QueryWrapper<BookInfo> bookInfoQueryWrapper){
         bookInfoQueryWrapper.gt(DatabaseConsts.BookTable.COLUMN_WORD_COUNT,0)
                 .last(DatabaseConsts.SqlEnum.LIMIT_30.getSql());
+
         return bookInfoMapper.selectList(bookInfoQueryWrapper).stream().map(v -> {
             BookRankRespDto bookRankRespDto = new BookRankRespDto();
             bookRankRespDto.setId(v.getId());
@@ -72,7 +79,23 @@ public class BookRankCacheManager {
             bookRankRespDto.setBookDesc(v.getBookDesc());
             bookRankRespDto.setLastChapterName(v.getLastChapterName());
             bookRankRespDto.setLastChapterUpdateTime(v.getLastChapterUpdateTime());
+            bookRankRespDto.setWordCount(v.getWordCount());
             return bookRankRespDto;
         }).toList();
+    }
+
+    @CacheEvict(cacheManager = CacheConsts.REDIS_CACHE_MANAGER,
+            value = CacheConsts.BOOK_VISIT_RANK_CACHE_NAME)
+    public void evictVisitRankBooks(){
+    }
+
+    @CacheEvict(cacheManager = CacheConsts.REDIS_CACHE_MANAGER,
+            value = CacheConsts.BOOK_NEWEST_RANK_CACHE_NAME)
+    public void evictNewestRankBooks(){
+    }
+
+    @CacheEvict(cacheManager = CacheConsts.REDIS_CACHE_MANAGER,
+            value = CacheConsts.BOOK_UPDATE_RANK_CACHE_NAME)
+    public void evictUpdateRankBooks(){
     }
 }
