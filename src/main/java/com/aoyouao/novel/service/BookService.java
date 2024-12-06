@@ -1,5 +1,7 @@
 package com.aoyouao.novel.service;
 
+import com.aoyouao.novel.core.common.req.PageReqDto;
+import com.aoyouao.novel.core.common.resp.PageRestDto;
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.dto.req.UserCommentReqDto;
 import com.aoyouao.novel.dto.resp.*;
@@ -91,4 +93,9 @@ public interface BookService {
      * 查询下一章节ID
      */
     RestResp<Long> getNextChapterId(Long chapterId);
+
+    /**
+     * 分页查询评论
+     */
+    RestResp<PageRestDto<UserCommentRespDto>> listComments(Long userId, PageReqDto pageReqDto);
 }

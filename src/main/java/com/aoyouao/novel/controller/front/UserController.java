@@ -2,12 +2,15 @@ package com.aoyouao.novel.controller.front;
 
 //import com.aoyouao.novel.core.auth.UserHolder;
 import com.aoyouao.novel.core.auth.UserHolder;
+import com.aoyouao.novel.core.common.req.PageReqDto;
+import com.aoyouao.novel.core.common.resp.PageRestDto;
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.core.constant.ApiRouterConsts;
 import com.aoyouao.novel.dto.req.UserCommentReqDto;
 import com.aoyouao.novel.dto.req.UserInfoUptReqDto;
 import com.aoyouao.novel.dto.req.UserLoginReqDto;
 import com.aoyouao.novel.dto.req.UserRegisterReqDto;
+import com.aoyouao.novel.dto.resp.UserCommentRespDto;
 import com.aoyouao.novel.dto.resp.UserInfoRespDto;
 import com.aoyouao.novel.dto.resp.UserLoginRespDto;
 import com.aoyouao.novel.dto.resp.UserRegisterRespDto;
@@ -97,5 +100,11 @@ public class UserController {
     @GetMapping("bookshelf_status")
     public RestResp<Integer> getBookshelfStatus(Long id){
         return userService.getBookshelfStatus(UserHolder.getUserId(),id);
+    }
+
+    //分页评论查询
+    @GetMapping("comments")
+    public RestResp<PageRestDto<UserCommentRespDto>> listComments(PageReqDto pageReqDto){
+        return bookService.listComments(UserHolder.getUserId(),pageReqDto);
     }
 }

@@ -26,7 +26,7 @@ public class WebConfig implements WebMvcConfigurer {
 
         //文件访问拦截
         registry.addInterceptor(fileInterceptor)
-                .addPathPatterns(SystemConfigConsts.IMAGE_UPLOAD_DIRECTORY+"**")
+                .addPathPatterns(ApiRouterConsts.API_FRONT_RESOURCE_URL_PREFIX +SystemConfigConsts.IMAGE_UPLOAD_DIRECTORY+"**")
                 .order(1);
 
         // 权限认证拦截
@@ -43,7 +43,8 @@ public class WebConfig implements WebMvcConfigurer {
                     ApiRouterConsts.API_FRONT_USER_URL_PREFIX + "/login",
                     ApiRouterConsts.API_ADMIN_URL_PREFIX + "/login",
                     ApiRouterConsts.API_FRONT_RESOURCE_URL_PREFIX+"/img_verify_code",
-                    ApiRouterConsts.API_FRONT_HOME_URL_PREFIX + "/**")
+                    ApiRouterConsts.API_FRONT_HOME_URL_PREFIX + "/**",
+                    ApiRouterConsts.API_FRONT_RESOURCE_URL_PREFIX+"/**")
             .order(2);
 
     }

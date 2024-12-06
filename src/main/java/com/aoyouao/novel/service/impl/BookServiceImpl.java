@@ -1,10 +1,13 @@
 package com.aoyouao.novel.service.impl;
 
 import com.aoyouao.novel.core.common.constant.ErrorCodeEnum;
+import com.aoyouao.novel.core.common.req.PageReqDto;
+import com.aoyouao.novel.core.common.resp.PageRestDto;
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.core.constant.DatabaseConsts;
 import com.aoyouao.novel.dao.entity.BookChapter;
 import com.aoyouao.novel.dao.entity.BookComment;
+import com.aoyouao.novel.dao.entity.BookInfo;
 import com.aoyouao.novel.dao.entity.UserInfo;
 import com.aoyouao.novel.dao.mapper.BookChapterMapper;
 import com.aoyouao.novel.dao.mapper.BookCommentMapper;
@@ -17,16 +20,21 @@ import com.aoyouao.novel.service.BookService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 @RequiredArgsConstructor
@@ -265,5 +273,36 @@ public class BookServiceImpl implements BookService {
         BookChapter bookChapter = bookChapterMapper.selectOne(queryWrapper);
         return RestResp.ok(Optional.ofNullable(bookChapter).map(BookChapter::getId).orElse(null));
     }
+
+    @Override
+    public RestResp<PageRestDto<UserCommentRespDto>> listComments(Long userId, PageReqDto pageReqDto) {
+        //获得分页请求的页数和条数 根据分页请求和更新时间查找数据 得到评论数据
+        //如果查询数据不为空 根据得到的评论数据得到小说id列表 再查询小说信息得到UserCommentRespDto里需要的评论小说名和评论小说封面
+        IPage<BookComment> page = new Page<>();
+        page.setCurrent(pageReqDto.getPageNum());
+        pageReqDto.setPageSize(pageReqDto.getPageSize());
+        QueryWrapper<BookComment> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq(DatabaseConsts.BookCommentTable.COLUMN_USER_ID,userId)
+                .orderByDesc(DatabaseConsts.CommonColumnEnum.UPDATE_TIME.getName());
+        IPage<BookComment> bookCommentIPage = bookCommentMapper.selectPage(page, queryWrapper);
+        List<BookComment> comments = bookCommentIPage.getRecords();
+        if(!CollectionUtils.isEmpty(comments)){
+            List<Long> bookIds = comments.stream().map(BookComment::getBookId).toList();
+            QueryWrapper<BookInfo> bookInfoQueryWrapper = new QueryWrapper<>();
+            bookInfoQueryWrapper.in(DatabaseConsts.CommonColumnEnum.ID.getName(),bookIds);
+            List<BookInfo> bookInfos = bookInfoMapper.selectList(bookInfoQueryWrapper);
+            Map<Long, BookInfo> bookInfoMap = bookInfos.stream().collect(Collectors.toMap(BookInfo::getId, Function.identity()));
+
+            return RestResp.ok(PageRestDto.of(pageReqDto.getPageNum(), pageReqDto.getPageSize(), page.getTotal(),
+                    comments.stream().map(v->
+                        UserCommentRespDto.builder().commentContent(v.getCommentContent())
+                                .commentBook(bookInfoMap.get(v.getBookId()).getBookName())
+                                .commentBookPic(bookInfoMap.get(v.getBookId()).getPicUrl())
+                                .commentTime(v.getCreateTime()).build()).toList()));
+        }
+        return RestResp.ok(PageRestDto.of(pageReqDto.getPageNum(), pageReqDto.getPageSize(), page.getTotal(),
+                Collections.emptyList()));
+    }
+
 
 }

@@ -17,6 +17,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Enumeration;
 import java.util.Map;
 
 /**
@@ -43,6 +44,8 @@ public class AuthInterceptor implements HandlerInterceptor {
         // 获取登录 JWT
         String token = request.getHeader(SystemConfigConsts.HTTP_AUTH_HEADER_NAME);
         log.info("Authorization Header: {}", token);  // 添加这行来检查 Authorization 头是否传递正确
+
+
         if (token == null) {
             log.warn("Authorization header is missing!");
         } else {

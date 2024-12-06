@@ -10,6 +10,7 @@ import com.aoyouao.novel.service.ResourceService;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,7 @@ import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class ResourceServiceImpl implements ResourceService {
 
     @Autowired
@@ -48,19 +50,26 @@ public class ResourceServiceImpl implements ResourceService {
         //创建新文件路径 包括存储路径和文件名 判断文件路径的是否存在 不存在则创建该目录 创建失败抛异常
         //将上传的文件保存到新的文件路径下
         //判断上传的文件是否为图片
+
+        log.info("uploadImage开始执行");
         LocalDateTime now = LocalDateTime.now();
         String savePath =
                 SystemConfigConsts.IMAGE_UPLOAD_DIRECTORY
                 +now.format(DateTimeFormatter.ofPattern("yyyy"))+ File.separator
                 +now.format(DateTimeFormatter.ofPattern("MM"))+ File.separator
                 +now.format(DateTimeFormatter.ofPattern("dd"));
+        log.info("保存路径：{}", savePath);
+
         String oriName = file.getOriginalFilename();
         assert oriName != null;
         String saveFileName =  IdWorker.get32UUID()+oriName.substring(oriName.lastIndexOf("."));
         File saveFile = new File(fileUploadPath+savePath,saveFileName);
+        log.info("文件保存路径：{}", saveFile.getAbsolutePath());
+
         if(!saveFile.getParentFile().exists()){
             boolean mkdirs = saveFile.getParentFile().mkdirs();
             if(!mkdirs){
+                log.error("创建目录失败：{}", saveFile.getParentFile().getAbsolutePath());
                 throw new BusinessException(ErrorCodeEnum.USER_UPLOAD_FILE_ERROR);
             }
         }
