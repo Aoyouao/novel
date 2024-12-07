@@ -10,10 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 /**
  * 文件拦截器
@@ -33,18 +30,20 @@ public class FileInterceptor implements HandlerInterceptor {
         //使用 try-with-resources 语法来确保流在使用完后会被自动关闭
 
         log.info("FileInterceptor:prehandle 开始执行");
-
-
         String requestUri = request.getRequestURI();
+        String method = request.getMethod();
+        if("PUT".equalsIgnoreCase(method)){
         response.setDateHeader("expires",System.currentTimeMillis() + 60 * 60 * 24 * 10 * 1000);
 
-        try(OutputStream outputStream =response.getOutputStream();
-            InputStream inputStream = new FileInputStream(fileUploadPath + requestUri)){
+            try(OutputStream outputStream =response.getOutputStream();
+            InputStream inputStream = new FileInputStream(fileUploadPath)){
             byte[] bytes = new byte[4096];
             for(int n; (n = inputStream.read(bytes)) != -1;){
                 outputStream.write(bytes,0,n);
             }
         }
         return false;
+        }
+        return true;
     }
 }
