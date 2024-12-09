@@ -78,7 +78,8 @@ public class ResourceServiceImpl implements ResourceService {
             Files.delete(saveFile.toPath());
             throw new BusinessException(ErrorCodeEnum.USER_UPLOAD_FILE_ERROR);
         }
-        return RestResp.ok(savePath + File.separator + saveFileName);
+        String finalPath = savePath.replace(File.separator, "/") + "/" + saveFileName;
+        return RestResp.ok(finalPath);
     }
 
 

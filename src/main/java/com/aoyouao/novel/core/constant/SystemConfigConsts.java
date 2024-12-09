@@ -1,5 +1,7 @@
 package com.aoyouao.novel.core.constant;
 
+import java.io.File;
+
 /**
  * 系统配置相关常量
  */
@@ -32,7 +34,7 @@ public class SystemConfigConsts {
     /**
      * 图片上传目录
      */
-    public static final String IMAGE_UPLOAD_DIRECTORY = "/image/";
+    public static final String IMAGE_UPLOAD_DIRECTORY = File.separator+"image"+ File.separator;
 
     /**
      * 常量类实例化异常信息

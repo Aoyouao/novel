@@ -38,6 +38,9 @@ public class NewsServiceImpl implements NewsService {
                 .last(DatabaseConsts.SqlEnum.LIMIT_1.getSql());
         NewsContent newsContent = newsContentMapper.selectOne(queryWrapper);
         return RestResp.ok(NewsInfoRespDto.builder()
+                .id(newsInfo.getId())
+                .categoryId(newsInfo.getCategoryId())
+                .categoryName(newsInfo.getCategoryName())
                 .title(newsInfo.getTitle())
                 .sourceName(newsInfo.getSourceName())
                 .content(newsContent.getContent())
