@@ -36,6 +36,11 @@ public class BookController {
         return bookService.listNewestComments(bookId);
     }
 
+    @GetMapping("comment_list")
+    public RestResp<List<BookCommentRespDto>> getComment(@RequestParam Long commentId){
+        return bookService.getComment(commentId);
+    }
+
     //小说点击榜查询接口
     @GetMapping("visit_rank")
     public RestResp<List<BookRankRespDto>> listVisitRankBooks(){

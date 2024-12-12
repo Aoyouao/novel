@@ -59,6 +59,13 @@ public class UserController {
         return bookService.saveComment(dto);
     }
 
+    //回复评论接口
+    @PostMapping("commentReply")
+    public RestResp<Void> saveReply(@Valid @RequestBody UserCommentReqDto userCommentReqDto){
+        userCommentReqDto.setUserId(UserHolder.getUserId());
+        return bookService.saveReply(userCommentReqDto);
+    }
+
     //修改评论接口
     @PutMapping("comment/{id}")
     public RestResp<Void> updateComment(@PathVariable Long id,@RequestBody String content){

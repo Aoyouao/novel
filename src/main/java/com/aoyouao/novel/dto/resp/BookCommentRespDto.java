@@ -13,11 +13,12 @@ import java.util.List;
  * 小说评论响应DTO
  */
 @Data
-@Builder
+
 public class BookCommentRespDto {
+
     private Long commentTotal;
     private List<CommentInfo> comments;
-
+    private List<BookCommentReplyRespDto> replies;
     @Data
     @Builder
     public static class CommentInfo{

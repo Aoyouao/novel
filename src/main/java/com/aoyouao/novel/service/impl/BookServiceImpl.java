@@ -5,12 +5,10 @@ import com.aoyouao.novel.core.common.req.PageReqDto;
 import com.aoyouao.novel.core.common.resp.PageRestDto;
 import com.aoyouao.novel.core.common.resp.RestResp;
 import com.aoyouao.novel.core.constant.DatabaseConsts;
-import com.aoyouao.novel.dao.entity.BookChapter;
-import com.aoyouao.novel.dao.entity.BookComment;
-import com.aoyouao.novel.dao.entity.BookInfo;
-import com.aoyouao.novel.dao.entity.UserInfo;
+import com.aoyouao.novel.dao.entity.*;
 import com.aoyouao.novel.dao.mapper.BookChapterMapper;
 import com.aoyouao.novel.dao.mapper.BookCommentMapper;
+import com.aoyouao.novel.dao.mapper.BookCommentReplyMapper;
 import com.aoyouao.novel.dao.mapper.BookInfoMapper;
 import com.aoyouao.novel.dto.req.UserCommentReqDto;
 import com.aoyouao.novel.dto.resp.*;
@@ -59,6 +57,8 @@ public class BookServiceImpl implements BookService {
     private BookChapterMapper bookChapterMapper;
     @Autowired
     private BookInfoMapper bookInfoMapper;
+    @Autowired
+    private BookCommentReplyMapper bookCommentReplyMapper;
 
     private static final Integer REC_BOOK_COUNT = 4;
     @Override
@@ -82,6 +82,28 @@ public class BookServiceImpl implements BookService {
         bookCommentMapper.addCommentCount(userCommentReqDto.getBookId());
         return RestResp.ok();
     }
+
+    @Override
+    public RestResp<Void> saveReply(UserCommentReqDto userCommentReqDto) {
+        //查询是否有根评论
+        BookComment bookComment = bookCommentMapper.selectById(userCommentReqDto.getCommentId());
+        if(bookComment == null){
+            return RestResp.fail(ErrorCodeEnum.USER_COMMENT);
+        }
+        BookCommentReply bookCommentReply = new BookCommentReply();
+        bookCommentReply.setUserId(userCommentReqDto.getUserId());
+        bookCommentReply.setCommentId(userCommentReqDto.getCommentId());
+        bookCommentReply.setReplyContent(userCommentReqDto.getReplyContent());
+        bookCommentReply.setCreateTime(LocalDateTime.now());
+        bookCommentReply.setUpdateTime(LocalDateTime.now());
+
+        if(userCommentReqDto.getParentReplyId() != null){
+            bookCommentReply.setParentReplyId(userCommentReqDto.getParentReplyId());
+        }
+        bookCommentReplyMapper.insert(bookCommentReply);
+        return RestResp.ok();
+    }
+
 
     @Override
     public RestResp<Void> updateComment(Long userId, Long id, String content) {
@@ -113,7 +135,9 @@ public class BookServiceImpl implements BookService {
         commentCountQueryWrapper.eq(DatabaseConsts.BookCommentTable.COLUMN_BOOK_ID,bookId);
         Long commentCount = bookCommentMapper.selectCount(commentCountQueryWrapper);
 
-        BookCommentRespDto bookCommentRespDto = BookCommentRespDto.builder().commentTotal(commentCount).build();
+       /* BookCommentRespDto bookCommentRespDto = BookCommentRespDto.builder().commentTotal(commentCount).build();*/
+        BookCommentRespDto bookCommentRespDto = new BookCommentRespDto();
+        bookCommentRespDto.setCommentTotal(commentCount);
 
         if(commentCount > 0){
             //查询最新评论列表
@@ -137,8 +161,53 @@ public class BookServiceImpl implements BookService {
         }else{
             bookCommentRespDto.setComments(Collections.emptyList());
         }
+
+
         return RestResp.ok(bookCommentRespDto);
     }
+
+    @Override
+    public RestResp<List<BookCommentRespDto>> getComment(Long commentId) {
+
+        QueryWrapper<BookComment> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq(DatabaseConsts.CommonColumnEnum.ID.getName(), commentId);
+        List<BookComment> bookCommentList = bookCommentMapper.selectList(queryWrapper);
+
+
+
+        QueryWrapper<BookCommentReply> bookCommentReplyQueryWrapper = new QueryWrapper<>();
+        bookCommentReplyQueryWrapper.eq(DatabaseConsts.BookCommentTable.COLUMN_COMMENT_ID,commentId);
+        List<BookCommentReply> bookCommentReplies = bookCommentReplyMapper.selectList(bookCommentReplyQueryWrapper);
+
+        List<Long> userIds = bookCommentList.stream().map(BookComment::getUserId).toList();
+        List<UserInfo> userInfos = userDaoManager.listUsers(userIds);
+        Map<Long, String> userInfoMap = userInfos.stream().collect(Collectors.toMap(UserInfo::getId, UserInfo::getUsername));
+
+
+        return RestResp.ok(bookCommentList.stream().map(bookComment -> {
+            BookCommentRespDto bookCommentRespDto = new BookCommentRespDto();
+            bookCommentRespDto.setCommentTotal(bookCommentMapper.selectCount(queryWrapper));
+            bookCommentRespDto.setComments(bookCommentList.stream().map(v-> BookCommentRespDto.CommentInfo.builder()
+                    .id(v.getId())
+                    .commentUserId(v.getUserId())
+                    .commentUser(userInfoMap.get(v.getUserId()))
+                    .commentContent(v.getCommentContent())
+                    .commentTime(v.getCreateTime()).build()).toList());
+                    List<BookCommentReplyRespDto> replyRespDtoList = bookCommentReplies.stream().filter(reply -> reply.getCommentId().equals(bookComment.getId()))
+                            .map(reply -> {
+                                BookCommentReplyRespDto replyRespDto = new BookCommentReplyRespDto();
+                                replyRespDto.setId(reply.getId());
+                                replyRespDto.setCommentId(reply.getCommentId());
+                                replyRespDto.setReplyContent(reply.getReplyContent());
+                                replyRespDto.setUserId(reply.getUserId());
+                                replyRespDto.setCreateTime(reply.getCreateTime());
+                                return replyRespDto;
+                            }).collect(Collectors.toList());
+                    bookCommentRespDto.setReplies(replyRespDtoList);
+                    return bookCommentRespDto;
+                }).collect(Collectors.toList()));
+    }
+
 
     @Override
     public RestResp<List<BookRankRespDto>> listVisitRankBooks() {

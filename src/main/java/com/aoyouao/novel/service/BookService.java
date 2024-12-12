@@ -19,6 +19,11 @@ public interface BookService {
     RestResp<Void> saveComment(UserCommentReqDto userCommentReqDto);
 
     /**
+     * 回复评论
+     */
+    RestResp<Void> saveReply(UserCommentReqDto userCommentReqDto);
+
+    /**
      * 修改评论
      */
     RestResp<Void> updateComment(Long userId,Long id,String content);
@@ -33,6 +38,11 @@ public interface BookService {
      * 展示最新评论列表
      */
     RestResp<BookCommentRespDto> listNewestComments(Long bookId);
+
+    /**
+     * 展示所有评论
+     */
+    RestResp<List<BookCommentRespDto>> getComment(Long commentId);
 
     /**
      * 小说点击榜查询

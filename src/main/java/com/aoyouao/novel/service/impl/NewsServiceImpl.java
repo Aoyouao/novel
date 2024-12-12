@@ -37,6 +37,7 @@ public class NewsServiceImpl implements NewsService {
         queryWrapper.eq(DatabaseConsts.NewsContentTable.COLUMN_NEWS_ID, id)
                 .last(DatabaseConsts.SqlEnum.LIMIT_1.getSql());
         NewsContent newsContent = newsContentMapper.selectOne(queryWrapper);
+
         return RestResp.ok(NewsInfoRespDto.builder()
                 .id(newsInfo.getId())
                 .categoryId(newsInfo.getCategoryId())

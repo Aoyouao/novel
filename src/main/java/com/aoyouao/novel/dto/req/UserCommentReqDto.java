@@ -18,7 +18,15 @@ public class UserCommentReqDto {
     @NotNull(message="小说ID不能为空！")
     private Long bookId;
 
-    @NotNull(message = "评论内容不能为空")
+    //@NotNull(message = "评论内容不能为空")
     @Length(min=10,max=512)
     private String commentContent;
+
+    /**
+     * 根评论ID
+     */
+    private Long commentId;
+    private String replyContent;
+    private Long parentReplyId;
+
 }

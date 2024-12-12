@@ -4,9 +4,12 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+import org.springframework.data.annotation.Transient;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * <p>
@@ -16,6 +19,7 @@ import java.time.LocalDateTime;
  * @author ${author}
  * @date 2024/11/23
  */
+@Data
 @TableName("book_comment")
     public class BookComment implements Serializable {
 
@@ -62,6 +66,11 @@ import java.time.LocalDateTime;
          * 更新时间
          */
         private LocalDateTime updateTime;
+
+        /*@Transient
+        private List<BookCommentReply> replies;*/
+
+
 
 
         public Long getId() {
